@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="usdt, TUSD, USDC, DAI, PAX, 稳定币, 换汇, 美元, Libra, 外汇, 汇款, maker, defi, 国际支付, blockchain, 区块链, crypto, 加密货币, 虚拟货币, stablecoin,">
+    <link rel="stylesheet" href="./src/css/devcon.css" id="changecss">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: NotoSansHans-Regular;
+            src: url('./src/font/NotoSansHans.otf')
+        }
+
+        div.ticket1::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 1px;
+            background: rgba(213, 162, 78, 1);
+            position: absolute;
+            left: 13px;
+            bottom: 0;
+        }
+    </style>
+
+    <title>Ticket</title>
+</head>
+
+<body>
+    <div class="body_ticket">
+        <div class="ticket_top_box">
+            <div class="ticket_top">
+                <div class="left">
+                    <div class="left1">
+                        <img src="./src/images/devcon_ticket_logo.png" alt="">
+                    </div>
+                    <div class="left2">
+                        <div class="token">ETH</div>
+                        <div class="balanceETH"> - </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="left3">
+                        <div class="token">
+                            <img src="./src/images/usdx_logo.png" alt="" srcset=""
+                                style="width: 14px; margin-bottom: -1px;">
+                            USDx
+                        </div>
+                        <div class="balanceUSDx"> - </div>
+                    </div>
+                </div>
+                <div class="right connectBtn">
+                    Connect
+                </div>
+                <div class="rightAddress"></div>
+
+                <div class="exchange">
+                    <div class="alert_button">Prize claim ends in…</div>
+                    <div class="home1">Home</div>
+                    <div class="ticket1">Ticket</div>
+                    <div class="hotel2">Hotel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ticket_time">
+        <div class="title">
+            Devcon Ticket
+        </div>
+        <div class="clear"></div>
+        <div class="time1">
+            <div class="timetext">DAYS</div>
+            <div class="timenumber time_days">0</div>
+        </div>
+        <div class="timeline"></div>
+        <div class="time1">
+            <div class="timetext">HOURS</div>
+            <div class="timenumber time_hours">0</div>
+        </div>
+        <div class="timeline"></div>
+        <div class="time1">
+            <div class="timetext">MINUTES</div>
+            <div class="timenumber time_min">0</div>
+        </div>
+        <div class="timeline"></div>
+        <div class="time1">
+            <div class="timetext">SECONDS</div>
+            <div class="timenumber time_sec">0</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="ticketTips">
+        <h2>Before you start:</h2>
+        <ul>
+            <li>
+                <span></span>
+                Purchase USDx from <a href="https://bitpie.com/" target="_blank">Bitpie</a>, <a href="https://token.im/"
+                    target="_blank">imToken</a>, <a href="https://ddex.io/" target="_blank">DDEX</a> or <a
+                    href="https://www.exshell.com" target="_blank">ExShell</a>.
+            </li>
+            <li>
+                <span></span>
+                Enter the bid price (in USDx) at which you wish to make the call (your USDx assets will be locked in an
+                auction contract).
+            </li>
+            <li>
+                <span></span>
+                Please be sure to use the same address for top-up. Bid prices from the same address will be aggregated.
+            </li>
+            <li>
+                <span></span>
+                You may withdraw your USDx assets at any time (except the top bidder).
+            </li>
+            <li>
+                <span></span>
+                Result will be disclosed within 24 hours after the auction.
+            </li>
+            <li>
+                <span></span>
+                Winner should expect a private notice on how to collect your prize when you revisit the auction website
+                12 hours after the result annoucement. You should expect an email from <a
+                    href="javascript:;">contacts@dforce.network</a>
+                with instructions on how to receive your ticket.
+            </li>
+        </ul>
+        <div class="confirm">
+            <img src="./src/images/not_approved.png" class="imCheckBox" style="cursor: pointer; margin-bottom: -3px;">
+            I confirm that I have read, understand and agree to the above rules and procedure for the auction of 1
+            Devcon ticket (Oct 8- Oct 11), Osaka, Japan.
+        </div>
+    </div>
+
+    <div class="ticket_bid">
+        <p class="pbidding">Enter the amount of USDx for bidding</p>
+        <div class="bidBox">
+            <input type="number" placeholder="Amount" id="imInputNumber">
+            <div class="bidBtn">BID</div>
+            <div class="clear"></div>
+        </div>
+        <div class="ticket_bidded hidden_before_approve">
+            Congratulations! You have successfully submitted an offer with the bidding price of <span
+                class="spanMyBidUSDx">0</span> USDx.
+        </div>
+        <div class="ticket_address hidden_before_approve">
+            Please be sure use the same address <span class="spanAddress">unconnect</span> for top-up.
+        </div>
+        <div class="withdraw withdrawActive hidden_before_approve">
+            WITHDRAW
+        </div>
+        <div class="ifCanWithdraw hidden_before_approve">
+            <img src="./src/images/ifcanwithdraw.png" alt="">
+            <div class="withdrawTips">
+                All your USDx assets supplied will be returned to the same address <span
+                    class="spanAddress">unconnect</span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="footer">
+        Please, feel free to reach out with any questions: <span>contacts@dforce.network</span>
+    </div>
+
+    <div class="popup alert_Popup">
+        <div class="popBox alert_Popup">
+            <button class="iamButton"></button>
+            <p class="pp1">The hotel acution is closed. The winner is</p>
+            <p class="pp2">0x9df7c98c933a0cb409606a3a24b1660a70283542</p>
+        </div>
+    </div>
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76437833-4"></script>
+<script src="./src/js/jquery.min.js"></script>
+<script src="./src/js/static.js"></script>
+<script>
+    $(function () {
+        $(".myid").click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    }, 800);
+                    return false;
+                }
+            }
+        })
+    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-76437833-4');
+
+
+    // web3 ticket
+    $(function () {
+        if (window.web3) {
+            var Web3 = window.web3;
+        } else {
+            return false;
+        }
+
+        var contractUSDx = Web3.eth.contract(abiUSDx).at(addressUSDx);
+        var contractTicket = Web3.eth.contract(abiTicket).at(addressTicket);
+
+        var myAccount;
+        var isApprove;
+        var approveNumer = Web3.toBigNumber(100000000 * (10 ** 18));
+        var gasRatio = 1.3;
+        var gasPrice = 1000000000;
+        var gas = Web3.toBigNumber(7 * (10 ** 9));
+
+        var myBidedOrigin;
+        var myBided;
+        var imTopBidder;
+        var isSubmitting;
+        var approving;
+        var withdrawing;
+        var mybalanceUSDx;
+        var toUSDx;
+
+        var timerStatus = setInterval(function () {
+            console.log('check account change');
+            if (!Web3.eth.coinbase) {
+                console.log('metamask may be not login.');
+                // window.location.reload();
+                // clearInterval(timerStatus);
+                return;
+            }
+            if (Web3.eth.accounts[0] !== myAccount) {
+                $("#imInputNumber").val('');
+                // $(".imCheckBox").attr('src', './src/images/not_approved.png');
+                console.log('status changed');
+                myAccount = Web3.eth.accounts[0];
+                Web3.currentProvider.enable().then(
+                    res => {
+                        myAccount = res[0];
+                        myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 6);
+                        // console.log(myAccountShort);
+                        $('.connectBtn').css('display', 'none');
+                        $('.rightAddress').html(myAccountShort);
+                        $('.spanAddress').html(myAccount);
+
+                        getMyBalance();
+                        checkApprove();
+                    }
+                )
+            }
+        }, 3000);
+
+        // 倒计时
+        // contractTicket.expireTime.call((err, ret) => {
+        //     setInterval(function () {
+        //         var nowTime = new Date();
+        //         var endTime = new Date(ret * 1000);
+        //         var t = endTime.getTime() - nowTime.getTime();
+        //         var hour = Math.floor(t / 1000 / 60 / 60 % 24);
+        //         // var d = Math.floor(hour / 24);
+        //         var d = Math.floor(t / 1000 / 60 / 60 / 24);
+        //         var min = Math.floor(t / 1000 / 60 % 60);
+        //         var sec = Math.floor(t / 1000 % 60);
+        //         if (hour < 10) {
+        //             hour = "0" + hour;
+        //         }
+        //         if (hour == 24) {
+        //             hour = "00";
+        //         }
+        //         if (min < 10) {
+        //             min = "0" + min;
+        //         }
+        //         if (sec < 10) {
+        //             sec = "0" + sec;
+        //         }
+        //         var countDownTime = d + ":" + hour + ":" + min + ":" + sec;
+        //         $('.time_days').html(d);
+        //         $('.time_hours').html(hour);
+        //         $('.time_min').html(min);
+        //         $('.time_sec').html(sec);
+        //     }, 1000);
+        // })
+
+        $(".iamButton").click(function () {
+            $('.alert_Popup').css('display', 'none');
+        })
+        $(".alert_button").click(function () {
+            $('.alert_Popup').css('display', 'block');
+            // window.onmousewheel = document.onmousewheel = function () { return false }
+        })
+
+        Web3.currentProvider.enable().then(
+            res => {
+                myAccount = res[0];
+                myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 6);
+                // console.log(myAccountShort);
+                $('.connectBtn').css('display', 'none');
+                $('.rightAddress').html(myAccountShort);
+                $('.spanAddress').html(myAccount);
+                getMyBalance();
+                checkApprove();
+                getGasPrice();
+                setInterval(function () {
+                    getMyBalance();
+                    checkApprove();
+                }, 15 * 1000)
+            }
+        )
+
+
+        // click to connect
+        $(".connectBtn").click(function () {
+            Web3.currentProvider.enable().then(
+                res => {
+                    myAccount = res[0];
+                    myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 6);
+                    // console.log(myAccountShort);
+                    $('.connectBtn').css('display', 'none');
+                    $('.rightAddress').html(myAccountShort);
+                    $('.spanAddress').html(myAccount);
+
+                    getMyBalance();
+                    checkApprove();
+                }
+            )
+        })
+
+        // getGasPrice
+        function getGasPrice() {
+            Web3.eth.getGasPrice((e, r) => {
+                // console.log(e, Number(r));
+                console.log(r);
+                gasPrice = r;
+            })
+        }
+
+        // get balance
+        function getMyBalance() {
+            Web3.eth.getBalance(myAccount, (err, ret) => {
+                // console.log(err, ret);
+                // console.log(formatNumber(ret));
+                $('.balanceETH').html(formatNumber(ret));
+            });
+            contractUSDx.balanceOf.call(myAccount, (err, ret) => {
+                $('.balanceUSDx').html(formatNumber(ret));
+                mybalanceUSDx = ret;
+            });
+        };
+
+        // check approve
+        function checkApprove() {
+            contractUSDx.allowance.call(myAccount, addressTicket, (err, ret) => {
+                // console.log(err, ret);
+                if (ret && ret.c[0] > 0) {
+                    isApprove = true;
+                    $('.confirm').css('display', 'none');
+                    if (!isSubmitting) {
+                        $('.bidBtn').addClass('bidBtnActive');
+                    }
+                    getMyBid();
+                } else {
+                    isApprove = false;
+                    $('.confirm').css('display', 'block');
+                    $('.hidden_before_approve').css('display', 'none');
+                    if (!isSubmitting) {
+                        $('.bidBtn').html('BID').removeClass('bidBtnActive');
+                    }
+                    // $(".imCheckBox").attr('src', './src/images/not_approved.png');
+                }
+            });
+        }
+
+        // get myBid
+        function getMyBid() {
+            console.log('getMyBid...');
+            contractTicket.balances.call(myAccount, (err, ret) => {
+                // console.log(err, ret);
+                if (ret) {
+                    myBidedOrigin = ret;
+                    myBided = formatNumber(ret);
+                    $('.spanMyBidUSDx').html(myBided);
+                    if (myBidedOrigin > 0) {
+                        // console.log('i check if i am topBidder...');
+                        $('.hidden_before_approve').css('display', 'block');
+                        if (!isSubmitting) {
+                            $('.bidBtn').html('TOP UP');
+                        }
+                        contractTicket.topBidder.call((err1, ret1) => {
+                            // console.log(err1, ret1);
+                            if (ret1 && ret1 === myAccount) {
+                                // console.log('yes iam the topOne!');
+                                imTopBidder = true;
+                                $('.withdraw').removeClass('withdrawActive');
+                                $('.withdrawTips').html("Please note you couldn't withdraw your USDx collateral if you were the top bidder.");
+                            } else {
+                                imTopBidder = false;
+                                if (!withdrawing) {
+                                    $('.withdraw').addClass('withdrawActive');
+                                }
+                                $('.withdrawTips').html("All your USDx assets supplied will be returned to the same address <span class='spanAddress'> " + myAccount + " </span>");
+                            }
+                        })
+                    } else {
+                        if (!isSubmitting) {
+                            $('.bidBtn').html('BID');
+                        }
+                        $('.hidden_before_approve').css('display', 'none');
+                    }
+                }
+            });
+        }
+
+        // click to approve
+        $(".imCheckBox").click(function () {
+            if (approving) {
+                return;
+            }
+            approving = true;
+            $(".imCheckBox").attr('src', './src/images/isapproved.png');
+            contractUSDx.approve.estimateGas(
+                addressTicket,
+                approveNumer,
+                {
+                    from: myAccount,
+                },
+                (err, gasLimit) => {
+                    contractUSDx.approve.sendTransaction(
+                        addressTicket,
+                        approveNumer,
+                        {
+                            from: myAccount,
+                            gas: gasLimit || gas,
+                            gasPrice: gasPrice
+                        },
+                        (err, ret) => {
+                            if (err) {
+                                approving = false;
+                                $(".imCheckBox").attr('src', './src/images/not_approved.png');
+                            }
+                            if (ret) {
+                                $(".imCheckBox").attr('src', './src/images/approving.png').addClass('imTurning');
+                                var approveUSDxtimer = setInterval(() => {
+                                    console.log('i am checking approve USDx...');
+                                    Web3.eth.getTransactionReceipt(ret, (err, data) => {
+                                        if (data && data.status === '0x1') {
+                                            clearInterval(approveUSDxtimer);
+                                            isApprove = true;
+                                            $('.confirm').css('display', 'none');
+                                            $('.bidBtn').addClass('bidBtnActive');
+                                            $(".imCheckBox").attr('src', './src/images/isapproved.png').removeClass('imTurning');
+                                            console.log('approve success');
+                                        }
+                                        if (data && data.status === '0x0') {
+                                            clearInterval(approveDAItimer);
+                                            isApprove = false;
+                                            $('.confirm').css('display', 'block');
+                                            console.log('approve faild');
+                                        }
+                                    })
+                                }, 2000);
+                            }
+                        }
+                    );
+                }
+            )
+
+        })
+
+        // click to deposit
+        $(".bidBtn").click(function () {
+            if (isSubmitting) {
+                return;
+            }
+            if (toUSDx) {
+                return;
+            }
+            var depositNumber = Web3.toBigNumber(Number($("#imInputNumber").val()) * (10 ** 18));
+            if (!isApprove || Number($("#imInputNumber").val()) <= 0) {
+                return;
+            }
+            isSubmitting = true;
+            $('.bidBtn').removeClass('bidBtnActive');
+            $('.bidBtn').html('SUBMITTING…');
+            contractTicket.deposit.estimateGas(
+                depositNumber,
+                {
+                    from: myAccount
+                },
+                (err, gasLimit) => {
+                    contractTicket.deposit.sendTransaction(
+                        depositNumber,
+                        {
+                            from: myAccount,
+                            gas: gasLimit || gas,
+                            gasPrice: gasPrice
+                        },
+                        (err, ret) => {
+                            if (err) {
+                                isSubmitting = false;
+                                $('.bidBtn').addClass('bidBtnActive');
+                                $('.bidBtn').html('BID');
+                            }
+                            if (ret) {
+                                var timerOBJ = {};
+                                var tempRnum = Math.random();
+                                timerOBJ[tempRnum] = setInterval(() => {
+                                    console.log('i am checking deposit... =>' + tempRnum);
+                                    Web3.eth.getTransactionReceipt(ret, (err, data) => {
+                                        if (data && data.status === '0x1') {
+                                            clearInterval(timerOBJ[tempRnum]);
+                                            console.log('deposit ' + depositNumber + ' USDx');
+                                            getMyBid();
+                                            getMyBalance();
+                                            $("#imInputNumber").val('');
+                                            isSubmitting = false;
+                                            $('.bidBtn').addClass('bidBtnActive');
+                                            $('.bidBtn').html('TOP UP');
+                                        }
+                                        if (data && data.status === '0x0') {
+                                            clearInterval(timerOBJ[tempRnum]);
+                                            console.log('deposit USDx faild');
+                                            isSubmitting = false;
+                                            $('.bidBtn').addClass('bidBtnActive');
+                                            $('.bidBtn').html('BID');
+                                        }
+                                    })
+                                }, 2000);
+                            }
+                        }
+                    )
+                }
+            )
+
+        })
+
+        // click to withdraw
+        $(".withdraw").click(function () {
+            console.log('withdraw...');
+            if (!isApprove || myBidedOrigin <= 0 || imTopBidder) {
+                return;
+            }
+            if (withdrawing) {
+                return;
+            }
+            withdrawing = true;
+            $('.withdraw').removeClass('withdrawActive');
+            $('.withdraw').html('SUBMITTING…');
+            contractTicket.withdraw.estimateGas(
+                myBidedOrigin,
+                {
+                    from: myAccount
+                },
+                (err, gasLimit) => {
+                    contractTicket.withdraw.sendTransaction(
+                        myBidedOrigin,
+                        {
+                            from: myAccount,
+                            gas: gasLimit || gas,
+                            gasPrice: gasPrice
+                        },
+                        (err, ret) => {
+                            if (err) {
+                                withdrawing = false;
+                                $('.withdraw').html('WITHDRAW');
+                            }
+                            if (ret) {
+                                var timerOBJ = {};
+                                var tempRnum = Math.random();
+                                timerOBJ[tempRnum] = setInterval(() => {
+                                    console.log('i am checking withdraw... =>' + tempRnum);
+                                    Web3.eth.getTransactionReceipt(ret, (err, data) => {
+                                        if (data && data.status === '0x1') {
+                                            clearInterval(timerOBJ[tempRnum]);
+                                            console.log('withdraw ' + myBidedOrigin + ' USDx');
+                                            getMyBid();
+                                            getMyBalance();
+                                            withdrawing = false;
+                                        }
+                                        if (data && data.status === '0x0') {
+                                            clearInterval(timerOBJ[tempRnum]);
+                                            console.log('withdraw USDx faild');
+                                        }
+                                    })
+                                }, 2000);
+                            }
+                        })
+                }
+            )
+
+        })
+
+        $(".home1").click(function () {
+            window.location.href = toHome;
+        });
+        $(".ticket1").click(function () {
+            return;
+        });
+        $(".hotel2").click(function () {
+            window.location.href = toHotel;
+        });
+
+
+        $("#imInputNumber").bind("input propertychange", function (event) {
+            if (!myAccount) {
+                return;
+            }
+            if (!isApprove) {
+                $('.bidBtn').removeClass('bidBtnActive');
+                return;
+            }
+            // console.log($("#imInputNumber").val());
+            // console.log(mybalanceUSDx);
+            if (Web3.toBigNumber(Number($("#imInputNumber").val()) * (10 ** 18)).sub(mybalanceUSDx) > 0) {
+                $('.bidBtn').removeClass('bidBtnActive');
+                toUSDx = true;
+            } else {
+                $('.bidBtn').addClass('bidBtnActive');
+                toUSDx = false;
+            }
+        });
+
+    });
+</script>
+
+</html>

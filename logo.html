@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords"
+        content="usdt, TUSD, USDC, DAI, PAX, 稳定币, 换汇, 美元, Libra, 外汇, 汇款, maker, defi, 国际支付, blockchain, 区块链, crypto, 加密货币, 虚拟货币, stablecoin,">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+
+    <style>
+        #input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+        div.wrap {
+            width: 930px;
+            /* background: red; */
+            margin: 0 auto;
+        }
+
+        div.wrap div.img {
+            width: 300px;
+            margin-right: 15px;
+            float: left;
+            /* background: green; */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        div.wrap div.nomargin {
+            margin-right: 0;
+        }
+
+        div.wrap div.img img {
+            /* width: 180px; */
+            height: 150px;
+        }
+
+        div.wrap div.img div.btm p {
+            font-size: 12px;
+            /* width: 150px; */
+            /* overflow: hidden; */
+            /* float: left; */
+        }
+    </style>
+    <title>dForce</title>
+</head>
+
+<body>
+    <textarea type="text" id="input"></textarea>
+    <div class="wrap">
+        <div class="img">
+            <p class="title">logo_DF (120*120)</p>
+            <img src="./logo_DF_120x120.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text1">https://dforce.network/logo_DF_120x120.png</p>
+                <button onclick="copyText1()">copy</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <p class="title">logo_DF (256*256)</p><img src="./logo_DF_256x256.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text2">https://dforce.network/logo_DF_256x256.png</p>
+                <button onclick="copyText2()">copy</button>
+            </div>
+        </div>
+
+        <div class="img nomargin">
+            <p class="title">logo_DF (svg)</p>
+            <img src="./dforce.svg" alt="" srcset="">
+            <div class="btm">
+                <p id="text3">https://dforce.network/dforce.svg</p>
+                <button onclick="copyText3()">copy</button>
+            </div>
+        </div>
+
+
+
+        <div class="img">
+            <p class="title">logo_USDx (120*120)</p>
+            <img src="./logo_USDx_120x120.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text4">https://dforce.network/logo_USDx_120x120.png</p>
+                <button onclick="copyText4()">copy</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <p class="title">logo_USDx (256*256)</p><img src="./logo_USDx_256x256.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text5">https://dforce.network/logo_USDx_256x256.png</p>
+                <button onclick="copyText5()">copy</button>
+            </div>
+        </div>
+
+        <div class="img nomargin">
+            <p class="title">logo_USDx (svg)</p>
+            <img src="./USDx.svg" alt="" srcset="">
+            <div class="btm">
+                <p id="text6">https://dforce.network/USDx.svg</p>
+                <button onclick="copyText6()">copy</button>
+            </div>
+        </div>
+
+        <div style="clear: both; margin-bottom: 50px;"></div>
+
+        <div>
+            https://dforce.network/logo_DF_120x120.png<br />
+            https://dforce.network/logo_DF_256x256.png<br />
+            https://dforce.network/dforce.svg<br />
+            https://dforce.network/logo_USDx_120x120.png<br />
+            https://dforce.network/logo_USDx_256x256.png<br />
+            https://dforce.network/USDx.svg<br />
+        </div>
+</body>
+
+
+<script type="text/javascript">
+function copyText1() {
+        var text = document.getElementById("text1").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+    function copyText2() {
+        var text = document.getElementById("text2").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+    function copyText3() {
+        var text = document.getElementById("text3").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+    function copyText4() {
+        var text = document.getElementById("text4").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+    function copyText5() {
+        var text = document.getElementById("text5").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+    function copyText6() {
+        var text = document.getElementById("text6").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+</script>
+
+</html>

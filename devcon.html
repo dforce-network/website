@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="usdt, TUSD, USDC, DAI, PAX, 稳定币, 换汇, 美元, Libra, 外汇, 汇款, maker, defi, 国际支付, blockchain, 区块链, crypto, 加密货币, 虚拟货币, stablecoin,">
+    <link rel="stylesheet" href="./src/css/devcon.css" id="changecss">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: NotoSansHans-Regular;
+            src: url('./src/font/NotoSansHans.otf')
+        }
+    </style>
+
+    <title>Devcon</title>
+</head>
+
+<body>
+    <div class="body_welcom">
+        <div class="topBox">
+            <div class="top">
+                <div class="left">
+                    <div class="left1">
+                        <img src="./src/images/devcon_logo.png" alt="">
+                    </div>
+                    <!-- <div class="left2">
+                        <div class="token">ETH</div>
+                        <div class="balanceETH"> - </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="left3">
+                        <div class="token">USDx</div>
+                        <div class="balanceUSDx"> - </div>
+                    </div> -->
+                </div>
+                <!-- <div class="right rightConnect">
+                    Connect
+                </div> -->
+                <div class="rightAddress" style="display: none; color: #fff;"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <h1>
+            <img src="./src/images/logo_big.png" alt="" style="width: 56px; margin-bottom: -7px;">
+            USDx Auction for Devcon
+        </h1>
+
+        <div class="twoBtn">
+            <div class="btnTicket btn1 toTicket">
+                <span class="">Ticket</span>
+            </div>
+            <div class="btnHotel btn2 toHotel">
+                <span class="">Hotel</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76437833-4"></script>
+<script src="./src/js/jquery.min.js"></script>
+<script src="./src/js/static.js"></script>
+<script>
+    // console.log('test', $);
+    $(function () {
+        $(".myid").click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    }, 800);
+                    return false;
+                }
+            }
+        })
+    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-76437833-4');
+
+    // account
+    $(function () {
+        var myAccount;
+        var myAccountShort;
+
+        // R test net
+        var addressUSDx = '0x17996ea27d03d68ddc618f9b8f0faf43838acaf6';
+        var contractUSDx = web3.eth.contract(abiUSDx).at(addressUSDx);
+
+        $(".rightConnect").click(function () {
+            console.log(111);
+            web3.currentProvider.enable().then(
+                res => {
+                    myAccount = res[0];
+                    myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 6);
+                    // console.log(myAccountShort);
+                    $('.rightConnect').css('display', 'none');
+                    $('.rightAddress').css('display', 'block');
+                    $('.rightAddress').html(myAccountShort);
+
+                    web3.eth.getBalance(myAccount, (err, ret) => {
+                        $('.balanceETH').html(formatNumber(ret));
+                    });
+                    contractUSDx.balanceOf.call(myAccount, (err, ret) => {
+                        $('.balanceUSDx').html(formatNumber(ret));
+                    });
+                }
+            )
+        })
+
+        $(".toTicket").click(function () {
+            console.log(111);
+            window.location.href = toTicket;
+        })
+        $(".toHotel").click(function () {
+            console.log(222);
+            window.location.href = toHotel;
+        })
+    })
+</script>
+
+</html>

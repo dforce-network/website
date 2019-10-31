@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./src/css/vote.css" id="changecss">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: NotoSansHans-Regular;
+            src: url('./src/font/NotoSansHans.otf')
+        }
+    </style>
+
+    <title>vote</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_box">
+            <div class="left">
+                <img src="./src/images/devcon_ticket_logo.png" alt="" srcset="">
+            </div>
+            <div class="right">
+                <div class="to_connect top_connect_btn">Connect</div>
+            </div>
+            <div class="clear"></div>
+            <div class="top_title"> dForce Governance Call </div>
+            <div class="top_details">
+                We have identified three key concerns with DAI and would like to implement a governance poll through
+                voting system.
+            </div>
+            <div class="top_details">
+                Threekey concerns are respectively stability issue, complexities of MCD, and high friction of trading
+                DAI <a href="#">More...</a>
+            </div>
+        </div>
+    </div>
+    <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
+    <div class="main">
+        <div class="main_left">
+            <div class="m_title">Removing DAI from the basket of USDx?</div>
+            <div class="m_choosen">
+                <img src="./src/images/vote_is_choosen.svg" alt="" srcset="" class="ichoiceA">
+                <span>Option A: Yes, remove DAI from the constituents</span>
+            </div>
+            <div class="m_choosen">
+                <img src="./src/images/vote_not_choosen.svg" alt="" srcset="" class="ichoiceB">
+                <span>Option B: No, keep DAI in the constituents</span>
+            </div>
+            <div class="vote_btn">VOTE</div>
+        </div>
+        <div class="main_right">
+            <p class="details">Details</p>
+            <p class="time"><span class="time_days">0</span> days : <span class="time_hours">0</span> hours : <span
+                    class="time_min">0</span> mins</p>
+            <div class="clear"></div>
+            <div class="text_part">
+                <div class="t_left">Percentage of total votes in COINS (Qurom is 5%)</div>
+                <div class="t_right"><span class="totalPersent">...</span><span style="margin-left: 25px;"
+                        class="totalVVV">...</span></div>
+            </div>
+            <div class="clear"></div>
+            <div class="connect bottom_connect_btn" style='display: none'>CONNECT</div>
+            <div class="i_am_bili" style='display: none'>
+                <div class="yes">
+                    <span>YES</span>
+                    <span class="yesPersent">50%</span>
+                </div>
+                <div class="no">
+                    <span>NO</span>
+                    <span class="noPersent">50%</span>
+                </div>
+            </div>
+            <div class="text_part">
+                <div class="t_left">Your Account</div>
+                <div class="t_right my_source">...</div>
+            </div>
+            <div class="text_part">
+                <div class="t_left">Your Choice</div>
+                <div class="t_right my_option">...</div>
+            </div>
+            <div class="clear"></div>
+            <div class="text_part">
+                <div class="t_left">Vote Amount</div>
+                <div class="t_right vote_amount">...</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
+    <div class="bottom">
+        <div class="b_title">Voting mechanism</div>
+        <ul>
+            <li>The governance poll will last for [7] days from [date] to [date] Oct.</li>
+            <li>All DF holders will have the opportunity to signal your support for portfolio adjustments of USDx
+                through voting system.</li>
+            <li>Decision will be implemented if the following requirements are satisfied Quorum: More than 5% of total
+                tokens at the end of the voting period need to have participated in the vote ( Using signal method)
+                Threshold: More than 50% of the tokens that participated in the signal need to have voted “Yes”of the
+                proposal (If the voting result is tied, the proposal won’t be implemented.)</li>
+            <li>Governance decision will be disclosed to the dForce community after the governance poll.</li>
+        </ul>
+    </div>
+</body>
+
+
+<script src="./src/js/jquery.min.js"></script>
+<script src="./src/js/static_vote.js"></script>
+<script>
+    // account 
+    $(function () {
+        if (typeof window.web3 === 'undefined') {
+            return false;
+        }
+        var contractVote = web3.eth.contract(abiVote).at(addressVote);
+        var contractDF = web3.eth.contract(abiDF).at(addressDF);
+
+        var myAccount;
+        var myAccountShort;
+        var isConnected;
+        var isVote;
+        var i_choice_AorB = 'A';
+        var total_A = 0;
+        var total_B = 0;
+
+        window.ethereum.on('accountsChanged', () => {
+            console.log('00000000000000000000');
+            // location.reload();
+            // window.location.replace("http://192.168.200.109:9991/dforce/vote.html")
+            connect_metamask();
+            setTimeout(() => {
+                check_isVote();
+            }, 500)
+        });
+
+        connect_metamask();
+        get_end_time();
+
+        $(".noPersent").html('-')
+        $(".yesPersent").html('-')
+
+        var timer = setInterval(function () {
+            getTotalVote();
+        }, 1000 * 1);
+
+        // 点击投票
+        $(".vote_btn").click(function () {
+            // if (isVote !== 0 || !isConnected) {
+            //     return false;
+            // }
+            vote();
+        })
+
+        $(".top_connect_btn").click(function () {
+            connect_metamask();
+        })
+        $(".bottom_connect_btn").click(function () {
+            connect_metamask();
+        })
+
+
+
+        $(".ichoiceA").click(function () {
+            console.log('aaaaa');
+            i_choice_AorB = 'A';
+            $(".ichoiceA").attr('src', './src/images/vote_is_choosen.svg');
+            $(".ichoiceB").attr('src', './src/images/vote_not_choosen.svg');
+        })
+        $(".ichoiceB").click(function () {
+            console.log('bbbbb');
+            i_choice_AorB = 'B';
+            $(".ichoiceA").attr('src', './src/images/vote_not_choosen.svg');
+            $(".ichoiceB").attr('src', './src/images/vote_is_choosen.svg');
+        })
+        function vote() {
+            var num = 1; // yes
+            if (i_choice_AorB === 'B') {
+                num = 2; // no
+            }
+            contractVote.vote.sendTransaction(num, { from: myAccount }, (err, ret) => {
+                if (ret) {
+                    // 投票成功 返回哈希
+                    console.log(ret);
+                    $(".vote_btn").html('VOTED').css({ 'background': 'rgba(217,216,233,1)', 'color': 'rgba(129,126,152,1)' });
+                    var approveUSDxtimer = setInterval(() => {
+                        web3.eth.getTransactionReceipt(ret, (err, data) => {
+                            if (data && data.status === '0x1') {
+                                clearInterval(approveUSDxtimer);
+                                if (i_choice_AorB === 'A') {
+                                    $(".my_option").html('YES');
+                                }
+                                if (i_choice_AorB === 'B') {
+                                    $(".my_option").html('NO');
+                                }
+                                $(".my_source").html(window.web3.eth.accounts[0]);
+                                contractDF.balanceOf.call(myAccount, (err, ret) => {
+                                    if (ret) {
+                                        console.log(ret);
+                                        $(".vote_amount").html(formatNumber(ret));
+                                    }
+                                })
+                                setTimeout(()=>{check_isVote()}, 3000)
+                                
+                            }
+                        })
+                    }, 2000);
+
+
+                }
+            })
+        }
+
+        function getTotalVote() {
+            contractVote.getTotalVote.call(1, (err, res_A) => {
+                if (res_A) {
+                    contractVote.getTotalVote.call(2, (err, res_B) => {
+                        // console.log('yes: ', Number(res_A))
+                        // console.log('no: ', Number(res_B))
+                        total_A = formatNumber_number(res_A);
+                        total_B = formatNumber_number(res_B);
+                        var total_VOTE = total_A + total_B;
+                        // console.log('total_VOTE: ', total_VOTE)
+                        // console.log('total_VOTE: ', total_A)
+                        // console.log('total_VOTE: ', total_B)
+                        // return;
+                        if (total_VOTE === 0) {
+                            return false;
+                        }
+
+                        $(".totalPersent").html((Number((total_VOTE / 1000000000).toFixed(4)) * 100).toString() + '%')
+                        // $(".totalVVV").html(formatNumber(web3.toBigNumber(res_A).add(web3.toBigNumber(res_B))))
+                        var showNum = total_VOTE.toString();
+                        console.log(showNum.indexOf('.'))
+                        if (showNum.indexOf('.') > 0) {
+                            var a = showNum.substring(0, showNum.indexOf('.'));
+                            a = toQfw(a);
+                            // console.log(typeof a)
+                            var b = showNum.substring(showNum.indexOf('.'), showNum.length)
+                            // console.log(typeof b)
+                            showNum = a + b;
+                        }
+                        $(".totalVVV").html(showNum)
+                        // $(".totalVVV").html(toQfw(total_VOTE))
+                        // formatNumber_bbbbbbbbbbbb
+                        // console.log(formatNumber(web3.toBigNumber(res_A).add(web3.toBigNumber(res_B))).toString().replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,"))
+                        // console.log('part_A: ', part_A)
+
+                        if (total_A / total_VOTE === 0) {
+                            $(".yes").css('display', 'none')
+                            $(".no").css('width', '100%')
+                            $(".noPersent").html('100%')
+                            return;
+                        }
+                        if (total_A / total_VOTE === 1) {
+                            $(".no").css('display', 'none')
+                            $(".yes").css('width', '100%')
+                            $(".yesPersent").html('100%')
+                            return;
+                        }
+
+                        // var part_A = ((total_A / total_VOTE).toFixed(4) * 100).toString() + '%';
+                        // var part_B = (100 - (total_A / total_VOTE).toFixed(4) * 100).toString() + '%';  web3.toBigNumber(total_VOTE * (10 ** 18))
+                        var part_A = ((((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        var part_B = (100 - (((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+
+                        // console.log('part_A: ', part_A)
+                        // console.log('part_B: ', part_B)
+                        $(".yes").css('display', 'block')
+                        $(".no").css('display', 'block')
+
+                        $(".yes").css('width', part_A)
+                        $(".no").css('width', part_B)
+
+                        $(".yesPersent").html(part_A)
+                        $(".noPersent").html(part_B)
+
+
+
+                        if ((total_A / total_VOTE) < 0.1) {
+                            $(".yes").css('width', '10%')
+                            $(".no").css('width', '90%')
+                        }
+                        if ((total_A / total_VOTE) > 0.9) {
+                            $(".yes").css('width', '90%')
+                            $(".no").css('width', '10%')
+                        }
+                    })
+                }
+            })
+        }
+
+
+
+        function connect_metamask() {
+            web3.currentProvider.enable().then(
+                res => {
+                    console.log(res[0]);
+                    isConnected = true;
+                    myAccount = res[0];
+                    myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 4);
+                    $(".top_connect_btn").html(myAccountShort).css({ 'background': 'none', 'color': 'rgba(7,2,55,1)' });
+                    $(".bottom_connect_btn").css('display', 'none');
+                    $(".i_am_bili").css('display', 'block');
+                    check_isVote();
+                },
+                err => {
+                    console.log(err);
+                }
+            )
+        }
+
+        function check_isVote() {
+            contractVote.isVote.call(myAccount, (err, res) => {
+                isVote = Number(res);
+                if (isVote === 0) {
+                    // alert(isVote)
+                    console.log('not vote yet.');
+                    $(".vote_amount").html('...');
+                    $(".my_source").html('...');
+                    $(".my_option").html('...');
+                    $(".vote_btn").html('VOTE').css({ 'background': 'rgba(213, 162, 78, 1)', 'color': '#fff' });
+                } else {
+                    $(".vote_btn").html('VOTED').css({ 'background': 'rgba(217,216,233,1)', 'color': 'rgba(129,126,152,1)' });
+                    if (isVote === 1) {
+                        $(".my_option").html('YES');
+                    }
+                    if (isVote === 2) {
+                        $(".my_option").html('NO');
+                    }
+                    $(".my_source").html(myAccount);
+                    contractDF.balanceOf.call(myAccount, (err, ret) => {
+                        if (ret) {
+                            console.log(ret);
+                            $(".vote_amount").html(formatNumber(ret));
+                        }
+                    })
+                }
+            })
+        }
+
+        function get_end_time() {
+            contractVote.endTime.call((err, res_time) => {
+                console.log(Number(res_time))
+                if (res_time) {
+                    setInterval(function () {
+                        var nowTime = new Date();
+                        var endTime = new Date(Number(res_time) * 1000);
+                        var t = endTime.getTime() - nowTime.getTime();
+                        var hour = Math.floor(t / 1000 / 60 / 60 % 24);
+                        var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                        var min = Math.floor(t / 1000 / 60 % 60);
+                        var sec = Math.floor(t / 1000 % 60);
+                        if (hour < 10) {
+                            hour = "0" + hour;
+                        }
+                        if (hour == 24) {
+                            hour = "00";
+                        }
+                        if (min < 10) {
+                            min = "0" + min;
+                        }
+                        var countDownTime = d + ":" + hour + ":" + min;
+                        // console.log(countDownTime)
+                        $('.time_days').html(d);
+                        $('.time_hours').html(hour);
+                        $('.time_min').html(min);
+                    }, 1000);
+                }
+            })
+        }
+
+
+        // str.replace(/(\d{1,3})(?=(\d{3})+$)/g,"$1,")
+        function formatNumber(BNr) {
+            var originStr = '0';
+            if (BNr.toFixed() < (10 ** 15) && BNr.toFixed() > 0) {
+                return '0.00';
+            }
+            originStr = BNr.div(10 ** 18).toString(10);
+            if (originStr.indexOf('.') > 0) {
+                originStr = originStr.substr(0, originStr.indexOf('.') + 3);
+                if (originStr.length >= 12) {
+                    originStr = originStr.substr(0, 11);
+                    return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,");
+                } else {
+                    return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,");
+                }
+            } else if (isNaN(originStr)) {
+                return '0.00'
+            } else {
+                return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,") + '.00';
+            }
+        }
+
+        function formatNumber_bbbbbbbbbbbb(BNr) {
+            console.log(BNr)
+            var originStr = '0';
+            originStr = BNr.toString(10);
+
+
+            if (originStr.indexOf('.') > 0) {
+                originStr = originStr.substr(0, originStr.indexOf('.') + 3);
+                if (originStr.length >= 12) {
+                    originStr = originStr.substr(0, 11);
+                    return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,");
+                } else {
+                    console.log('111111111111111')
+                    console.log(originStr)
+                    return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,");
+                }
+            } else if (isNaN(originStr)) {
+                console.log(originStr)
+                return '0.00'
+            } else {
+                return originStr.replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,") + '.00';
+            }
+        }
+
+
+        function toQfw(n) {
+            var str_n = n;
+            var result = "";
+            while (str_n.length > 3) {
+                result = "," + str_n.slice(-3) + result;
+                str_n = str_n.slice(0, str_n.length - 3)
+            }
+            if (str_n) {
+                return (str_n + result)
+            }
+        };
+
+        function formatNumber_number(BNr) {
+            var originStr = '0';
+            if (BNr.toFixed() < (10 ** 15) && BNr.toFixed() > 0) {
+                return 0;
+            }
+            originStr = BNr.div(10 ** 18).toString(10);
+            if (originStr.indexOf('.') > 0) {
+                originStr = originStr.substr(0, originStr.indexOf('.') + 3);
+                if (originStr.length >= 12) {
+                    return originStr = Number(originStr.substr(0, 11));
+                } else {
+                    return Number(originStr);
+                }
+            } else if (isNaN(originStr)) {
+                return 0
+            } else {
+                return Number(originStr);
+            }
+        }
+
+    })
+</script>
+
+</html>

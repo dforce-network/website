@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgba(213, 162, 78, 1);
+}
+
+.clear {
+    clear: both;
+}
+
+.itemNomargin {
+    margin-right: 0 !important;
+}
+
+header {
+    display: none;
+}
+
+div.header {
+    width: 100%;
+    min-width: 750px;
+    padding-top: 35px;
+    padding-left: 35px;
+}
+
+div.header img {
+    float: left;
+    height: 70px;
+    margin-right: 60px;
+}
+
+div.header a {
+    float: left;
+    display: block;
+    font-size: 24px;
+    /* background: red; */
+    padding: 5px 15px;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-family: NotoSansHans-Regular;
+}
+
+/* --------------------------------- */
+
+div.top {
+    width: 100%;
+    min-width: 750px;
+    padding-left: 35px;
+    height: 350px;
+    /* background: pink; */
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+}
+
+div.top h1 {
+    font-size: 40px;
+    font-family: OpenSans-ExtraBold;
+    font-family: NotoSansHans-Regular;
+    font-weight: 800;
+    color: rgba(7, 2, 55, 1);
+    line-height: 60px;
+}
+
+div.top h2 {
+    display: none;
+}
+
+div.top h2.h2mobile {
+    display: block;
+    font-size: 30px;
+    font-family: DINAlternate-Bold;
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(213, 162, 78, 1);
+    line-height: 50px;
+}
+
+
+div.top img {
+    width: 600px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+/* --------------------------------- */
+
+div.arrowdown {
+    display: none;
+}
+
+
+/* --------------------------------- */
+
+div.bg1 {
+    width: 100%;
+    min-width: 750px;
+    background: pink;
+    background: url('../images/bg1.png') no-repeat center 216px;
+}
+
+/* --------------------------------- */
+
+div.dforce {
+    width: 100%;
+    min-width: 750px;
+    /* background: red; */
+    margin: 0 auto;
+}
+
+div.dforce h3.iamh3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Bold; */
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(7, 2, 55, 1);
+    line-height: 38px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 35px;
+}
+
+div.dforce div.dforceitem {}
+
+div.dforce div.dforceitem div.item {
+    width: 100%;
+    height: 130px;
+    /* background: red; */
+    margin-bottom: 20px;
+}
+
+div.dforce div.dforceitem div.item img {
+    float: left;
+    width: 70px;
+    margin-left: 35px;
+    margin-right: 40px;
+}
+
+div.dforce div.dforceitem div.item div.text {
+    width: 580px;
+    float: left;
+    /* background: green; */
+    font-size: 24px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(75, 70, 119, 1);
+    line-height: 30px;
+}
+
+/* --------------------------------- */
+div.usdx {
+    width: 750px;
+    min-width: 100%;
+    /* background: green; */
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 60px;
+    padding-bottom: 110px;
+}
+
+div.usdx div.left {
+    float: right;
+}
+
+div.usdx div.left img {
+    width: 380px;
+    margin-right: 40px;
+}
+
+/* div.usdx div.right {
+    float: left;
+    width: 500px;
+} */
+
+div.usdx div.right h3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Bold; */
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(7, 2, 55, 1);
+    line-height: 38px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+div.usdx div.right div.text1,
+div.usdx div.right div.text2 {
+    font-size: 24px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(75, 70, 119, 1);
+    line-height: 30px;
+}
+
+div.usdx div.right div.text2 {
+    margin-top: 10px;
+}
+
+/* --------------------------------- */
+
+div.highlight {
+    width: 100%;
+    min-width: 750px;
+    /* background: red; */
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+div.highlight h3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    /* margin-top: 150px; */
+    margin-bottom: 30px;
+    padding-left: 35px;
+}
+
+div.highlight div.hightlightitem {
+    width: 100%;
+    min-width: 750px;
+}
+
+div.highlight div.hightlightitem div.item {
+    width: 100%;
+    min-width: 750px;
+    height: 100px;
+    /* background: green; */
+    margin-bottom: 20px;
+}
+
+div.highlight div.hightlightitem div.item div.img {
+    float: left;
+    padding-left: 35px;
+}
+
+div.highlight div.hightlightitem div.item div.img img {
+    width: 70px;
+    margin-right: 40px;
+}
+
+div.highlight div.hightlightitem div.item div.title {
+    font-size: 24px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(75, 70, 119, 1);
+    line-height: 30px;
+    /* background: red; */
+    margin-top: 20px;
+    float: left;
+    width: 500px;
+}
+
+/* --------------------------------- */
+
+div.lendf {
+    width: 100%;
+    min-width: 750px;
+    /* background: red; */
+    margin: 0 auto;
+    /* background: url(../images/lendf.png) no-repeat right top; */
+}
+
+div.lendf div.left {
+    display: none;
+}
+
+
+div.lendf div.right {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* background: red; */
+}
+
+div.lendf div.right h3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    padding-top: 32px;
+}
+
+div.lendf div.right div.text {
+    /* height: 74px; */
+    font-size: 24px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(83, 78, 124, 1);
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+div.lendf div.right div.h46 {
+    height: 46px;
+}
+
+/* --------------------------------- */
+
+div.partner {
+    width: 100%;
+    min-width: 750px;
+    /* background: red; */
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+div.partner h3 {
+    height: 22px;
+    font-size: 28px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    /* padding-left: 35px; */
+}
+
+div.partner div.partneritem {}
+
+div.partner div.partneritem div.item {
+    position: relative;
+    float: left;
+    width: 206px;
+    height: 110px;
+    margin-right: 31px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 242, 1);
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+div.partner div.partneritem div.item img {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --------------------------------- */
+
+div.developers {
+    width: 100%;
+    min-width: 750px;
+    /* background: pink; */
+    margin: 0 auto;
+    padding-bottom: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+div.developers h3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    /* padding-left: 35px; */
+}
+
+div.developers div.developersItem {
+    float: left;
+    width: 145px;
+    height: 208px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 242, 1);
+    margin-right: 33px;
+    text-align: center;
+}
+
+div.developers div.developersItem img {
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+div.developers div.developersItem div.devName {
+    font-size: 24px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 500;
+    color: rgba(43, 41, 58, 1);
+}
+
+div.developers div.developersItem div.more {
+    /* background: red; */
+    padding-top: 10px;
+}
+
+div.developers div.developersItem div.more a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    /* background: url('../images/arrow_right.png') no-repeat right 4px; */
+    /* background-size: 8px; */
+    font-size: 22px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(172, 170, 185, 1);
+    /* background: green; */
+}
+
+/* --------------------------------- */
+
+div.bottom {
+    display: none;
+}
+
+div.bottom_mobile {
+    width: 100%;
+    min-width: 750px;
+    /* background: red; */
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+div.bottom_mobile h3 {
+    font-size: 28px;
+    /* font-family: NotoSansHans-Black; */
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    /* margin-top: 80px; */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+div.bottom_mobile div.image {
+    display: inline-block;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+div.bottom_mobile div.image a {
+    display: block;
+    background: rgba(20, 14, 72, 1);
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+div.bottom_mobile div.image a.exeBack {
+    background: rgba(28, 23, 82, 1);
+}
+
+div.bottom_mobile div.image a img {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.bottom_mobile p {
+    text-align: left;
+    padding-left: 35px;
+    font-size: 20px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(83, 78, 124, 1);
+    line-height: 24px;
+}

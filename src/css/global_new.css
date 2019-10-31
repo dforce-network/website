@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgba(213, 162, 78, 1);
+}
+
+.clear {
+    clear: both;
+}
+
+.nomargin {
+    margin-right: 0 !important;
+}
+
+div.header {
+    display: none;
+}
+
+header {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header div.left {
+    float: left;
+}
+
+header div.left img {
+    width: 100px;
+}
+
+header div.right {
+    float: right;
+    /* padding-right: 70px; */
+}
+
+header div.right div.meun {
+    float: left;
+    /* background: green; */
+    margin-left: 20px;
+    position: relative;
+}
+
+header div.right div.meun::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+}
+
+header div.right div.meun1::after {
+    width: 50px;
+}
+
+header div.right div.meun a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    line-height: 26px;
+    transition: 0.3s;
+    font-family: NotoSansHans-Regular;
+}
+
+header div.right div.meun:hover::after {
+    display: block;
+}
+
+header div.right div.meun:hover a {
+    color: rgba(0, 0, 0, 1);
+}
+
+/* --------------------------------- */
+
+div.top {
+    width: 1040px;
+    height: 400px;
+    /* background: pink; */
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    /* margin-bottom: 50px; */
+}
+
+div.top h1 {
+    font-size: 40px;
+    font-family: OpenSans-ExtraBold;
+    font-family: NotoSansHans-Regular;
+    font-weight: 800;
+    color: rgba(7, 2, 55, 1);
+    line-height: 60px;
+}
+
+div.top h2 {
+    font-size: 30px;
+    font-family: DINAlternate-Bold;
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(213, 162, 78, 1);
+    line-height: 50px;
+}
+
+div.top h2.h2mobile {
+    display: none;
+}
+
+div.top img {
+    width: 800px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* --------------------------------- */
+
+div.arrowdown {
+    width: 720px;
+    height: 1px;
+    background: rgba(213, 162, 78, 1);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+div.arrowdown img {
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --------------------------------- */
+
+div.bg1 {
+    background: pink;
+    background: url('../images/bg1.png') no-repeat center 0px;
+}
+
+/* --------------------------------- */
+
+div.dforce {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+}
+
+div.dforce h3.iamh3 {
+    font-size: 28px;
+    font-family: NotoSansHans-Bold;
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(7, 2, 55, 1);
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.dforce div.dforceitem {}
+
+div.dforce div.dforceitem div.item {
+    width: 280px;
+    height: 316px;
+    /* background: red; */
+    margin-right: 100px;
+    float: left;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(191, 191, 191, 1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.dforce div.dforceitem div.item img {
+    height: 60px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+div.dforce div.dforceitem div.item div.text {
+    width: 242px;
+    margin: 0 auto;
+    /* background: red; */
+    font-size: 16px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(75, 70, 119, 1);
+    line-height: 26px;
+}
+
+/* --------------------------------- */
+div.usdx {
+    width: 1040px;
+    /* background: green; */
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 210px;
+}
+
+div.usdx div.left {
+    float: left;
+}
+
+div.usdx div.left img {
+    width: 500px;
+    margin-right: 40px;
+}
+
+div.usdx div.right {
+    float: left;
+    width: 500px;
+}
+
+div.usdx div.right h3 {
+    font-size: 28px;
+    font-family: NotoSansHans-Bold;
+    font-family: NotoSansHans-Regular;
+    font-weight: bold;
+    color: rgba(7, 2, 55, 1);
+    line-height: 38px;
+    padding-top: 28px;
+    padding-bottom: 10px;
+}
+
+div.usdx div.right div.text1,
+div.usdx div.right div.text2 {
+    font-size: 16px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(75, 70, 119, 1);
+    line-height: 24px;
+}
+
+div.usdx div.right div.text2 {
+    margin-top: 10px;
+}
+
+/* --------------------------------- */
+
+div.highlight {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+    /* padding-top: 100px; */
+    /* margin-top: 150px; */
+    margin-bottom: 180px;
+}
+
+div.highlight h3 {
+    font-size: 28px;
+    font-family: NotoSansHans-Black;
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+}
+
+div.highlight div.hightlightitem {
+    /* background: green; */
+    /* padding-left: 40px; */
+}
+
+div.highlight div.hightlightitem div.item {
+    width: 180px;
+    float: left;
+    margin-right: 35px;
+    /* background: pink; */
+}
+
+div.highlight div.hightlightitem div.item div.img {
+    width: 110px;
+    height: 110px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(232, 232, 233, 1);
+    border-radius: 50%;
+    margin-left: 35px;
+    position: relative;
+}
+
+div.highlight div.hightlightitem div.item div.img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.highlight div.hightlightitem div.item div.title {
+    font-size: 16px;
+    font-family: NotoSansHans-Black;
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(75, 70, 119, 1);
+    line-height: 24px;
+    /* background: red; */
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* --------------------------------- */
+
+div.lendf {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+}
+
+div.lendf div.left {
+    float: left;
+    width: 380px;
+    /* background: pink; */
+    padding-left: 35px;
+}
+
+div.lendf div.left img {
+    width: 270px;
+}
+
+div.lendf div.right {
+    float: left;
+    width: 660px;
+}
+
+div.lendf div.right h3 {
+    font-size: 28px;
+    font-family: NotoSansHans-Black;
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    padding-top: 32px;
+}
+
+div.lendf div.right h3 a:hover {
+    text-decoration: underline;
+}
+
+div.lendf div.right div.text {
+    height: 36px;
+    font-size: 16px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(83, 78, 124, 1);
+    line-height: 22px;
+}
+
+/* --------------------------------- */
+
+div.partner {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+}
+
+div.partner h3 {
+    height: 22px;
+    font-size: 28px;
+    font-family: NotoSansHans-Black;
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+div.partner div.partneritem {}
+
+div.partner div.partneritem div.item {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 130px;
+    margin-right: 40px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 242, 1);
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+div.partner div.partneritem div.item img {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --------------------------------- */
+
+div.developers {
+    width: 1040px;
+    /* background: pink; */
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+div.developers h3 {
+    font-size: 28px;
+    font-family: NotoSansHans-Black;
+    font-family: NotoSansHans-Regular;
+    font-weight: 900;
+    color: rgba(7, 2, 55, 1);
+    line-height: 70px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+div.developers div.developersItem {
+    float: left;
+    width: 200px;
+    height: 208px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 242, 1);
+    margin-right: 80px;
+    text-align: center;
+}
+
+div.developers div.developersItem img {
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+div.developers div.developersItem div.devName {
+    font-size: 20px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 500;
+    color: rgba(43, 41, 58, 1);
+}
+
+div.developers div.developersItem div.more {
+    /* background: red; */
+    padding-top: 10px;
+}
+
+div.developers div.developersItem div.more a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background: url('../images/arrow_right.png') no-repeat right 4px;
+    background-size: 8px;
+    font-size: 16px;
+    font-family: NotoSansHans-Regular;
+    font-weight: 400;
+    color: rgba(172, 170, 185, 1);
+    /* background: green; */
+}
+
+/* --------------------------------- */
+div.bottom_mobile {
+    display: none;
+}
+
+div.bottom {
+    width: 100%;
+    min-width: 1040px;
+    height: 140px;
+    background: rgba(7, 2, 55, 1);
+}
+
+div.bottom div.content {
+    width: 1040px;
+    /* background: red; */
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+div.bottom div.content div.left {
+    float: left;
+}
+
+div.bottom div.content div.left div.leftitem {
+    margin-right: 20px;
+}
+
+div.bottom div.content div.left div.leftitem,
+div.bottom div.content div.left div.rightitem {
+    float: left;
+    font-size: 18px;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(254, 254, 255, 1);
+}
+
+div.bottom div.content div.image {
+    float: left;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+
+div.bottom div.content div.image a {
+    /* background: green; */
+    display: inline-block;
+    margin-right: 30px;
+}
+
+div.bottom div.content div.image a img {
+    width: 40px;
+}

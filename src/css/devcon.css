@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgba(213, 162, 78, 1);
+}
+
+.clear {
+    clear: both;
+}
+
+.nomargin {
+    margin-right: 0 !important;
+}
+
+/*------------------------------ 分割线 ------------------------------*/
+.hidden_before_approve {
+    display: none;
+}
+
+.rightAddress {
+    float: right;
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(54, 71, 79, 1);
+}
+
+/*------------------------------ 分割线 ------------------------------*/
+div.body_welcom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/devcon_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    /* background: red; */
+
+    /* display: none; */
+}
+
+div.topBox {
+    width: 100%;
+    height: 70px;
+    background: rgba(11, 34, 73, 0.25);
+    box-shadow: 0px 10px 20px 0px rgba(54, 71, 79, 0.05);
+}
+
+div.top {
+    width: 1200px;
+    margin: 0 auto;
+    /* background: red; */
+}
+
+div.left {
+    float: left;
+    padding-top: 16px;
+}
+
+div.left1 {
+    float: left;
+    margin-right: 35px;
+}
+
+div.left2,
+div.left3 {
+    float: left;
+    /* background: red; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.line {
+    float: left;
+    width: 1px;
+    height: 34px;
+    background: rgba(211, 214, 218, 1);
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.balanceETH,
+div.balanceUSDx {
+    /* padding-left: 3px; */
+}
+
+div.right {
+    width: 86px;
+    height: 36px;
+    float: right;
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background: rgba(213, 162, 78, 1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+div.exchange {
+    float: right;
+}
+
+div.exchange div.home1,
+div.exchange div.ticket1,
+div.exchange div.hotel2 {
+    float: left;
+    width: 55px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(213, 162, 78, 1);
+    /* background: red; */
+    margin-right: 20px;
+    margin-top: 13px;
+    text-align: center;
+    /* border-bottom: 2px solid rgba(213, 162, 78, 1); */
+    cursor: pointer;
+    position: relative;
+}
+
+div.exchange div.alert_button {
+    float: left;
+    background: #D5A24E;
+    color: #fff;
+    margin-top: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 66px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 6px 6px rgba(3, 24, 34, 1);
+    margin-top: 15%;
+}
+
+div.twoBtn {
+    /* background: red; */
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+div.twoBtn div.btn1,
+div.twoBtn div.btn2 {
+    float: left;
+    width: 200px;
+    height: 70px;
+    background: rgba(255, 255, 255, 1) url('../images/devcon_ticket.png') no-repeat 23px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 32px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(12, 46, 88, 1);
+    line-height: 30px;
+    padding-top: 21px;
+    padding-left: 70px;
+}
+
+div.twoBtn div.btn2 {
+    float: right;
+    background: rgba(255, 255, 255, 1) url('../images/devcon_hotel.png') no-repeat 23px 18px;
+}
+
+div.twoBtn div.btn1:hover,
+div.twoBtn div.btn2:hover {
+    /* background: rgba(12, 46, 88, 1); */
+    background: rgba(12, 46, 88, 1) url('../images/devcon_ticket_bg.png') no-repeat 23px 18px;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.twoBtn div.btn2:hover {
+    background: rgba(12, 46, 88, 1) url('../images/devcon_hotel_bg.png') no-repeat 23px 18px;
+}
+
+/* ---------------------------- 分割线 ---------------------------- */
+
+div.ticket_top_box {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 20px 0px rgba(54, 71, 79, 0.05);
+}
+
+div.ticket_top {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.ticket_top div.left2,
+div.ticket_top div.left3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(54, 71, 79, 1);
+
+}
+
+div.ticket_top div.left2 div.token,
+div.ticket_top div.left3 div.token {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(54, 71, 79, 1);
+}
+
+div.ticket_time {
+    width: 1200px;
+    margin: 0 auto;
+    height: 188px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 40px 0px rgba(54, 71, 79, 0.08);
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+div.ticket_time div.title {
+    width: 244px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: url('../images/devcon_time_bg.png') no-repeat;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(177, 112, 6, 1);
+}
+
+div.ticket_time div.title1 {
+    width: 322px;
+    background: url('../images/devcon_time_bg1.png') no-repeat;
+}
+
+div.ticket_time div.timeline {
+    float: left;
+    width: 1px;
+    height: 60px;
+    background: rgba(217, 224, 227, 1);
+    margin-top: 45px;
+}
+
+div.ticket_time div.time1 {
+    float: left;
+    width: 24%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+div.ticket_time div.time1 div.timetext {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(144, 152, 156, 1);
+    margin-bottom: 10px;
+}
+
+div.ticket_time div.time1 div.timenumber {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(54, 71, 79, 1);
+    line-height: 31px;
+}
+
+div.ticketTips {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+div.ticketTips h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(54, 71, 79, 1);
+    margin-bottom: 10px;
+}
+
+div.ticketTips ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(125, 132, 136, 1);
+    line-height: 28px;
+    position: relative;
+    padding-left: 15px;
+}
+
+div.ticketTips ul li span {
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    /* border-radius: 50%; */
+    background: #A0A4A7;
+    left: 0;
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+div.ticketTips ul li a {
+    color: #0963DC;
+}
+
+div.ticketTips div.confirm {
+    margin-top: 24px;
+    display: none;
+}
+
+div.ticketTips div.confirm .imCheckBox {
+    margin-right: 10px;
+}
+
+div.ticket_bid {
+    width: 1200px;
+    margin: 0 auto;
+    background: rgba(248, 250, 251, 1);
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 20px;
+}
+
+div.ticket_bid p.pbidding {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(54, 71, 79, 1);
+    margin-bottom: 15px;
+}
+
+div.ticket_bid div.bidBox {}
+
+div.ticket_bid div.bidBox input {
+    float: left;
+    width: 400px;
+    height: 44px;
+    font-size: 18px;
+    border: 1px solid rgba(226, 231, 233, 1);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+div.ticket_bid div.bidBox input:focus {
+    outline: 1px solid rgba(213, 162, 78, 1);
+}
+
+div.ticket_bid div.bidBox div.bidBtn {
+    float: left;
+    width: 160px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    /* background: rgba(213, 162, 78, 1); */
+    background: rgba(218, 224, 227, 1);
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 25px;
+}
+
+div.ticket_bid div.bidBox div.bidBtnActive {
+    background: rgba(213, 162, 78, 1);
+    cursor: pointer;
+}
+
+div.ticket_bid div.ticket_bidded,
+div.ticket_bid div.ticket_address {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(54, 71, 79, 1);
+    margin-top: 5px;
+}
+
+div.ticket_bid div.ticket_bidded span,
+div.ticket_bid div.ticket_address span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #D5A24E;
+}
+
+div.ticket_bid div.withdraw {
+    width: 160px;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    /* background: rgba(213, 162, 78, 1); */
+    background: rgba(218, 224, 227, 1);
+    border-radius: 3px;
+    color: #fff;
+    float: left;
+    margin-top: 15px;
+}
+
+div.ticket_bid div.withdrawActive {
+    background: rgba(213, 162, 78, 1);
+    cursor: pointer;
+}
+
+div.ticket_bid div.ifCanWithdraw {
+    float: left;
+    margin-top: 22px;
+    width: 30px;
+    height: 30px;
+    /* background: red; */
+    padding-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+}
+
+div.ticket_bid div.ifCanWithdraw:hover div.withdrawTips {
+    display: block;
+}
+
+div.ticket_bid div.ifCanWithdraw div.withdrawTips {
+    display: none;
+    width: 477px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(54, 71, 79, 1);
+    line-height: 24px;
+    position: absolute;
+    left: 45px;
+    top: -16px;
+    background: #fff;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+
+div.ticket_bid div.ifCanWithdraw div.withdrawTips::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 22px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid #fff;
+}
+
+div.ticket_bid div.ifCanWithdraw div.withdrawTips span {
+    color: #D5A24E;
+}
+
+div.footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(141, 147, 149, 1);
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.footer span {
+    color: #0963DC;
+}
+
+/* donghua */
+
+.imTurning {
+    -webkit-animation: spinner 1s infinite linear;
+    animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: ratate(359deg);
+    }
+}
+
+div.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+}
+
+div.popBox {
+    position: relative;
+    width: 500px;
+    height: 180px;
+    margin: auto;
+    top: 25%;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    padding-top: 55px;
+}
+
+div.popBox button {
+    background: url('../images/close.png') no-repeat 0 0;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+div.popBox p.pp1 {
+    color: #404F57;
+    font-size: 16px;
+    /* background: red; */
+    text-align: center;
+}
+
+div.popBox p.pp2 {
+    color: #D5A24E;
+    /* background: pink; */
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
