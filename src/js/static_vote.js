@@ -332,6 +332,10 @@ const abiDF = [{
 }
 ];
 
+// test
+// var addressDF = "0x5d378961e9D31C0ee394d34741fa1A18144f6Fb5";
+// var addressVote = "0x3c150aa61f6EC51Ab24d19687E3aC5D23014944f";
 
-var addressDF = "0x5d378961e9D31C0ee394d34741fa1A18144f6Fb5";
-var addressVote = "0x3c150aa61f6EC51Ab24d19687E3aC5D23014944f";
+
+var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
+var addressVote = "0x2162ccc518bcef6025a2a233a38d276121240562";
