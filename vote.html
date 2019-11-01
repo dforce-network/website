@@ -29,28 +29,42 @@
                 <div class="to_connect top_connect_btn">Connect</div>
             </div>
             <div class="clear"></div>
-            <div class="top_title"> dForce Governance Call </div>
-            <div class="top_details">
-                We have identified three key concerns with DAI and would like to implement a governance poll through
-                voting system.
+            <div class="top_title"> dForce Governance Poll No.1: USDx Reserve Adjustment Proposal </div>
+            <!-- <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we would like to propose a change to remove DAI
+            </div> -->
+            <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we
+                would like to propose a change to remove DAI from USDx reserve, due to a few concerns including the lack
+                of dollar redeemability, upcoming launch of Multi-Collateral DAI (MCD) and DAI Saving Rates (DSR), and
+                high friction and transaction costs associated with acquiring DAI.
+                <a href="#">More...</a>
             </div>
-            <div class="top_details">
-                Threekey concerns are respectively stability issue, complexities of MCD, and high friction of trading
-                DAI <a href="#">More...</a>
+
+            <div class="section">
+                <div class="secL">
+                    <div>Current weighting:</div>
+                    <div>Proposed weighting:</div>
+                </div>
+                <div class="secR">
+                    <div>1 USDx = 30% USDC + 30% TUSD + 30% PAX + 10% DAI</div>
+                    <div>1 USDx = 35% USDC + 35% TUSD + 30% PAX</div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="main">
         <div class="main_left">
-            <div class="m_title">Removing DAI from the basket of USDx?</div>
+            <div class="m_title">Action Required: Please Vote Here</div>
             <div class="m_choosen">
                 <img src="./src/images/vote_is_choosen.svg" alt="" srcset="" class="ichoiceA">
-                <span>Option A: Yes, remove DAI from the constituents</span>
+                <span>Option A: Yes, please remove DAI from the reserve basket.
+                </span>
             </div>
             <div class="m_choosen">
                 <img src="./src/images/vote_not_choosen.svg" alt="" srcset="" class="ichoiceB">
-                <span>Option B: No, keep DAI in the constituents</span>
+                <span>Option B: No, keep DAI in the reserve basket.
+                </span>
             </div>
             <div class="vote_btn">VOTE</div>
         </div>
@@ -94,16 +108,15 @@
     </div>
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="bottom">
-        <div class="b_title">Voting mechanism</div>
+        <div class="b_title">Join us for online discussion! We’d love to hear your voice!
+        </div>
         <ul>
-            <li>The governance poll will last for [7] days from [date] to [date] Oct.</li>
-            <li>All DF holders will have the opportunity to signal your support for portfolio adjustments of USDx
-                through voting system.</li>
-            <li>Decision will be implemented if the following requirements are satisfied Quorum: More than 5% of total
-                tokens at the end of the voting period need to have participated in the vote ( Using signal method)
-                Threshold: More than 50% of the tokens that participated in the signal need to have voted “Yes”of the
-                proposal (If the voting result is tied, the proposal won’t be implemented.)</li>
-            <li>Governance decision will be disclosed to the dForce community after the governance poll.</li>
+            <li>Telegram: <a href="https://t.me/dforcenet" target="_blank">https://t.me/dforcenet</a> </li>
+            <li>Twitter: <a href="https://twitter.com/dForcenet" target="_blank">@dForcenet</a> </li>
+            <li>Discord: <a href="https://discordapp.com/channels/608242918808879104/608242918808879106"
+                    target="_blank">https://discordapp.com/channels/608242918808879104/608242918808879106</a> </li>
+            <li>Reddit: <a href="https://www.reddit.com/r/dForceNetwork/"
+                    target="_blank">https://www.reddit.com/r/dForceNetwork/</a> </li>
         </ul>
     </div>
 </body>
@@ -204,8 +217,8 @@
                                         $(".vote_amount").html(formatNumber(ret));
                                     }
                                 })
-                                setTimeout(()=>{check_isVote()}, 3000)
-                                
+                                setTimeout(() => { check_isVote() }, 3000)
+
                             }
                         })
                     }, 2000);

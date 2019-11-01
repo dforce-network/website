@@ -36,7 +36,7 @@ a:active {
 
 div.top {
     width: 100%;
-    height: 330px;
+    height: 460px;
     background: url('../images/vote_banner.png') no-repeat 0 0;
     background-size: 100% 100%;
 }
@@ -76,7 +76,7 @@ div.top_box .right .to_connect {
 
 div.top .top_title {
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     color: rgba(7, 2, 55, 1);
     /* background: red; */
@@ -91,6 +91,25 @@ div.top .top_details {
     color: rgba(7, 2, 55, 1);
     line-height: 34px;
     /* background: green; */
+}
+
+div.top_box .section {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(15, 21, 47, 1);
+    padding-top: 35px;
+}
+
+div.top_box .section .secL {
+    float: left;
+    width: 450px;
+    /* background: green; */
+    text-align: right;
+    margin-right: 10px;
+}
+
+div.top_box .section .secR {
+    float: left;
 }
 
 /* **************************   华丽的分割线   ************************** */
@@ -170,18 +189,20 @@ div.main_left .m_title {
     font-size: 22px;
     font-weight: 500;
     color: rgba(7, 2, 55, 1);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 div.main_left .m_choosen {
     font-size: 18px;
     font-weight: 400;
     color: rgba(7, 2, 55, 1);
-    margin-bottom: 12px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 30px;
 }
 
 div.main_left .m_choosen span {
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 div.main_left .vote_btn {
@@ -203,6 +224,9 @@ div.main_left .vote_btn {
 div.main_left .m_choosen img {
     width: 16px;
     cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 0;
 }
 
 /* **************************   华丽的分割线   ************************** */
