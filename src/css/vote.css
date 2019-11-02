@@ -76,7 +76,7 @@ div.top_box .right .to_connect {
 
 div.top .top_title {
     text-align: center;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
     color: rgba(7, 2, 55, 1);
     /* background: red; */
@@ -85,15 +85,18 @@ div.top .top_title {
 }
 
 div.top .top_details {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 400;
     color: rgba(7, 2, 55, 1);
     line-height: 34px;
     /* background: green; */
+    width: 1071px;
+    margin: 0 auto;
 }
 
 div.top_box .section {
+    width: 1000px;
     font-size: 20px;
     font-weight: 400;
     color: rgba(15, 21, 47, 1);
@@ -102,10 +105,11 @@ div.top_box .section {
 
 div.top_box .section .secL {
     float: left;
-    width: 450px;
+    width: 358px;
     /* background: green; */
-    text-align: right;
+    /* text-align: right; */
     margin-right: 10px;
+    padding-left: 162px;
 }
 
 div.top_box .section .secR {
@@ -122,13 +126,13 @@ div.main {
 
 div.main_left {
     float: left;
-    width: 450px;
+    width: 525px;
     padding-top: 45px;
 }
 
 div.main_right {
     float: left;
-    width: 750px;
+    width: 670px;
     background: pink;
     position: relative;
     background: url('../images/vote_bg.png') no-repeat 0 0;
@@ -310,4 +314,14 @@ div.bottom ul li::after {
 
 .i_am_bili span {
     display: block;
+}
+
+
+div.addPlus{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(107, 104, 129, 1);
+    height: 40px;
+    margin-top: -44px;
+    margin-bottom: 30px;
 }
