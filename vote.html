@@ -256,8 +256,17 @@
                             var b = showNum.substring(showNum.indexOf('.'), showNum.length)
                             // console.log(typeof b)
                             showNum = a + b;
+
+
                         }
+                        // console.log(typeof showNum)
+
                         $(".totalVVV").html(showNum)
+
+                        if (showNum.indexOf('.') > 0) {
+                            console.log(showNum.substring(0, (showNum.indexOf('.') + 3)))
+                            $(".totalVVV").html(showNum.substring(0, (showNum.indexOf('.') + 3)))
+                        }
                         // $(".totalVVV").html(toQfw(total_VOTE))
                         // formatNumber_bbbbbbbbbbbb
                         // console.log(formatNumber(web3.toBigNumber(res_A).add(web3.toBigNumber(res_B))).toString().replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,"))
@@ -289,9 +298,20 @@
                         $(".yes").css('width', part_A)
                         $(".no").css('width', part_B)
 
+                        // console.log(Number(part_A))
+                        // console.log(part_A.substring(0, 5))
+                        // console.log(part_B.substring(0, 5))
+
                         $(".yesPersent").html(part_A)
                         $(".noPersent").html(part_B)
 
+                        if (part_A.indexOf('.') > 0) {
+                            $(".yesPersent").html(part_A.substring(0, 5) + '%')
+                        }
+
+                        if (part_B.indexOf('.') > 0) {
+                            $(".noPersent").html(part_B.substring(0, 5) + '%')
+                        }
 
 
                         if ((total_A / total_VOTE) < 0.1) {
