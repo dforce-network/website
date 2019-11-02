@@ -109,7 +109,7 @@ div.top_box .section .secL {
     /* background: green; */
     /* text-align: right; */
     margin-right: 10px;
-    padding-left: 162px;
+    padding-left: 145px;
 }
 
 div.top_box .section .secR {
@@ -126,13 +126,13 @@ div.main {
 
 div.main_left {
     float: left;
-    width: 525px;
+    width: 560px;
     padding-top: 45px;
 }
 
 div.main_right {
     float: left;
-    width: 670px;
+    width: 640px;
     background: pink;
     position: relative;
     background: url('../images/vote_bg.png') no-repeat 0 0;
