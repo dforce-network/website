@@ -338,5 +338,4 @@ const abiDF = [{
 
 
 var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
-// var addressVote = "0x2162ccc518bcef6025a2a233a38d276121240562";
-var addressVote = "0xA0D607aE0AB45A941FfAee0a21F00863416627ca";
+var addressVote = "0x12B0938E71B15aD42eFF3479Ac2874F6b5Cf40E3";
