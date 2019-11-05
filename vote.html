@@ -36,7 +36,8 @@
                 would like to propose a change to remove DAI from USDx reserve, due to a few concerns including the lack
                 of dollar redeemability, upcoming launch of Multi-Collateral DAI (MCD) and DAI Saving Rates (DSR), and
                 high friction and transaction costs associated with acquiring DAI.
-                <a href="https://medium.com/@dforcenet/dforce-governance-poll-no-1-usdx-reserve-adjustment-proposal-f15312a18303" target="_blank">More...</a>
+                <a href="https://medium.com/@dforcenet/dforce-governance-poll-no-1-usdx-reserve-adjustment-proposal-f15312a18303"
+                    target="_blank">More...</a>
             </div>
 
             <div class="section">
@@ -71,8 +72,8 @@
         </div>
         <div class="main_right">
             <p class="details">Details</p>
-            <p class="time">End in: <span class="time_days">0</span> DAYS : <span class="time_hours">0</span> HOURS : <span
-                    class="time_min">0</span> MINUTES</p>
+            <p class="time">End in: <span class="time_days">0</span> DAYS : <span class="time_hours">0</span> HOURS :
+                <span class="time_min">0</span> MINUTES</p>
             <div class="clear"></div>
             <div class="text_part">
                 <div class="t_left">% Percentage of DF participated</div>
@@ -114,8 +115,7 @@
         <ul>
             <li>Telegram: <a href="https://t.me/dforcenet" target="_blank">https://t.me/dforcenet</a> </li>
             <li>Twitter: <a href="https://twitter.com/dForcenet" target="_blank">@dForcenet</a> </li>
-            <li>Discord: <a href="https://discord.gg/Gbtd3MR"
-                    target="_blank">https://discord.gg/Gbtd3MR</a> </li>
+            <li>Discord: <a href="https://discord.gg/Gbtd3MR" target="_blank">https://discord.gg/Gbtd3MR</a> </li>
             <li>Reddit: <a href="https://www.reddit.com/r/dForceNetwork/"
                     target="_blank">https://www.reddit.com/r/dForceNetwork/</a> </li>
         </ul>
@@ -219,12 +219,9 @@
                                     }
                                 })
                                 setTimeout(() => { check_isVote() }, 3000)
-
                             }
                         })
                     }, 2000);
-
-
                 }
             })
         }
@@ -233,45 +230,27 @@
             contractVote.getTotalVote.call(1, (err, res_A) => {
                 if (res_A) {
                     contractVote.getTotalVote.call(2, (err, res_B) => {
-                        // console.log('yes: ', Number(res_A))
-                        // console.log('no: ', Number(res_B))
                         total_A = formatNumber_number(res_A);
                         total_B = formatNumber_number(res_B);
                         var total_VOTE = total_A + total_B;
-                        // console.log('total_VOTE: ', total_VOTE)
-                        // console.log('total_VOTE: ', total_A)
-                        // console.log('total_VOTE: ', total_B)
-                        // return;
                         if (total_VOTE === 0) {
                             return false;
                         }
-
                         $(".totalPersent").html((Number((total_VOTE / 1000000000).toFixed(4)) * 100).toString() + '%')
-                        // $(".totalVVV").html(formatNumber(web3.toBigNumber(res_A).add(web3.toBigNumber(res_B))))
                         var showNum = total_VOTE.toString();
-                        console.log(showNum.indexOf('.'))
                         if (showNum.indexOf('.') > 0) {
                             var a = showNum.substring(0, showNum.indexOf('.'));
                             a = toQfw(a);
-                            // console.log(typeof a)
                             var b = showNum.substring(showNum.indexOf('.'), showNum.length)
-                            // console.log(typeof b)
                             showNum = a + b;
-
-
                         }
                         // console.log(typeof showNum)
 
                         $(".totalVVV").html(showNum)
 
                         if (showNum.indexOf('.') > 0) {
-                            console.log(showNum.substring(0, (showNum.indexOf('.') + 3)))
                             $(".totalVVV").html(showNum.substring(0, (showNum.indexOf('.') + 3)))
                         }
-                        // $(".totalVVV").html(toQfw(total_VOTE))
-                        // formatNumber_bbbbbbbbbbbb
-                        // console.log(formatNumber(web3.toBigNumber(res_A).add(web3.toBigNumber(res_B))).toString().replace(/(\d{1,3})(?=(\d{3})+$)/g, "$1,"))
-                        // console.log('part_A: ', part_A)
 
                         if (total_A / total_VOTE === 0) {
                             $(".yes").css('display', 'none')
@@ -286,34 +265,54 @@
                             return;
                         }
 
-                        // var part_A = ((total_A / total_VOTE).toFixed(4) * 100).toString() + '%';
-                        // var part_B = (100 - (total_A / total_VOTE).toFixed(4) * 100).toString() + '%';  web3.toBigNumber(total_VOTE * (10 ** 18))
-                        var part_A = ((((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
-                        var part_B = (100 - (((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        var part_A = ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        // var part_B = ((((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        var part_B = (100 - (((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
 
-                        // console.log('part_A: ', part_A)
-                        // console.log('part_B: ', part_B)
+                        // console.log('choice_A: ', total_A)
+                        // console.log('choice_B: ', total_B)
+
                         $(".yes").css('display', 'block')
                         $(".no").css('display', 'block')
 
                         $(".yes").css('width', part_A)
                         $(".no").css('width', part_B)
 
-                        // console.log(Number(part_A))
-                        // console.log(part_A.substring(0, 5))
-                        // console.log(part_B.substring(0, 5))
-
                         $(".yesPersent").html(part_A)
                         $(".noPersent").html(part_B)
 
                         if (part_A.indexOf('.') > 0) {
-                            $(".yesPersent").html(part_A.substring(0, 5) + '%')
+                            if (part_A.substring(0, 5).indexOf('%') > 0) {
+                                // $(".yesPersent").html(part_A.substring(0, 5))
+
+                                if (part_A.substring(0, 5).split('.')[1].length === 2) {
+                                    var newStr = part_A.substring(0, 5).split('.')[1];
+                                    console.log(newStr)
+                                    var newStr1 = newStr.substring(0, newStr.indexOf('%'));
+                                    $(".yesPersent").html(part_A.substring(0, 5).split('.')[0] + '.' + newStr1 + '0%');
+                                } else {
+                                    $(".yesPersent").html(part_A.substring(0, 5))
+                                }
+                            } else {
+                                $(".yesPersent").html(part_A.substring(0, 5) + '%')
+                            }
                         }
 
                         if (part_B.indexOf('.') > 0) {
-                            $(".noPersent").html(part_B.substring(0, 5) + '%')
+                            if (part_B.substring(0, 5).indexOf('%') > 0) {
+                                // $(".noPersent").html(part_B.substring(0, 5))
+                                if (part_B.substring(0, 5).split('.')[1].length === 2) {
+                                    var newStr = part_B.substring(0, 5).split('.')[1];
+                                    console.log(newStr)
+                                    var newStr1 = newStr.substring(0, newStr.indexOf('%'));
+                                    $(".noPersent").html(part_B.substring(0, 5).split('.')[0] + '.' + newStr1 + '0%');
+                                } else {
+                                    $(".noPersent").html(part_B.substring(0, 5))
+                                }
+                            } else {
+                                $(".noPersent").html(part_B.substring(0, 5) + '%')
+                            }
                         }
-
 
                         if ((total_A / total_VOTE) < 0.1) {
                             $(".yes").css('width', '10%')
@@ -322,6 +321,15 @@
                         if ((total_A / total_VOTE) > 0.9) {
                             $(".yes").css('width', '90%')
                             $(".no").css('width', '10%')
+                        }
+
+                        if ((total_A / total_VOTE) < 0.0001) {
+                            $(".yesPersent").html('0.01%')
+                            $(".noPersent").html('99.99%')
+                        }
+                        if ((total_B / total_VOTE) < 0.0001) {
+                            $(".noPersent").html('0.01%')
+                            $(".yesPersent").html('99.99%')
                         }
                     })
                 }
@@ -333,7 +341,7 @@
         function connect_metamask() {
             web3.currentProvider.enable().then(
                 res => {
-                    console.log(res[0]);
+                    console.log('myAccount: ', res[0]);
                     isConnected = true;
                     myAccount = res[0];
                     myAccountShort = myAccount.substring(0, 4) + '...' + myAccount.substring(myAccount.length - 4);
