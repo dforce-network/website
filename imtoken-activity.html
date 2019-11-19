@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/imtoken_activity.css" id="changecss">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: NotoSansHans-Regular;
+            src: url('./src/font/NotoSansHans.otf')
+        }
+    </style>
+
+    <title>imtoken-activity</title>
+</head>
+
+<body>
+    <div class="bg0">
+        <div class="bg">
+            <div class="b_div content_zh">
+                <div class="top_one">
+                    <p class="title"><span>USDx剩余额度:</span> <span class="color">150,000 USDx</span></p>
+                    <p class="title"><span>活动时间:</span> 2019年11月20日至12月03日</p>
+                    <p class="title"><span>认购额度:</span> 150,000 USDx</p>
+                </div>
+
+                <div class="top_two">
+                    <h5>参与规则</h5>
+                    <ul>
+                        <li>1. 仅限imToken钱包的用户参与 </li>
+                        <li>2. 单笔最低存款金额为100 USDx，最高为10,000 USDx</li>
+                        <li>3. 超出认购额度的USDx存款将按市场利息结算（目前年化存款利息约为8%）</li>
+                        <li>4. 补贴收益将于12月04日中午12点前发放到用户存币地址</li>
+                    </ul>
+                </div>
+
+                <div class="top_three">
+                    <h5>参与流程</h5>
+                    <ul class="hasLink">
+                        <li>1. 购买USDx</li>
+                        <li>2. <a href="https://www.bilibili.com/video/av76239970/" target="_blank">USDx活期存款教程</a></li>
+                        <li>3. <a href="http://t.cn/AidyUp8A">USDx活期存款入口Lendf.me</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="b_div content_en" style="display: none;">
+                <div class="top_one">
+                    <p class="title"><span>Balance: </span> <span class="color">150,000 USDx</span></p>
+                    <p class="title"><span>Subscription Period: </span> Nov 20 to Dec 3, 2019</p>
+                    <p class="title"><span>Total USDx available: </span> 150,000 USDx</p>
+                </div>
+
+                <div class="top_two">
+                    <h5>IMPORTANT</h5>
+                    <ul>
+                        <li>1. Accessible from imToken only </li>
+                        <li>2. Subscribe from 100 USDx up to 10,000 USDx per user</li>
+                        <li>3. Subscriptions exceeding maximum supply (150,000 USDx) will be based on actual yielding
+                            (Saving APR is around 8%)</li>
+                        <li>4. Extra yielding will be allocated to the same address of entitled participants before
+                            12:00 GMT+8:00, 4 Dec, 2019.</li>
+                    </ul>
+                </div>
+
+                <div class="top_three">
+                    <h5>How to Participate</h5>
+                    <ul class="hasLink en">
+                        <li>1. Get USDx from Tokenlon</li>
+                        <li style="margin-bottom: 5px;">2. <a href="https://www.youtube.com/watch?v=cwfCne_PJus" target="_blank">Tutorial to USDx saving <span
+                                    class="arrow"></span></a></li>
+                        <li>3. <a href="http://t.cn/AidyUp8A">Get started now and enjoy your high-yielding income on your USDx
+                                holdings <span class="arrow"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+<script src="./src/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        console.log(navigator.language);
+        console.log(navigator.language === 'zh-CN');
+        // alert(navigator.language === 'zh-CN');
+        if (!(navigator.language === 'zh-CN')) {
+            console.log('111111:  英文环境')
+            $('.content_zh').css('display', 'none');
+            $('.content_en').css('display', 'block');
+            $('.bg').css({ 'background': "url('./src/images/imtoken_bg_en.png') no-repeat center 0px", "backgroundSize": "100%" });
+        } else {
+            console.log('222222: 中文环境')
+            $('.content_zh').css('display', 'block');
+            $('.content_en').css('display', 'none');
+            $('.bg').css({ 'background': "url('./src/images/imtoken_bg.png') no-repeat center 0px", "backgroundSize": "100%" });
+        }
+    });
+</script>
+
+</html>

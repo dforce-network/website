@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    /* color: #1A76FF; */
+    color: rgba(85, 77, 64, 1);
+}
+
+.clear {
+    clear: both;
+}
+
+.nomargin {
+    margin-right: 0 !important;
+}
+
+div.bg0 {
+    font-family: NotoSansHans-Regular;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('../images/imtoken_bg_p.png') no-repeat center bottom;
+    background-size: 100%;
+}
+
+div.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('../images/imtoken_bg.png') no-repeat center 0px;
+    background-size: 100%;
+}
+
+div.b_div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background: red; */
+}
+
+div.b_div .top_one,
+div.b_div .top_two,
+div.b_div .top_three {
+    width: 92%;
+    margin-left: 4%;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div.b_div .top_one p.title {
+    font-size: 13px;
+    color: rgba(85, 77, 64, 1);
+    font-weight: 500;
+}
+
+div.b_div .top_one p.title span {
+    font-weight: 700;
+}
+
+div.b_div .top_one p.title span.color {
+    color: #FA801E;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(85, 77, 64, 1);
+}
+
+ul li {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(85, 77, 64, 1);
+}
+
+ul.hasLink li {
+    /* background: red; */
+}
+
+ul.hasLink li a {
+    padding-right: 14px;
+    display: inline-block;
+    background: green;
+    background: url('../images/icon_more@2x.png') no-repeat right 5px;
+    background-size: 5px;
+}
+
+ul.en li {
+    /* height: 25px; */
+    line-height: 12px;
+    /* background: #FA801E; */
+    margin-bottom: 3px;
+}
+ul.en li a {
+    background: none;
+    display: inline;
+}
+ul.en li a span.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background: url('../images/icon_more@2x.png') no-repeat right 5px;
+    /* background:red; */
+    background-size: 5px;
+}
