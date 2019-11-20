@@ -71,9 +71,10 @@
                     <h5>How to Participate</h5>
                     <ul class="hasLink en">
                         <li>1. Get USDx from Tokenlon</li>
-                        <li style="margin-bottom: 5px;">2. <a href="https://www.youtube.com/watch?v=cwfCne_PJus" target="_blank">Tutorial to USDx saving <span
-                                    class="arrow"></span></a></li>
-                        <li>3. <a href="http://t.cn/AidyUp8A">Get started now and enjoy your high-yielding income on your USDx
+                        <li style="margin-bottom: 5px;">2. <a href="https://www.youtube.com/watch?v=cwfCne_PJus"
+                                target="_blank">Tutorial to USDx saving <span class="arrow"></span></a></li>
+                        <li>3. <a href="http://t.cn/AidyUp8A">Get started now and enjoy your high-yielding income on
+                                your USDx
                                 holdings <span class="arrow"></span></a>
                         </li>
                     </ul>
@@ -103,6 +104,24 @@
             $('.content_zh').css('display', 'block');
             $('.content_en').css('display', 'none');
             $('.bg').css({ 'background': "url('./src/images/imtoken_bg.png') no-repeat center 0px", "backgroundSize": "100%" });
+        }
+
+
+        $.get('./num.json').done(function (data) {
+            // console.log('loding...')
+            if (data) {
+                console.log(data.num)
+                var input_str = format(data.num) + ' USDx';
+                $('.color').html(input_str)
+            } else {
+                console.log('没有数据.')
+            }
+        });
+
+
+        function format(num) {
+            var reg = /\d{1,3}(?=(\d{3})+$)/g;
+            return (num + '').replace(reg, '$&,');
         }
     });
 </script>
