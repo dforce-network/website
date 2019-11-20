@@ -54,6 +54,25 @@ div.b_div {
     /* background: red; */
 }
 
+div.b_div div.topbtn {
+    width: 60%;
+    margin-left: 20%;
+    /* background: red; */
+    padding-bottom: 10px;
+}
+
+div.b_div div.topbtn a {
+    display: block;
+    background: rgba(255, 252, 247, 1);
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(233, 103, 0, 1);
+}
+
 div.b_div .top_one,
 div.b_div .top_two,
 div.b_div .top_three {
@@ -63,6 +82,22 @@ div.b_div .top_three {
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 10px;
+}
+
+
+div.b_div .top_two {
+    position: relative;
+}
+
+div.b_div .top_two a.jiaocheng {
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    color: rgba(233, 103, 0, 1);
+    font-size: 12px;
+    background: url('../images/icon_more@2x.png') no-repeat right 7px;
+    background-size: 6px;
+    padding: 3px 14px 3px 5px;
 }
 
 div.b_div .top_one p.title {
@@ -76,7 +111,7 @@ div.b_div .top_one p.title span {
 }
 
 div.b_div .top_one p.title span.color {
-    color: #FA801E;
+    color: rgba(233, 103, 0, 1);
     font-weight: 700;
 }
 
@@ -110,10 +145,12 @@ ul.en li {
     /* background: #FA801E; */
     margin-bottom: 3px;
 }
+
 ul.en li a {
     background: none;
     display: inline;
 }
+
 ul.en li a span.arrow {
     display: inline-block;
     width: 10px;
