@@ -25,7 +25,7 @@
 
                 <div class="topbtn">
                     <a href="http://t.cn/AidyUp8A">存USDx</a>
-                    <a href="imtokenv2://navigate?screen=Tokenlon">购买USDx</a>
+                    <a class="got_usdx">购买USDx</a>
                 </div>
 
                 <div class="top_one">
@@ -52,7 +52,7 @@
 
                 <div class="topbtn">
                     <a href="http://t.cn/AidyUp8A">Save USDx</a>
-                    <a href="imtokenv2://navigate?screen=Tokenlon">Get USDx</a>
+                    <a class="got_usdx">Get USDx</a>
                 </div>
 
                 <div class="top_one">
@@ -124,6 +124,21 @@
             var reg = /\d{1,3}(?=(\d{3})+$)/g;
             return (num + '').replace(reg, '$&,');
         }
+
+        $('.got_usdx').click((e) => {
+            e.preventDefault();
+            console.log(e);
+            if (window.ethereum.isImToken) {
+                imToken.callPromisifyAPI('navigator.routeTo', {
+                    screen: 'Tokenlon',
+                })
+            } else {
+                alert('u are not in imToken now. pls do this in imToken.')
+            }
+        })
+
+
+
     });
 </script>
 
