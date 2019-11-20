@@ -89,6 +89,11 @@
 
 
 <script src="./src/js/jquery.min.js"></script>
+<!-- <script>
+    var now = new Date();
+    var number = now.getYear().toString() + now.getMonth().toString() + now.getDate().toString();
+    document.write('<script type="text/javascript" src="../../js/redpacket/myRedPacketDetails.js?' + number + '"><\/script\>');
+</script> -->
 <script>
     $(function () {
         console.log(navigator.language);
@@ -108,7 +113,13 @@
 
 
         // https://dforce.network/imtoken-activity.html
-        $.get('https://dforce.network/num.json').done(function (data) {
+
+        var now = new Date();
+        var number = now.getTime().toString();
+        var url = 'https://dforce.network/num.json?' + number;
+
+
+        $.get(url).done(function (data) {
             // console.log('loding...')
             if (data) {
                 console.log(data.num)
