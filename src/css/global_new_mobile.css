@@ -20,6 +20,12 @@ a:active {
     margin-right: 0 !important;
 }
 
+
+div.partner div:nth-child(3n){
+    margin-right: 0 !important;
+    /* background: red; */
+}
+
 header {
     display: none;
 }
