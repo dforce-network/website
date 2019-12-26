@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/imtoken_activity2.css" id="changecss">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: NotoSansHans-Regular;
+            src: url('./src/font/Roboto-Regular.ttf')
+        }
+    </style>
+
+    <title>imtoken-activity</title>
+</head>
+
+<body>
+    <div class="bg0">
+        <div class="bg">
+            <div class="b_div content_zh">
+
+                <div class="topbtn">
+                    <a href="http://t.cn/AidyUp8A">存USDT</a>
+                    <a class="got_usdx">购买USDT</a>
+                </div>
+
+                <div class="top_one">
+                    <p class="title"><span>剩余认购额度：</span> <span class="color">-</span></p>
+                    <p class="title"><span>产品认购期：</span>12月27日中午12:00点至12月30日中午12:00点（一期）</p>
+                    <p class="title"><span>产品存续期：</span>12月30日中午12:00点至1月13日中午12:00点</p>
+                    <p class="title"><span>产品总额度：</span>150,000 USDT</p>
+                </div>
+
+                <div class="top_two">
+                    <h5>参与规则</h5>
+                    <ul>
+                        <li>1. 仅限imToken钱包的用户参与</li>
+                        <li>2. 单笔最低存款金额为100 USDT，最高为10,000 USDT</li>
+                        <li>3. 用户可在产品认购期通过imToken钱包购买年化存款利息为16%的USDT活期存款产品，产品总额度为15万USDT</li>
+                        <li>4. 超出产品总额度的USDT存款将按市场利息结算（参考利率~5%）</li>
+                        <li>5. 用户可在存续期内随时取出自己的存款，但取出后再次存入将按市场利息结算</li>
+                        <li>6. 补贴收益将于北京时间1月14日18点前发放到用户存币地址</li>
+                        <li>7. 本次活动由dForce主办，imToken协办，dForce拥有本次活动的最终解释权</li>
+                    </ul>
+                    <a href="https://www.bilibili.com/video/av76239970/" target="_blank" class="jiaocheng">存款教程</a>
+                </div>
+            </div>
+
+            <!-- ---  ---  ---  --- 分割线 ---  ---  ---  ---  -->
+
+            <div class="b_div content_en" style="display: none;">
+
+                <div class="topbtn">
+                    <a href="http://t.cn/AidyUp8A">Save USDx</a>
+                    <a class="got_usdx">Get USDx</a>
+                </div>
+
+                <div class="top_one">
+                    <p class="title"><span>Remaining Balance: </span> <span class="color">-</span></p>
+                    <p class="title"><span>Subscription Period: </span> Nov 22 to Dec 5, 2019</p>
+                    <p class="title"><span>Total USDx available: </span> 150,000 USDx</p>
+                </div>
+
+                <div class="top_two">
+                    <h5>IMPORTANT</h5>
+                    <ul>
+                        <li>1. Accessible from imToken only </li>
+                        <li>2. Subscribe from 100 USDx up to 10,000 USDx per user</li>
+                        <li>3. Subscriptions exceeding maximum supply (150,000 USDx) will be based on actual yielding
+                            (Saving APR is around 8%)</li>
+                        <li>4. Extra yielding will be allocated to the same address of entitled participants before
+                            12:00 GMT+8:00, 6 Dec, 2019.</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=cwfCne_PJus" target="_blank" class="jiaocheng">USDx Saving
+                        Guide</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="./src/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        console.log(navigator.language);
+        console.log(navigator.language === 'zh-CN');
+        // alert(navigator.language === 'zh-CN');
+        if (!(navigator.language === 'zh-CN')) {
+            console.log('111111:  英文环境')
+            $('.content_zh').css('display', 'none');
+            $('.content_en').css('display', 'block');
+            $('.bg').css({ 'background': "url('./src/images/imtoken_bg_en1.png') no-repeat center 0px", "backgroundSize": "100%" });
+        } else {
+            console.log('222222: 中文环境')
+            $('.content_zh').css('display', 'block');
+            $('.content_en').css('display', 'none');
+            $('.bg').css({ 'background': "url('./src/images/imtoken_bg1.png') no-repeat center 0px", "backgroundSize": "100%" });
+        }
+
+
+        // https://dforce.network/imtoken-activity.html
+
+        var now = new Date();
+        var number = now.getTime().toString();
+        var url = 'https://dforce.network/num.json?' + number;
+
+
+        $.get(url).done(function (data) {
+            // console.log('loding...')
+            if (data) {
+                console.log(data.num)
+                var input_str = format(data.num) + ' USDx';
+                $('.color').html(input_str)
+            } else {
+                console.log('没有数据.')
+            }
+        });
+
+
+        function format(num) {
+            var reg = /\d{1,3}(?=(\d{3})+$)/g;
+            return (num + '').replace(reg, '$&,');
+        }
+
+        $('.got_usdx').click((e) => {
+            e.preventDefault();
+            console.log(e);
+            if (window.ethereum.isImToken) {
+                imToken.callPromisifyAPI('navigator.routeTo', {
+                    screen: 'Tokenlon',
+                })
+            } else {
+                alert('u are not in imToken now. pls do this in imToken.')
+            }
+        })
+
+
+
+    });
+</script>
+
+</html>

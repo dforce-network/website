@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background: url('../images/imtoken_bg_p.png') no-repeat center 0px; */
+    /* background: red; */
+    /* background: url('../images/dforce_usdt_bg_en1.jpeg') no-repeat center 0px; */
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    /* color: #1A76FF; */
+    color: rgba(85, 77, 64, 1);
+}
+
+.clear {
+    clear: both;
+}
+
+.content_zh {
+    display: none;
+    /* background: url('../images/imtoken_bg_p.png') no-repeat center 0px; */
+}
+
+div.bg0 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('../images/imtoken_bg_p.png') no-repeat center bottom;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+div.bg {
+    width: 100%;
+    background: url('./src/images/dforce_usdt_bg.jpeg') no-repeat center bottom;
+    /* background: url('./src/images/imtoken_bg_p.png') no-repeat center 0px; */
+    background-size: 100%;
+    overflow-y: auto;
+}
+
+.b_div .topbtn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48%;
+    margin-bottom: 32px;
+}
+
+div.b_div .topbtn a {
+    display: block;
+    line-height: 43px;
+    text-align: center;
+    width: 40%;
+    /* background: linear-gradient(90deg, rgba(60, 250, 154, 1), rgba(42, 223, 192, 1)); */
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* color: #020762; */
+    color: rgba(233, 103, 0, 1);
+}
+
+div.b_div .top_one {
+    width: 96%;
+    height: 177px;
+    /* border: 1px solid rgba(75, 238, 157, 1); */
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #fff;
+    /* color: #333; */
+}
+
+div.b_div .top_two {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* background: #020860;
+    background: rgba(233, 103, 0, 1); */
+
+}
+
+.content_wrapper {
+    width: 100%;
+    height: 100%;
+    /* background: #020860;
+    background: rgba(233, 103, 0, 1); */
+}
+
+div.b_div .top_three {
+    width: 100%;
+    min-height: 91px;
+    /* background: #020860; */
+}
+
+.last_footer {
+    width: 100%;
+    height: 95px;
+    /* background: #020860; */
+}
+
+.last_footer .last_footer_box {
+    width: 96%;
+    /* border: 1px solid rgba(75, 238, 157, 1); */
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 15px;
+    height: 90px;
+    padding: 16px;
+    background: #fff;
+}
+
+.last_footer .last_footer_box span {
+    font-size: 13px;
+    font-weight: bold;
+    /* color: rgba(59, 249, 156, 1); */
+}
+
+.last_footer .last_footer_box p {
+    font-size: 13px;
+    font-weight: 400;
+    /* color: rgba(184, 193, 251, 1); */
+
+}
+
+div.b_div .top_three .top_three_activity {
+    width: 96%;
+    /* border: 1px solid rgba(75, 238, 157, 1); */
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 15px;
+    margin-bottom: 12px;
+    min-height: 91px;
+    padding: 16px;
+    background: #fff;
+}
+
+div.b_div .top_three .top_three_activity p {
+    font-size: 13px;
+    font-weight: bold;
+    /* color: rgba(59, 249, 156, 1); */
+    margin-bottom: 16px;
+}
+
+div.b_div .top_three .top_three_activity .top_three_dorce {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.b_div .top_three .top_three_activity .top_three_dorce img {
+    width: 11px;
+    height: 6px;
+}
+
+div.b_div .top_three .top_three_activity .top_three_dorce .upfoure {
+    width: 11px;
+    height: 6px;
+    display: none;
+}
+
+div.b_div .top_three .top_three_activity .top_three_dorce .upfoures {
+    width: 11px;
+    height: 6px;
+    display: none;
+}
+
+div.b_div .top_three .top_three_activity .top_three_dorce span {
+    font-size: 13px;
+    font-weight: 500;
+    /* color: rgba(59, 249, 156, 1); */
+    line-height: 20px;
+}
+
+.dForceNetwork {
+    /* color: #B7C0FC; */
+    font-size: 12px;
+    line-height: 17px;
+
+}
+
+div.b_div .top_two .top_two_main {
+    width: 96%;
+    /* border: 1px solid rgba(75, 238, 157, 1); */
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 15px;
+    margin-bottom: 12px;
+    min-height: 254px;
+    padding: 15px;
+    background: #fff;
+}
+
+div.b_div .top_two .top_two_main .ruleTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.b_div .top_two .top_two_main .ruleTitle span {
+    font-size: 13px;
+    font-weight: bold;
+    /* color: rgba(59, 249, 156, 1); */
+}
+
+
+div.b_div .top_two .top_two_main .ruleTitle span.speicial {
+    color: rgba(233, 103, 0, 1);
+}
+
+div.b_div .top_two .top_two_main .ruleTitle>p>img {
+    width: 6px;
+    margin-left: 5px;
+}
+
+div.b_div .top_two .top_two_main .textContent {
+    font-size: 12px;
+    /* color: #B8C1FB; */
+    line-height: 18px;
+}
+
+div.b_div .top_one p.title {
+    font-size: 13px;
+    font-weight: bold;
+    /* color: rgba(255, 255, 255, 1); */
+    display: flex;
+    margin-bottom: 14px;
+}
+
+div.b_div .top_one p.title span {
+    font-weight: 700;
+}
+
+div.b_div .top_one p.title span.color {
+    /* color: rgba(75, 238, 157, 1); */
+    font-weight: 700;
+}
+
+div.b_div .top_one p.title span.titleTime {
+    flex: 1;
+    line-height: 18px;
+}
+
+.iconLogo {
+    display: flex;
+    margin-top: 19.5px;
+    text-align: left;
+}
+
+.iconLogo a {
+    width: 26px;
+    height: 26px;
+    margin-right: 23px;
+}
+
+.iconLogo a img {
+    width: 26px;
+    height: 26px;
+}
+
+.LendfMedForceNetwork,
+.dfoureNetwork {
+    display: none;
+}
