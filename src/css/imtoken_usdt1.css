@@ -128,14 +128,15 @@ div.b_div .top_three {
 }
 
 .last_footer .last_footer_box span {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     /* color: rgba(59, 249, 156, 1); */
 }
 
 .last_footer .last_footer_box p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
+    margin-top: 4px;
     /* color: rgba(184, 193, 251, 1); */
 
 }
@@ -153,7 +154,7 @@ div.b_div .top_three .top_three_activity {
 }
 
 div.b_div .top_three .top_three_activity p {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     /* color: rgba(59, 249, 156, 1); */
     margin-bottom: 16px;
@@ -167,6 +168,8 @@ div.b_div .top_three .top_three_activity .top_three_dorce {
 div.b_div .top_three .top_three_activity .top_three_dorce img {
     width: 11px;
     height: 6px;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 div.b_div .top_three .top_three_activity .top_three_dorce .upfoure {
@@ -182,16 +185,16 @@ div.b_div .top_three .top_three_activity .top_three_dorce .upfoures {
 }
 
 div.b_div .top_three .top_three_activity .top_three_dorce span {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     /* color: rgba(59, 249, 156, 1); */
-    line-height: 20px;
+    line-height: 24px;
 }
 
 .dForceNetwork {
     /* color: #B7C0FC; */
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 22px;
 
 }
 
@@ -210,10 +213,11 @@ div.b_div .top_two .top_two_main {
 div.b_div .top_two .top_two_main .ruleTitle {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 div.b_div .top_two .top_two_main .ruleTitle span {
-    font-size: 13px;
+    font-size: 16px !important;
     font-weight: bold;
     /* color: rgba(59, 249, 156, 1); */
 }
@@ -229,17 +233,17 @@ div.b_div .top_two .top_two_main .ruleTitle>p>img {
 }
 
 div.b_div .top_two .top_two_main .textContent {
-    font-size: 12px;
+    font-size: 15px !important;
     /* color: #B8C1FB; */
-    line-height: 18px;
+    line-height: 26px;
 }
 
 div.b_div .top_one p.title {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     /* color: rgba(255, 255, 255, 1); */
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 4px;
 }
 
 div.b_div .top_one p.title span {
@@ -249,11 +253,13 @@ div.b_div .top_one p.title span {
 div.b_div .top_one p.title span.color {
     /* color: rgba(75, 238, 157, 1); */
     font-weight: 700;
+    font-size: 90%;
 }
 
 div.b_div .top_one p.title span.titleTime {
     flex: 1;
-    line-height: 18px;
+    line-height: 24px;
+    font-size: 90%;
 }
 
 .iconLogo {
@@ -276,4 +282,12 @@ div.b_div .top_one p.title span.titleTime {
 .LendfMedForceNetwork,
 .dfoureNetwork {
     display: none;
+}
+
+a.speicial {
+    color: rgba(233, 103, 0, 1);
+}
+
+span.size90 {
+    font-size: 90%;
 }
