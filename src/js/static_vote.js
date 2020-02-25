@@ -65,13 +65,13 @@ var abiVote = [
 const abiDF = [{
     "constant": false,
     "inputs": [{
-            "name": "_owner",
-            "type": "address"
-        },
-        {
-            "name": "value",
-            "type": "uint256"
-        }
+        "name": "_owner",
+        "type": "address"
+    },
+    {
+        "name": "value",
+        "type": "uint256"
+    }
     ],
     "name": "allocateTo",
     "outputs": [],
@@ -82,13 +82,13 @@ const abiDF = [{
 {
     "constant": false,
     "inputs": [{
-            "name": "_spender",
-            "type": "address"
-        },
-        {
-            "name": "_value",
-            "type": "uint256"
-        }
+        "name": "_spender",
+        "type": "address"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    }
     ],
     "name": "approve",
     "outputs": [{
@@ -102,13 +102,13 @@ const abiDF = [{
 {
     "constant": false,
     "inputs": [{
-            "name": "_spender",
-            "type": "address"
-        },
-        {
-            "name": "_subtractedValue",
-            "type": "uint256"
-        }
+        "name": "_spender",
+        "type": "address"
+    },
+    {
+        "name": "_subtractedValue",
+        "type": "uint256"
+    }
     ],
     "name": "decreaseApproval",
     "outputs": [{
@@ -122,13 +122,13 @@ const abiDF = [{
 {
     "constant": false,
     "inputs": [{
-            "name": "_spender",
-            "type": "address"
-        },
-        {
-            "name": "_addedValue",
-            "type": "uint256"
-        }
+        "name": "_spender",
+        "type": "address"
+    },
+    {
+        "name": "_addedValue",
+        "type": "uint256"
+    }
     ],
     "name": "increaseApproval",
     "outputs": [{
@@ -142,13 +142,13 @@ const abiDF = [{
 {
     "constant": false,
     "inputs": [{
-            "name": "_to",
-            "type": "address"
-        },
-        {
-            "name": "_value",
-            "type": "uint256"
-        }
+        "name": "_to",
+        "type": "address"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    }
     ],
     "name": "transfer",
     "outputs": [{
@@ -162,17 +162,17 @@ const abiDF = [{
 {
     "constant": false,
     "inputs": [{
-            "name": "_from",
-            "type": "address"
-        },
-        {
-            "name": "_to",
-            "type": "address"
-        },
-        {
-            "name": "_value",
-            "type": "uint256"
-        }
+        "name": "_from",
+        "type": "address"
+    },
+    {
+        "name": "_to",
+        "type": "address"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    }
     ],
     "name": "transferFrom",
     "outputs": [{
@@ -185,21 +185,21 @@ const abiDF = [{
 },
 {
     "inputs": [{
-            "name": "_initialAmount",
-            "type": "uint256"
-        },
-        {
-            "name": "_tokenName",
-            "type": "string"
-        },
-        {
-            "name": "_decimalUnits",
-            "type": "uint8"
-        },
-        {
-            "name": "_tokenSymbol",
-            "type": "string"
-        }
+        "name": "_initialAmount",
+        "type": "uint256"
+    },
+    {
+        "name": "_tokenName",
+        "type": "string"
+    },
+    {
+        "name": "_decimalUnits",
+        "type": "uint8"
+    },
+    {
+        "name": "_tokenSymbol",
+        "type": "string"
+    }
     ],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -208,20 +208,20 @@ const abiDF = [{
 {
     "anonymous": false,
     "inputs": [{
-            "indexed": true,
-            "name": "owner",
-            "type": "address"
-        },
-        {
-            "indexed": true,
-            "name": "spender",
-            "type": "address"
-        },
-        {
-            "indexed": false,
-            "name": "value",
-            "type": "uint256"
-        }
+        "indexed": true,
+        "name": "owner",
+        "type": "address"
+    },
+    {
+        "indexed": true,
+        "name": "spender",
+        "type": "address"
+    },
+    {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+    }
     ],
     "name": "Approval",
     "type": "event"
@@ -229,20 +229,20 @@ const abiDF = [{
 {
     "anonymous": false,
     "inputs": [{
-            "indexed": true,
-            "name": "from",
-            "type": "address"
-        },
-        {
-            "indexed": true,
-            "name": "to",
-            "type": "address"
-        },
-        {
-            "indexed": false,
-            "name": "value",
-            "type": "uint256"
-        }
+        "indexed": true,
+        "name": "from",
+        "type": "address"
+    },
+    {
+        "indexed": true,
+        "name": "to",
+        "type": "address"
+    },
+    {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+    }
     ],
     "name": "Transfer",
     "type": "event"
@@ -250,13 +250,13 @@ const abiDF = [{
 {
     "constant": true,
     "inputs": [{
-            "name": "_owner",
-            "type": "address"
-        },
-        {
-            "name": "_spender",
-            "type": "address"
-        }
+        "name": "_owner",
+        "type": "address"
+    },
+    {
+        "name": "_spender",
+        "type": "address"
+    }
     ],
     "name": "allowance",
     "outputs": [{
@@ -338,4 +338,4 @@ const abiDF = [{
 
 
 var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
-var addressVote = "0x12B0938E71B15aD42eFF3479Ac2874F6b5Cf40E3";
+var addressVote = "0xD1B38faCe0E7fc9D8706D7CD8c967F823E2aa79D";

@@ -64,7 +64,7 @@ div.top_box .right {
 
 div.top_box .right .to_connect {
     width: 100px;
-    text-align: center;
+    /* text-align: center; */
     height: 36px;
     line-height: 36px;
     background: rgba(213, 162, 78, 1);
@@ -80,8 +80,10 @@ div.top .top_title {
     font-weight: bold;
     color: rgba(7, 2, 55, 1);
     /* background: red; */
+    width: 1071px;
+    margin: 0 auto;
+    margin-bottom: 50px;
     margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 div.top .top_details {
@@ -317,7 +319,7 @@ div.bottom ul li::after {
 }
 
 
-div.addPlus{
+div.addPlus {
     font-size: 16px;
     font-weight: 500;
     color: rgba(107, 104, 129, 1);
