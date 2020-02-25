@@ -334,8 +334,8 @@ const abiDF = [{
 
 // test
 // var addressDF = "0x5d378961e9D31C0ee394d34741fa1A18144f6Fb5";
-// var addressVote = "0x3c150aa61f6EC51Ab24d19687E3aC5D23014944f";
+// var addressVote = "0xD1B38faCe0E7fc9D8706D7CD8c967F823E2aa79D";
 
 
-var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
-var addressVote = "0xD1B38faCe0E7fc9D8706D7CD8c967F823E2aa79D";
+var addressDF = "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0";
+var addressVote = "0xD4573F462d4Fc4b0f0932Ab9315d194A58a7427E";

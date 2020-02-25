@@ -14,13 +14,6 @@
             font-family: NotoSansHans-Regular;
             src: url('./src/font/NotoSansHans.otf')
         }
-
-        .top_details-title {
-            height: 44px;
-            font-size: 24px;
-            font-weight: 500;
-            color: rgba(7, 2, 55, 1);
-        }
     </style>
 
     <title>vote</title>
@@ -43,12 +36,11 @@
             <!-- <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we would like to propose a change to remove DAI
             </div> -->
             <div class="top_details">
-                <div class="top_details-title">Proposal: </div>
                 It is proposed to unlock up to 90% of constituent collaterals and re-supply them
                 into the lending protocol of dForce (or similar designated protocols like Compound, dYdX, and etc) to
-                earn yield. By doing so, USDx holders are entitled to a systematic interest rate by simply depositing
+                earn yield. By doing so, USDx holders are entitled to a systematic interest by simply depositing
                 USDx into USR (USDx Saving Rate).
-                <a href="https://medium.com/@dforcenet/dforce-governance-poll-no-1-usdx-reserve-adjustment-proposal-f15312a18303"
+                <a href="https://medium.com/dforcenet/dforce-improvement-proposal-001-dip001-a78dc740841e"
                     target="_blank">
                     More...
                 </a>
@@ -58,8 +50,8 @@
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="main">
         <div class="main_left">
-            <div class="m_title">Vote</div>
-            <!-- <div class="addPlus">(Start from 4 November 2019)</div> -->
+            <div class="m_title">Action Required: Please Vote Here</div>
+            <div class="addPlus">(Start from 12:00 UTC+8 26 Feb 2020)</div>
             <div class="m_choosen">
                 <img src="./src/images/vote_is_choosen.svg" alt="" srcset="" class="ichoiceA">
                 <span>Vote A: Yes</span>
@@ -110,10 +102,11 @@
     </div>
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="bottom">
-        <div class="b_title">Join us for online discussion! We'd love to hear your voice!
+        <div class="b_title">
+            Voting mechanism
         </div>
         <ul>
-            <li>The governance poll will last for 3 days from 26 to 28 February.</li>
+            <li>The governance poll will last for 3 days from 26 to 29 February.</li>
             <li>
                 Proposal will be implemented if the following requirements are satisfied:
                 <br />
@@ -124,13 +117,15 @@
                 proposal (If the voting result is tied, the
                 proposal won’t be implemented.)
             </li>
-            <li>Governance decision will be disclosed through Medium and Twitter on 29 February.</li>
+            <li>Governance decision will be disclosed through Medium and Twitter on 1 March.</li>
         </ul>
     </div>
 
 
     <div class="bottom">
-        <div class="b_title">Voting mechanism</div>
+        <div class="b_title">
+            Join us for online discussion! We'd love to hear your voice!
+        </div>
         <ul>
             <li>Telegram: <a href="https://t.me/dforcenet" target="_blank">https://t.me/dforcenet</a> </li>
             <li>Twitter: <a href="https://twitter.com/dForcenet" target="_blank">@dForcenet</a> </li>
@@ -396,7 +391,7 @@
                     $(".my_source").html(myAccount);
                     contractDF.balanceOf.call(myAccount, (err, ret) => {
                         if (ret) {
-                            console.log(ret);
+                            console.log('amount in DF: ', ret.toString());
                             $(".vote_amount").html(formatNumber(ret));
                         }
                     })
