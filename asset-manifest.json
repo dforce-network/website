@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.8e5611a5.chunk.css",
-    "main.js": "/static/js/main.be6a0a79.chunk.js",
-    "main.js.map": "/static/js/main.be6a0a79.chunk.js.map",
+    "main.js": "/static/js/main.5a5c6b3a.chunk.js",
+    "main.js.map": "/static/js/main.5a5c6b3a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.58b10c31.js",
     "runtime-main.js.map": "/static/js/runtime-main.58b10c31.js.map",
     "static/js/2.97ce0a9f.chunk.js": "/static/js/2.97ce0a9f.chunk.js",
     "static/js/2.97ce0a9f.chunk.js.map": "/static/js/2.97ce0a9f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e09567e9676194ebaaf45090c077cd79.js": "/precache-manifest.e09567e9676194ebaaf45090c077cd79.js",
+    "precache-manifest.8962191d4105863c3ff6dad293d18391.js": "/precache-manifest.8962191d4105863c3ff6dad293d18391.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8e5611a5.chunk.css.map": "/static/css/main.8e5611a5.chunk.css.map",
     "static/js/2.97ce0a9f.chunk.js.LICENSE.txt": "/static/js/2.97ce0a9f.chunk.js.LICENSE.txt",
-    "static/media/300.svg": "/static/media/300.3c191008.svg",
+    "static/media/300.svg": "/static/media/300.b9df4748.svg",
     "static/media/400.svg": "/static/media/400.30ba23af.svg",
     "static/media/DeFi-Full-Stacks.svg": "/static/media/DeFi-Full-Stacks.397a21df.svg",
     "static/media/Discord.svg": "/static/media/Discord.cc3125cc.svg",
@@ -75,6 +75,6 @@
     "static/js/runtime-main.58b10c31.js",
     "static/js/2.97ce0a9f.chunk.js",
     "static/css/main.8e5611a5.chunk.css",
-    "static/js/main.be6a0a79.chunk.js"
+    "static/js/main.5a5c6b3a.chunk.js"
   ]
 }
