@@ -12,7 +12,14 @@
 
 
     <style>
-        #input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+        #input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -10;
+        }
+
         div.wrap {
             width: 930px;
             /* background: red; */
@@ -104,6 +111,35 @@
             </div>
         </div>
 
+
+
+        <div class="img">
+            <p class="title">logo_Lendf (120*120)</p>
+            <img src="./lendf_120x120.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text4">https://dforce.network/lendf_120x120.png</p>
+                <button onclick="copyText('https://dforce.network/lendf_120x120.png')">copy</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <p class="title">logo_Lendf (256*256)</p>
+            <img src="./lendflogo_256x256.png" alt="" srcset="">
+            <div class="btm">
+                <p id="text5">https://dforce.network/lendflogo_256x256.png</p>
+                <button onclick="copyText('https://dforce.network/lendflogo_256x256.png')">copy</button>
+            </div>
+        </div>
+
+        <div class="img nomargin">
+            <p class="title">logo_Lendf (svg)</p>
+            <img src="./lendf.svg" alt="" srcset="">
+            <div class="btm">
+                <p id="text6">https://dforce.network/lendf.svg</p>
+                <button onclick="copyText('https://dforce.network/lendf.svg')">copy</button>
+            </div>
+        </div>
+
         <div style="clear: both; margin-bottom: 50px;"></div>
 
         <div>
@@ -113,12 +149,15 @@
             https://dforce.network/logo_USDx_120x120.png<br />
             https://dforce.network/logo_USDx_256x256.png<br />
             https://dforce.network/USDx.svg<br />
+            https://dforce.network/lendf_120x120.png<br />
+            https://dforce.network/lendflogo_256x256.png<br />
+            https://dforce.network/lendf.svg<br />
         </div>
 </body>
 
 
 <script type="text/javascript">
-function copyText1() {
+    function copyText1() {
         var text = document.getElementById("text1").innerText;
         var input = document.getElementById("input");
         input.value = text;
@@ -160,6 +199,15 @@ function copyText1() {
     }
     function copyText6() {
         var text = document.getElementById("text6").innerText;
+        var input = document.getElementById("input");
+        input.value = text;
+        input.select();
+        document.execCommand("copy");
+        alert("复制成功");
+    }
+
+    function copyText(str) {
+        var text = str;
         var input = document.getElementById("input");
         input.value = text;
         input.select();
