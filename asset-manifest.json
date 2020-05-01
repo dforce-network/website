@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a199aa1.chunk.css",
-    "main.js": "/static/js/main.3d616054.chunk.js",
-    "main.js.map": "/static/js/main.3d616054.chunk.js.map",
+    "main.css": "/static/css/main.f2f81907.chunk.css",
+    "main.js": "/static/js/main.40910afb.chunk.js",
+    "main.js.map": "/static/js/main.40910afb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.58b10c31.js",
     "runtime-main.js.map": "/static/js/runtime-main.58b10c31.js.map",
-    "static/js/2.f2cf4077.chunk.js": "/static/js/2.f2cf4077.chunk.js",
-    "static/js/2.f2cf4077.chunk.js.map": "/static/js/2.f2cf4077.chunk.js.map",
+    "static/js/2.c9b6ea76.chunk.js": "/static/js/2.c9b6ea76.chunk.js",
+    "static/js/2.c9b6ea76.chunk.js.map": "/static/js/2.c9b6ea76.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.40f48e5e3048bfc3984931fd7e580d01.js": "/precache-manifest.40f48e5e3048bfc3984931fd7e580d01.js",
+    "precache-manifest.ad169d24ce0183e4e54cec3b11b56002.js": "/precache-manifest.ad169d24ce0183e4e54cec3b11b56002.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4a199aa1.chunk.css.map": "/static/css/main.4a199aa1.chunk.css.map",
-    "static/js/2.f2cf4077.chunk.js.LICENSE.txt": "/static/js/2.f2cf4077.chunk.js.LICENSE.txt",
+    "static/css/main.f2f81907.chunk.css.map": "/static/css/main.f2f81907.chunk.css.map",
+    "static/js/2.c9b6ea76.chunk.js.LICENSE.txt": "/static/js/2.c9b6ea76.chunk.js.LICENSE.txt",
     "static/media/300.svg": "/static/media/300.b9df4748.svg",
     "static/media/400.svg": "/static/media/400.30ba23af.svg",
     "static/media/DeFi-Full-Stacks.svg": "/static/media/DeFi-Full-Stacks.397a21df.svg",
@@ -35,6 +35,7 @@
     "static/media/dforce.svg": "/static/media/dforce.2c8ecb0b.svg",
     "static/media/erweima.png": "/static/media/erweima.19d5b586.png",
     "static/media/hashbot.png": "/static/media/hashbot.071ab8b4.png",
+    "static/media/hb_capital.png": "/static/media/hb_capital.2a0d4e81.png",
     "static/media/hotbit.png": "/static/media/hotbit.4baaceb6.png",
     "static/media/icon-composability.svg": "/static/media/icon-composability.9ca5186d.svg",
     "static/media/icon-contracts.svg": "/static/media/icon-contracts.14b7c0c3.svg",
@@ -53,6 +54,7 @@
     "static/media/logo_DF.svg": "/static/media/logo_DF.51c73956.svg",
     "static/media/logo_LENDF.svg": "/static/media/logo_LENDF.aaf8ecf5.svg",
     "static/media/meun.svg": "/static/media/meun.91cf92a1.svg",
+    "static/media/multicoin.png": "/static/media/multicoin.689ac1d6.png",
     "static/media/nst.svg": "/static/media/nst.88934dea.svg",
     "static/media/nvex.svg": "/static/media/nvex.d015abbc.svg",
     "static/media/p100.svg": "/static/media/p100.1048ab35.svg",
@@ -73,8 +75,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.58b10c31.js",
-    "static/js/2.f2cf4077.chunk.js",
-    "static/css/main.4a199aa1.chunk.css",
-    "static/js/main.3d616054.chunk.js"
+    "static/js/2.c9b6ea76.chunk.js",
+    "static/css/main.f2f81907.chunk.css",
+    "static/js/main.40910afb.chunk.js"
   ]
 }
