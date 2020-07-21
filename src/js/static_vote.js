@@ -333,9 +333,9 @@ const abiDF = [{
 ];
 
 // test
-// var addressDF = "0x5d378961e9D31C0ee394d34741fa1A18144f6Fb5";
-// var addressVote = "0xD1B38faCe0E7fc9D8706D7CD8c967F823E2aa79D";
+var addressDF = "0x5d378961e9d31c0ee394d34741fa1a18144f6fb5";
+var addressVote = "0x9934A1C447f348E8CEc7A3C8F455b280058d5126";
 
 
-var addressDF = "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0";
-var addressVote = "0xD4573F462d4Fc4b0f0932Ab9315d194A58a7427E";
+// var addressDF = "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0";
+// var addressVote = "0xD4573F462d4Fc4b0f0932Ab9315d194A58a7427E";
