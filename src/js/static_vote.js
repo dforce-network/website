@@ -333,8 +333,8 @@ const abiDF = [{
 ];
 
 // test
-var addressDF = "0x5d378961e9d31c0ee394d34741fa1a18144f6fb5";
-var addressVote = "0x9934A1C447f348E8CEc7A3C8F455b280058d5126";
+var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
+var addressVote = "0xC09D8215Cb467c31452F014B3d9f7694d83065BF";
 
 
 // var addressDF = "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0";

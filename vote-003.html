@@ -30,7 +30,7 @@
             </div>
             <div class="clear"></div>
             <div class="top_title">
-                dForce Governance Poll No. 3 (DIP003)<br />
+                dForce Governance Poll No. 3 <br />
                 USDx Reserve Adjustment Proposal
             </div>
             <!-- <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we would like to propose a change to remove DAI
@@ -39,7 +39,9 @@
                 In an attempt to improve yielding opportunity of USDx' underlying constituent stablecoins, we would like
                 to propose a change to adjust the constituent stablecoins' weighting, taking into account their
                 outstanding market share, number of exchanges supported, DeFi integrations, yield market accessibility.
-                Click <a href="#!" target="_blank" style="text-decoration: underline;">here</a> to view the proposal in
+                Click <a
+                    href="https://medium.com/dforcenet/dforce-governance-poll-no-3-usdx-reserve-adjustment-proposal-35db404f0c8b"
+                    target="_blank" style="text-decoration: underline;">here</a> to view the proposal in
                 details.
 
             </div>
@@ -51,7 +53,7 @@
                 </div>
                 <div class="secR">
                     <div>1 USDx = 35% USDC + 35% PAX + 30% TUSD</div>
-                    <div>1 USDx = 75% USDC + 15% PAX + 10% TUSD</div>
+                    <div>1 USDx = 80% USDC + 10% PAX + 10% TUSD</div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -123,10 +125,10 @@
                 <br />
                 - Given only 11.8% DF tokens are in circulation, the required quorum is: >2% of total DF tokens at the
                 end of
-                the voting period need to have &nbsp;&nbsp;&nbsp;participated in the voting;
+                the voting period need to have<br /> &nbsp;&nbsp;&nbsp;participated in the voting;
                 <br />
                 - Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
-                proposal (If the voting result is tied, the &nbsp;&nbsp;&nbsp;proposal won’t be implemented).
+                proposal (If the voting result is tied, the<br /> &nbsp;&nbsp;&nbsp;proposal won’t be implemented).
             </li>
             <li>Governance decision will be disclosed through Medium and Twitter before 9:00pm UTC+8, 27 July.</li>
         </ul>
@@ -291,8 +293,10 @@
                         }
 
                         var part_A = ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
-                        // var part_B = ((((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
-                        var part_B = (100 - (((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        // var part_B = (100 - (((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        // console.log('choice_B: ', 10000 - ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) * 100)
+                        var part_B = (10000 - ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) * 100) / 100 + '%';
+                        // console.log(part_B)
 
                         // console.log('choice_A: ', total_A)
                         // console.log('choice_B: ', total_B)
@@ -325,7 +329,6 @@
 
                         if (part_B.indexOf('.') > 0) {
                             if (part_B.substring(0, 5).indexOf('%') > 0) {
-                                // $(".noPersent").html(part_B.substring(0, 5))
                                 if (part_B.substring(0, 5).split('.')[1].length === 2) {
                                     var newStr = part_B.substring(0, 5).split('.')[1];
                                     console.log(newStr)
