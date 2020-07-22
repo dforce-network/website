@@ -14,6 +14,20 @@
             font-family: NotoSansHans-Regular;
             src: url('./src/font/NotoSansHans.otf')
         }
+
+        .spe-span {
+            display: block;
+            /* background-color: red; */
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .spe-span::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
     </style>
 
     <title>vote</title>
@@ -123,12 +137,14 @@
             <li>
                 Proposal will be implemented if the following requirements are satisfied:
                 <br />
-                - Given only 11.8% DF tokens are in circulation, the required quorum is: >2% of total DF tokens at the
-                end of
-                the voting period need to have<br /> &nbsp;&nbsp;&nbsp;participated in the voting;
-                <br />
-                - Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
-                proposal (If the voting result is tied, the<br /> &nbsp;&nbsp;&nbsp;proposal won’t be implemented).
+                <span class="spe-span">
+                    Given only 11.8% DF tokens are in circulation, the required quorum is: >2% of total DF tokens at the
+                    end of the voting period need to have participated in the voting;
+                </span>
+                <span class="spe-span">
+                    Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
+                    proposal (If the voting result is tied, the proposal won’t be implemented).
+                </span>
             </li>
             <li>Governance decision will be disclosed through Medium and Twitter before 9:00pm UTC+8, 27 July.</li>
         </ul>
