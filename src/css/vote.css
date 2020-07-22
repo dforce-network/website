@@ -64,7 +64,7 @@ div.top_box .right {
 
 div.top_box .right .to_connect {
     width: 100px;
-    /* text-align: center; */
+    text-align: center;
     height: 36px;
     line-height: 36px;
     background: rgba(213, 162, 78, 1);

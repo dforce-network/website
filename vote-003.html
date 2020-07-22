@@ -214,6 +214,7 @@
         })
 
         $(".top_connect_btn").click(function () {
+            // console.log('12345');
             connect_metamask();
         })
         $(".bottom_connect_btn").click(function () {
@@ -234,6 +235,7 @@
             $(".ichoiceA").attr('src', './src/images/vote_not_choosen.svg');
             $(".ichoiceB").attr('src', './src/images/vote_is_choosen.svg');
         })
+
         function vote() {
             var num = 1; // yes
             if (i_choice_AorB === 'B') {
