@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8aa7694c.chunk.css",
-    "main.js": "/static/js/main.70efeaed.chunk.js",
-    "main.js.map": "/static/js/main.70efeaed.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.58b10c31.js",
-    "runtime-main.js.map": "/static/js/runtime-main.58b10c31.js.map",
-    "static/js/2.679c6d01.chunk.js": "/static/js/2.679c6d01.chunk.js",
-    "static/js/2.679c6d01.chunk.js.map": "/static/js/2.679c6d01.chunk.js.map",
+    "main.css": "/static/css/main.990b0852.chunk.css",
+    "main.js": "/static/js/main.cf2d5a9b.chunk.js",
+    "main.js.map": "/static/js/main.cf2d5a9b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dc2469a2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dc2469a2.js.map",
+    "static/js/2.731ead7f.chunk.js": "/static/js/2.731ead7f.chunk.js",
+    "static/js/2.731ead7f.chunk.js.map": "/static/js/2.731ead7f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1f18b43f115be671940f602348c0b7eb.js": "/precache-manifest.1f18b43f115be671940f602348c0b7eb.js",
+    "precache-manifest.5a5c98aaa6d119b8f1d3a99385e0f775.js": "/precache-manifest.5a5c98aaa6d119b8f1d3a99385e0f775.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8aa7694c.chunk.css.map": "/static/css/main.8aa7694c.chunk.css.map",
-    "static/js/2.679c6d01.chunk.js.LICENSE.txt": "/static/js/2.679c6d01.chunk.js.LICENSE.txt",
+    "static/css/main.990b0852.chunk.css.map": "/static/css/main.990b0852.chunk.css.map",
+    "static/js/2.731ead7f.chunk.js.LICENSE.txt": "/static/js/2.731ead7f.chunk.js.LICENSE.txt",
     "static/media/300.svg": "/static/media/300.b9df4748.svg",
     "static/media/400.svg": "/static/media/400.30ba23af.svg",
     "static/media/DeFi-Full-Stacks.svg": "/static/media/DeFi-Full-Stacks.397a21df.svg",
@@ -22,6 +22,7 @@
     "static/media/Telegram.svg": "/static/media/Telegram.428714b2.svg",
     "static/media/Twitter.svg": "/static/media/Twitter.226b89fe.svg",
     "static/media/Youtube.svg": "/static/media/Youtube.8ecbbedb.svg",
+    "static/media/after-debank.svg": "/static/media/after-debank.b7c0fc8e.svg",
     "static/media/alpha.svg": "/static/media/alpha.208bb0d2.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.ceadf4de.svg",
     "static/media/arrow_d.svg": "/static/media/arrow_d.72f00d20.svg",
@@ -52,6 +53,7 @@
     "static/media/litex.svg": "/static/media/litex.4fccc6f0.svg",
     "static/media/logo-USDx.svg": "/static/media/logo-USDx.a98fd76c.svg",
     "static/media/logo-X-Swap.svg": "/static/media/logo-X-Swap.71539d55.svg",
+    "static/media/logo-defipulse.svg": "/static/media/logo-defipulse.bc164e0c.svg",
     "static/media/logo_DF.svg": "/static/media/logo_DF.51c73956.svg",
     "static/media/logo_LENDF.svg": "/static/media/logo_LENDF.aaf8ecf5.svg",
     "static/media/meun.svg": "/static/media/meun.91cf92a1.svg",
@@ -60,6 +62,7 @@
     "static/media/nvex.svg": "/static/media/nvex.d015abbc.svg",
     "static/media/p100.svg": "/static/media/p100.1048ab35.svg",
     "static/media/pic_arrowright.svg": "/static/media/pic_arrowright.8eb51dd0.svg",
+    "static/media/pic_debank2.svg": "/static/media/pic_debank2.4dfeda58.svg",
     "static/media/portto.svg": "/static/media/portto.aef76fd3.svg",
     "static/media/slogen-cn.png": "/static/media/slogen-cn.7670eff4.png",
     "static/media/slogen-en.png": "/static/media/slogen-en.4ca0a484.png",
@@ -75,9 +78,9 @@
     "static/media/zhaoshang.png": "/static/media/zhaoshang.e7214f94.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.58b10c31.js",
-    "static/js/2.679c6d01.chunk.js",
-    "static/css/main.8aa7694c.chunk.css",
-    "static/js/main.70efeaed.chunk.js"
+    "static/js/runtime-main.dc2469a2.js",
+    "static/js/2.731ead7f.chunk.js",
+    "static/css/main.990b0852.chunk.css",
+    "static/js/main.cf2d5a9b.chunk.js"
   ]
 }
