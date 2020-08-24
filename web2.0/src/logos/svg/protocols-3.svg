@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="54px" viewBox="0 0 101 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>protocols-3</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6068619%" id="linearGradient-1">
+            <stop stop-color="#FA9B00" offset="0%"></stop>
+            <stop stop-color="#FFD899" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="切图文件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网---EN" transform="translate(-359.000000, -2985.000000)">
+            <g id="编组-28" transform="translate(3.000000, 2412.000000)">
+                <g id="Lending-Protocols" transform="translate(356.000000, 102.000000)">
+                    <g id="编组-16备份" transform="translate(0.000000, 84.000000)"></g>
+                </g>
+                <g id="Liquidity-Protocols" transform="translate(357.000000, 484.000000)">
+                    <g id="编组-16备份-2" transform="translate(1.000000, 84.000000)">
+                        <g id="编组-14" transform="translate(1.000000, 11.000000)">
+                            <circle id="椭圆形" fill="url(#linearGradient-1)" cx="30" cy="10" r="10"></circle>
+                            <path d="M39,20.5 C39,31.2695526 30.2695526,40 19.5,40 C8.73044738,40 0,31.2695526 0,20.5 C0,9.73044738 8.73044738,1 19.5,1 L19.499,1 L19.5,20.5 Z" id="形状结合" stroke="#242A47" stroke-width="4" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

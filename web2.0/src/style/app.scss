@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  content: normal !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root,
+.App {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+i {
+  font-style: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @media screen and (min-width: 768px) {
+//   .pc {
+//     .container {
+//       max-width: 1100px;
+//       margin: 0 auto;
+//       color: #252152;
+//       font-weight: bold;
+
+//       .p-header {
+//         line-height: 30px;
+//         text-align: center;
+//         margin-top: 30px;
+//       }
+
+//       .p-footer {
+//         width: 922px;
+//         height: 100px;
+//         border-top: 1px solid #dee0ed;
+//         text-align: center;
+//         margin: 50px auto 0;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .container {
+//     width: 750px;
+//     color: #252152;
+//     font-weight: bold;
+//     padding: 40px 24px 14px;
+
+//     .p-header {
+//       height: 48px;
+//       display: flex;
+//       justify-content: space-between;
+//     }
+
+//     .p-footer {
+//       height: 100px;
+//       border-top: 1px solid #dee0ed;
+//       text-align: center;
+//       margin-top: 50px;
+//     }
+//   }
+// }

@@ -1,0 +1,16 @@
+$supply:#BA59FF;
+$borrow:#675CFF;
+$ratio:#00A577;
+$supply_APR:#F2874C;
+$main_title:#434976;
+$Balance_title:#A4A7BE;
+$disabled_bgcolor:#E6E6EF;
+$disabled_btn:#9D9CAC;
+$abled_btn:#FFF;
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: $disabled_btn !important;
+    background-color: $disabled_bgcolor !important;
+}

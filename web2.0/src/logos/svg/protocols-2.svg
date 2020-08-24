@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="54px" viewBox="0 0 101 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>protocols-2</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6068619%" id="linearGradient-1">
+            <stop stop-color="#FA9B00" offset="0%"></stop>
+            <stop stop-color="#FFD899" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="切图文件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网---EN" transform="translate(-970.000000, -2605.000000)">
+            <g id="编组-28" transform="translate(3.000000, 2412.000000)">
+                <g id="Lending-Protocols" transform="translate(356.000000, 102.000000)">
+                    <g id="编组-16" transform="translate(610.000000, 85.000000)">
+                        <g id="编组-20" transform="translate(1.000000, 11.000000)">
+                            <circle id="椭圆形" stroke="#242A47" stroke-width="4" stroke-linejoin="round" cx="22" cy="22" r="20"></circle>
+                            <path d="M22,0 C9.8497355,0 0,9.8497355 0,22 C0,34.1502645 9.8497355,44 22,44 L22,0 Z" id="路径" fill="url(#linearGradient-1)"></path>
+                            <circle id="椭圆形备份-8" stroke="#242A47" stroke-width="4" stroke-linejoin="round" cx="22" cy="22" r="7"></circle>
+                        </g>
+                    </g>
+                    <g id="编组-16备份" transform="translate(0.000000, 84.000000)"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

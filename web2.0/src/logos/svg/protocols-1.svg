@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="54px" viewBox="0 0 101 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>protocols-1</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6068619%" id="linearGradient-1">
+            <stop stop-color="#FA9B00" offset="0%"></stop>
+            <stop stop-color="#FFD899" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="切图文件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网---EN" transform="translate(-359.000000, -2602.000000)">
+            <g id="编组-28" transform="translate(3.000000, 2412.000000)">
+                <g id="Lending-Protocols" transform="translate(356.000000, 102.000000)">
+                    <g id="编组-16备份" transform="translate(0.000000, 84.000000)">
+                        <g id="编组-19" transform="translate(2.000000, 9.698485)">
+                            <polygon id="矩形备份-8" fill="url(#linearGradient-1)" transform="translate(35.181818, 22.000000) rotate(-315.000000) translate(-35.181818, -22.000000) " points="19.7818182 6.6 50.4545455 6.72727273 50.5818182 37.4 19.9090909 37.2727273"></polygon>
+                            <polygon id="矩形" stroke="#242A47" stroke-width="4" stroke-linejoin="round" transform="translate(20.636364, 22.000000) rotate(-315.000000) translate(-20.636364, -22.000000) " points="6.7030303 8.06666667 34.4545455 8.18181818 34.569697 35.9333333 6.81818182 35.8181818"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

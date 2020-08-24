@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="80px" viewBox="0 0 190 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>exchanges-12</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.608582 0 0 0 0 0.319216 0 0 0 0 0.319216 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <rect id="path-2" x="202" y="184" width="190" height="80"></rect>
+    </defs>
+    <g id="切图文件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网---EN" transform="translate(-774.000000, -3823.000000)">
+            <g id="编组-25" transform="translate(357.000000, 3323.000000)">
+                <g id="编组-21" transform="translate(215.000000, 316.000000)">
+                    <g filter="url(#filter-1)" id="BG">
+                        <g>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="蒙版备份-13"></g>
+                        </g>
+                    </g>
+                    <image id="组-1" x="252" y="212" width="84" height="22.5806452" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAATCAYAAADCrxD+AAAABGdBTUEAALGOfPtRkwAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAR6ADAAQAAAABAAAAEwAAAAAZcIvgAAAEsElEQVRYCd2YWWwVVRjHb60ULVbAgmt8sBFI0JiipHWLoTFGQtQgGkSMW1TEBY1bNY1xqQRl02iLPNiEGhuK+4OGJ6PV4AMFpBr3RIILaF1u0SigiPj73c6Qw3XunSG8WP7J757vfOebmTPffOfM5Fb8PG/mhFwu1wWTIUnNY9peWlzZuGAhg81JAfh2wOLda1sedrympiZXVVWlOaRVQXLWcwdnlLmLvxk7+5je+j7aNdBQJraJBPXU1tbmqqury4QNjaFDmGa5xHgXh8Kq/oa+w2ivhN+glE4rNTAU/SYni+oIaqMqNtHOLXNA1vOVOcX/Z2h/bmat0yZB3TQr9uMWXLZ7EtiG7ytoh1EQaz6GY3kYETujdiztl+D4LzAJToB/IOkaoa+DGNe61/T4fjgVQj1JxzG5N2tyXmNTXh6cZR72F0G/nOmyTNJInFbkbbAaKkAdAY6NhmEQy/FOGAeOL4ONYEx8LGZJOY/t4EvF44+GTojnNwX7LnDsO2jPkpxvCbwRcmzeE6GO6vmD7iz4S39GbSHupADfju9Fx55Fm7b3mcRpUbxV3BrZYWNFh9cIbW9cvQovFKzBa96PbUU9F/l8AV0DO9OSs5ug2VTNAElxQ34RVmIPI0F92PdBVnnRzQEbsD1frPgJxv2wdaNfEjl+p70KPF+xfFlsLsFAEGzlfxP1H6LtgpOjvkn/QLvchBxfRGLWaCDXY7xG52Ob8Ta4BM6HNPl0pgdBJ2Jb4uozWF+w/vvjQ1kJw6OhO2jdN5I0Eed1CQNW+suB/1fsa+Ft8IPsUlC98HjB4ictOW8aSKUcRXOLdqR78D06pq1lOx+Hq/FlSc5Y4l6PTxC0bn6XQ1IlGLYUTtFA74BLp5QuYECKZTLC5DjeAx1wEyg3dRO2dx5py+oij6J68jThhrwUn4lxI5xmTAbtIubDgO+jY0bRvg+nR/2wuZjOrYHjTOxxQb/Y3ILj3QRMarG87tTAaS7OC/q5tOQ0UyHnRgfcTfsxuBk+GPlup81SNYZvhfqA47GbYA840SegWMsih3ufT/RwsHIqIUmv4JySQLxswmOepePSDvUUnQmxIy05TsINeDSVshP7CnCD3kXVeKNL4EDkU3YTVeMHm31+a6Kem2acvHOwfVAHIr/0RX0CcwrW4FurG7vKftqeY4zZ7YDLSMqnOkjMCJpVUDiJvgwy1oQqr+uNzwC/K1Th3IPmPr9v0TMxHj8TxsNj8AZ8DqHc1+JrhH7tH2EreD/xFmE1Xg0bYSo4n0nQCg+kVQ4xBc2gesIN2bfU3vKLYtKa4whwErIOfFO4LJXfS06oWD/hcPJullbuHFDDoROKl9dsfPE1itsFjHm/z8NIUI+AcWou9BeswbdoU5bKieJzjRjLqRrL8frYmaEdIMa3RbH8XvkTnNwi6AXlE/4a3Ituhh8glsvwaZgOx8KF0AfboALKyeXr3lMHnt/lZEXG8kHcAO3guVr9y8JJpGkTAfX8bWHZejNHljjgTj4OnzmY/rLYUOJGY7frchaJsay7oVRijP/In4NFLis/xbtgcombamEjXlfZWL+Q8YYSMTvw+09gj+P5fD43MOBqGtr6F0nnMkcMqW7HAAAAAElFTkSuQmCC"></image>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

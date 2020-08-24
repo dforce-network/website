@@ -1,0 +1,339 @@
+@media screen and (min-width: 768px) {
+    .pc {
+        .foot {
+            width: 100%;
+            // background-color: goldenrod;
+            border-top: 1px solid #F8F8F8;
+            margin-top: 100px;
+
+            .foot-content {
+                display: flex;
+                width: 1200px;
+                margin: 0 auto;
+                justify-content: space-between;
+                // background-color: goldenrod;
+                padding-top: 38px;
+                padding-bottom: 20px;
+
+                .foot-item {
+
+                    .item-title {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: rgba(36, 42, 71, 1);
+                        line-height: 42px;
+                    }
+
+                    .item-link {
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #555555;
+                            line-height: 36px;
+                        }
+
+                        a:hover {
+                            color: #FA9B00;
+                        }
+                    }
+
+                    .item-icons {
+                        display: flex;
+                        padding-top: 20px;
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 8px;
+
+                            a {
+                                width: 40px;
+                                height: 40px;
+
+                                i,
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+
+                        .icon:last-child {
+                            margin-right: 0;
+                        }
+
+                        .icon-wechat {
+                            position: relative;
+
+                            .qrcode-wrap {
+                                display: none;
+                                position: absolute;
+                                // background-color: red;
+                                bottom: 40px;
+                                width: 100px;
+                                padding-bottom: 10px;
+                                left: -30px;
+                            }
+                        }
+
+                        .icon-wechat:hover {
+                            .qrcode-wrap {
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .foot {
+        // width: 750px;
+        width: 100%;
+        // background-color: goldenrod;
+        border-top: 1px solid #F8F8F8;
+        margin-top: 30px;
+
+        .foot-content {
+            width: 100%;
+            // background-color: goldenrod;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .foot-item {
+                // display: flex;
+                justify-content: space-between;
+                // background-color: goldenrod;
+
+                .item-title {
+                    font-size: 15px;
+                    font-weight: normal;
+                    color: rgba(36, 42, 71, 1);
+                    line-height: 24px;
+                    width: 100px;
+                    // margin-bottom: 30px;
+                    // background-color: goldenrod;
+                    padding-top: 10px;
+                }
+
+                .item-link-special {
+                    // flex: 1;
+                    // background: red;
+
+                    .item-link {
+                        a:hover {
+                            color: #555555;
+                        }
+                    }
+
+
+                    .item-link {
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                .item-link {
+                    // flex: 1;
+                    // padding-left: 20px;
+
+                    a {
+                        font-size: 11px;
+                        font-weight: 400;
+                        color: #555555;
+                        line-height: 26px;
+                        // background-color: goldenrod;
+                    }
+
+                    a:hover {
+                        color: #FA9B00;
+                    }
+                }
+
+                .item-icons {
+                    display: flex;
+                    padding-top: 10px;
+
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 8px;
+
+                        a {
+                            width: 32px;
+                            height: 32px;
+
+                            i,
+                            svg {
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                    }
+
+                    .icon:last-child {
+                        margin-right: 0;
+                    }
+
+                    .icon-wechat {
+                        position: relative;
+
+                        .qrcode-wrap {
+                            display: none;
+                            position: absolute;
+                            // background-color: red;
+                            bottom: 40px;
+                            width: 100px;
+                            padding-bottom: 10px;
+                            left: -30px;
+                        }
+                    }
+
+                    .icon-wechat:hover {
+                        .qrcode-wrap {
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+
+            .foot-item-spe {
+                display: block;
+
+                .item-title {
+                    display: block !important;
+                    // margin-bottom: 10px;
+                }
+
+                .item-icons {
+                    display: flex;
+                }
+            }
+
+            .foot-item:nth-child(1) {
+                width: 50%;
+                // background: red;
+                float: left;
+            }
+
+            .foot-item:nth-child(2) {
+                width: 50%;
+                // background: goldenrod;
+                float: left;
+            }
+
+            .foot-item:nth-child(3) {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background: #333;
+            }
+
+            .foot-item:nth-child(4) {
+                // padding-top: 120px;
+                // background: red;
+            }
+
+            .foot-item:nth-child(5) {
+                // padding-top: 120px;
+                // background: goldenrod;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+    .pc {
+        .foot {
+            width: 100%;
+            // background-color: goldenrod;
+            border-top: 1px solid #F8F8F8;
+            margin-top: 90px;
+
+            .foot-content {
+                display: flex;
+                width: 1080px;
+                margin: 0 auto;
+                justify-content: space-between;
+                // background-color: goldenrod;
+                padding-top: 38px;
+                padding-bottom: 20px;
+
+                .foot-item {
+
+                    .item-title {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: rgba(36, 42, 71, 1);
+                        line-height: 42px;
+                    }
+
+                    .item-link {
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #555555;
+                            line-height: 36px;
+                        }
+
+                        a:hover {
+                            color: #FA9B00;
+                        }
+                    }
+
+                    .item-icons {
+                        display: flex;
+                        padding-top: 20px;
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 8px;
+
+                            a {
+                                width: 40px;
+                                height: 40px;
+
+                                i,
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+
+                        .icon:last-child {
+                            margin-right: 0;
+                        }
+
+                        .icon-wechat {
+                            position: relative;
+
+                            .qrcode-wrap {
+                                display: none;
+                                position: absolute;
+                                // background-color: red;
+                                bottom: 40px;
+                                width: 100px;
+                                padding-bottom: 10px;
+                                left: -30px;
+                            }
+                        }
+
+                        .icon-wechat:hover {
+                            .qrcode-wrap {
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>news</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF7E69" offset="0%"></stop>
+            <stop stop-color="#FF4343" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.44397632,16 C4.44397632,16 -2.20811974,14.4392857 0.764970444,6.69285714 C0.764970444,6.69285714 1.43997012,7.55357143 1.34722207,7.96785714 C1.34722207,7.96785714 1.87622946,6.0125 3.01840448,4.84464286 C3.99912921,3.84107143 4.99531194,1.01964286 4.07641925,0 C4.07641925,0 8.6279438,1.01964286 9.13462294,6.11964286 C9.13462294,6.11964286 9.71687458,4.49464286 10.9122939,4.33392857 C10.9122939,4.33392857 10.5447368,5.22678571 10.9122939,6.56607143 C10.9122939,6.56607143 14.6823302,13.45 8.18481424,15.7767857 C8.18481424,15.7767857 10.1325232,13.4178571 6.00180001,9.36964286 C6.00180001,9.36964286 5.02794551,11.5375 4.44569388,12.3017857 C4.44397632,12.3035714 2.81916794,14.2464286 4.44397632,16 Z" id="path-2"></path>
+        <filter x="-58.3%" y="-31.2%" width="216.7%" height="187.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.99852808   0 0 0 0 0.758713904   0 0 0 0 0.758713904  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="切图文件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网---EN" transform="translate(-828.000000, -43.000000)" fill-rule="nonzero">
+            <g id="Navbar---EN" transform="translate(0.000000, -1.000000)">
+                <g id="news" transform="translate(832.000000, 46.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

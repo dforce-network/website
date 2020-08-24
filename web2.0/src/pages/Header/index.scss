@@ -1,0 +1,588 @@
+@media screen and (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .pc {
+        .header {
+            width: 100%;
+            border-bottom: 1px solid #F8F8F8;
+            margin-bottom: 60px;
+
+            .header-content {
+                width: 1200px;
+                margin: 0 auto;
+                // background-color: goldenrod;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-bottom: 25px;
+
+                .hot-a {
+
+                    i,
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        display: inline;
+                    }
+
+                    span {
+                        float: right;
+                        margin-left: 6px;
+                    }
+                }
+
+                .header-logo {
+                    width: 150px;
+
+                    i,
+                    svg {
+                        width: 150px;
+                        height: 40px;
+                    }
+                }
+
+                .menu-lists {
+                    display: flex;
+
+                    .menu-item:hover {
+                        span {
+                            color: #1F243A;
+                        }
+
+                        .list-ul {
+                            display: block;
+                        }
+                    }
+
+                    .menu-item {
+                        position: relative;
+                        margin-right: 30px;
+                        // background-color: violet;
+                        padding: 10px 15px 15px;
+                        cursor: pointer;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #555555;
+
+                            i,
+                            svg {
+                                margin-left: 3px;
+                                display: inline;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+
+                        .list-ul {
+                            display: none;
+                            z-index: 9999;
+                            width: 250px;
+                            position: absolute;
+                            background: rgba(253, 254, 254, 1);
+                            box-shadow: 0px 0px 15px 0px rgba(35, 42, 73, 0.16);
+                            padding: 5px 0px 5px;
+                            left: 15px;
+                            top: 40px;
+                            border-radius: 5px;
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                width: 0px;
+                                height: 0px;
+                                left: 15px;
+                                top: -14px;
+                                border: 7px solid transparent;
+                                border-bottom: 7px solid #fff;
+                            }
+
+                            .list-ul-item-flex {
+                                display: flex;
+
+                                .flex-left {
+                                    flex: 1;
+
+                                    .flex-item {
+                                        padding: 10px;
+
+                                        a {
+                                            span {
+                                                margin-left: 15px;
+                                                color: #555555;
+                                            }
+
+                                            i,
+                                            svg {
+                                                margin-bottom: -2px;
+                                                display: inline;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                        }
+
+                                        a:hover {
+                                            span {
+                                                color: #fa9b00;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .list-ul-item {
+                                a {
+                                    display: block;
+                                    padding-top: 6px;
+                                    padding-bottom: 6px;
+                                    // background-color: red;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+
+                                    .title {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        color: rgba(44, 46, 69, 1);
+                                        line-height: 23px;
+                                    }
+
+                                    .title-plus {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #555555;
+                                        line-height: 21px;
+                                    }
+
+                                    &:hover {
+                                        background-color: #FAFAFA;
+
+                                        .title {
+                                            color: #fa9b00;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .list-ul-language {
+                            width: 120px;
+
+                            .list-ul-item-language {
+                                // background-color: red;
+                                padding: 6px 10px;
+
+                                &:hover {
+                                    background-color: #FAFAFA;
+
+                                    .title {
+                                        color: #fa9b00;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            // background: red;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pc-header {
+        display: none;
+    }
+
+    .mobile-menu-top {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .mobile-menu-top-left {
+
+            i,
+            svg {
+                width: 80px;
+                height: 50px;
+            }
+        }
+
+        .mobile-menu-top-right {
+            // background-color: red;
+            padding: 10px;
+            padding-bottom: 0;
+            margin-right: -7px;
+            width: 34px;
+            height: 34px;
+            margin-top: 7px;
+
+            i,
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .mobile-header {
+        width: 100%;
+        // padding: 0 15px;
+        background-color: rgb(236, 239, 242);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+
+        .mobile-menu {
+
+
+            .mobile-menu-body {
+                .menu-item-wrap {
+                    height: 90vh;
+                    overflow: auto;
+                }
+
+                .menu-item {
+                    h1 {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: rgba(36, 42, 71, 1);
+                        line-height: 45px;
+                        background-color: #fff;
+                        padding: 0 15px;
+                        position: relative;
+                        padding-left: 30px;
+
+                        i,
+                        svg {
+                            width: 12px;
+                            height: 45px;
+                            float: right;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 12px;
+                            background: rgba(237, 160, 57, 1);
+                            border-radius: 2px;
+                            left: 15px;
+                            top: 16px;
+                        }
+                    }
+
+                    .Staking {
+                        display: flex;
+
+                        span {
+                            margin-right: 10px;
+                        }
+
+                        i,
+                        svg {
+                            width: 16px;
+                            height: 45px;
+                            // float: left;
+                        }
+                    }
+
+                    .items {
+                        background-color: #FAFAFA;
+                        margin-bottom: 12px;
+                        padding: 0 30px;
+                        padding-right: 0;
+                        height: auto;
+
+                        a {
+                            display: block;
+                            border-bottom: 1px solid #EEEEEE;
+
+                            .title {
+                                display: block;
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: rgba(44, 46, 69, 1);
+                                height: 36px;
+                                padding-top: 10px;
+                                // background-color: red;
+                            }
+
+                            .title-plus {
+                                display: block;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: #555555;
+                                margin-bottom: 8px;
+                            }
+                        }
+
+                        a:last-child {
+                            border-bottom: 1px solid transparent;
+                        }
+                    }
+
+                    .item-hidden {
+                        height: 0;
+                        overflow: hidden;
+                    }
+
+                    .items-icons {
+                        a {
+                            display: flex;
+
+                            .icon {
+
+                                i,
+                                svg {
+                                    width: 20px;
+                                    height: 45px;
+                                }
+                            }
+
+                            .name {
+                                line-height: 45px;
+                                color: #555555;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-header-realitave {
+        width: 100%;
+        // padding: 0 15px;
+        background-color: #fff;
+        position: relative;
+
+        .Staking-top {
+            // background: red;
+            position: absolute;
+            right: 50px;
+            top: 0px;
+            padding-top: 12px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+
+            i {
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    top: 0px;
+                    left: -24px;
+                }
+            }
+
+            i,
+            svg {
+                display: inline;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+    .pc {
+        .header {
+            width: 100%;
+            border-bottom: 1px solid #F8F8F8;
+            margin-bottom: 50px;
+
+            .header-content {
+                width: 1080px;
+                margin: 0 auto;
+                // background-color: goldenrod;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-bottom: 25px;
+
+                .hot-a {
+
+                    i,
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        display: inline;
+                    }
+
+                    span {
+                        float: right;
+                        margin-left: 6px;
+                    }
+                }
+
+                .header-logo {
+                    width: 150px;
+
+                    i,
+                    svg {
+                        width: 150px;
+                        height: 40px;
+                    }
+                }
+
+                .menu-lists {
+                    display: flex;
+
+                    .menu-item:hover {
+                        span {
+                            color: #1F243A;
+                        }
+
+                        .list-ul {
+                            display: block;
+                        }
+                    }
+
+                    .menu-item {
+                        position: relative;
+                        margin-right: 30px;
+                        // background-color: violet;
+                        padding: 10px 15px 15px;
+                        cursor: pointer;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #555555;
+
+                            i,
+                            svg {
+                                margin-left: 3px;
+                                display: inline;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+
+                        .list-ul {
+                            display: none;
+                            z-index: 9999;
+                            width: 250px;
+                            position: absolute;
+                            background: rgba(253, 254, 254, 1);
+                            box-shadow: 0px 0px 15px 0px rgba(35, 42, 73, 0.16);
+                            padding: 5px 0px 5px;
+                            left: 15px;
+                            top: 40px;
+                            border-radius: 5px;
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                width: 0px;
+                                height: 0px;
+                                left: 15px;
+                                top: -14px;
+                                border: 7px solid transparent;
+                                border-bottom: 7px solid #fff;
+                            }
+
+                            .list-ul-item-flex {
+                                display: flex;
+
+                                .flex-left {
+                                    flex: 1;
+
+                                    .flex-item {
+                                        padding: 10px;
+
+                                        a {
+                                            span {
+                                                margin-left: 15px;
+                                                color: #555555;
+                                            }
+
+                                            i,
+                                            svg {
+                                                margin-bottom: -2px;
+                                                display: inline;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                        }
+
+                                        a:hover {
+                                            span {
+                                                color: #fa9b00;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .list-ul-item {
+                                a {
+                                    display: block;
+                                    padding-top: 6px;
+                                    padding-bottom: 6px;
+                                    // background-color: red;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+
+                                    .title {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        color: rgba(44, 46, 69, 1);
+                                        line-height: 23px;
+                                    }
+
+                                    .title-plus {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #555555;
+                                        line-height: 21px;
+                                    }
+
+                                    &:hover {
+                                        background-color: #FAFAFA;
+
+                                        .title {
+                                            color: #fa9b00;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .list-ul-language {
+                            width: 120px;
+
+                            .list-ul-item-language {
+                                // background-color: red;
+                                padding: 6px 10px;
+
+                                &:hover {
+                                    background-color: #FAFAFA;
+
+                                    .title {
+                                        color: #fa9b00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
