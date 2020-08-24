@@ -1,0 +1,25 @@
+{
+  "short_name": "PPP",
+  "name": "Public-Private-Pool",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "pp-0.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pp-0.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFBF52",
+  "background_color": "#ffffff"
+}
