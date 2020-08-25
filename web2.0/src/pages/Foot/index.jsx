@@ -34,7 +34,9 @@ export default class Foot extends Component {
                                 </a>
                             </div>
                             <div className="item-link">
-                                <a href="https://trade.dforce.network/" target="_blank" rel="noopener noreferrer">dForce Trade</a>
+                                <a href="https://trade.dforce.network/" target="_blank" rel="noopener noreferrer">
+                                    <FormattedMessage id='dForce_Trade' />
+                                </a>
                             </div>
                         </div>
 

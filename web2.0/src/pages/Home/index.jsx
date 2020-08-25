@@ -4,6 +4,7 @@ import { IntlProvider, FormattedMessage } from 'react-intl';
 import en_US from '../../language/en_US';
 import zh_CN from '../../language/zh_CN';
 
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -198,7 +199,9 @@ export default class Home extends Component {
               </div>
 
               <div className='item'>
-                <div className='item-title'>Yield Markets</div>
+                <div className='item-title'>
+                  <FormattedMessage id='Yield_Markets' />
+                </div>
                 <div className='item-title-plus'>
                   <FormattedMessage id='Asset_Protocols__title_3' />
                 </div>

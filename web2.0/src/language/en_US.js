@@ -1,4 +1,5 @@
 const en_US = {
+    dForce_Trade: 'dForce Trade',
     faq: 'FAQ',
     coming_soon: 'Coming soon',
     learn_more: 'Learn more',

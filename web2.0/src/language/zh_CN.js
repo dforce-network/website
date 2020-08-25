@@ -1,4 +1,5 @@
 const zh_CN = {
+    dForce_Trade: '资产闪兑',
     faq: '常见问题',
     coming_soon: '敬请期待',
     learn_more: '查看更多',
