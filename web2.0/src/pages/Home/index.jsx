@@ -4,6 +4,8 @@ import { IntlProvider, FormattedMessage } from 'react-intl';
 import en_US from '../../language/en_US';
 import zh_CN from '../../language/zh_CN';
 
+import banner_lr_bg from '../../logos/svg/banner-lr-bg.png';
+
 
 export default class Home extends Component {
   constructor(props) {
@@ -46,6 +48,11 @@ export default class Home extends Component {
               <div className='banner-image'>
                 <Svg iconClass={"banner-bg"}></Svg>
               </div>
+            </div>
+
+            <div className='banner-bg'>
+              {/* <Svg iconClass={"banner-lr-bg"}></Svg> */}
+              <img src={banner_lr_bg} alt="" />
             </div>
           </div>
 
