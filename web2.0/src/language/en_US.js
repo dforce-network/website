@@ -1,5 +1,5 @@
 const en_US = {
-    dForce_Trade: 'dForce Trade',
+    dForce_Trade: 'dForce Swap',
     faq: 'FAQ',
     coming_soon: 'Coming soon',
     learn_more: 'Learn more',
@@ -59,7 +59,7 @@ const en_US = {
     Assets__goldx: 'GOLDx',
     Assets__goldx__content: 'Token backed by physical gold',
     Trade: 'Trade',
-    Trade__dforce: 'dForce Trade',
+    Trade__dforce: 'dForce Swap',
     Trade__dforce__content: 'Stable assets swap',
     Governance: 'Governance',
     Governance__air: 'Airdrop',
