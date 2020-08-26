@@ -59,7 +59,7 @@ const zh_CN = {
     Assets__goldx: '黄金代币',
     Assets__goldx__content: '锚定实物黄金代币',
     Trade: '交易协议',
-    Trade__dforce: 'dForce Trade',
+    Trade__dforce: 'dForce Swap',
     Trade__dforce__content: '稳定资产闪兑',
     Governance: '治理',
     Governance__air: 'Airdrop',
