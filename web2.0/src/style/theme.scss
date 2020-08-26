@@ -9,8 +9,8 @@ $disabled_btn:#9D9CAC;
 $abled_btn:#FFF;
 
 .disabled {
-    pointer-events: none;
-    cursor: not-allowed;
-    color: $disabled_btn !important;
-    background-color: $disabled_bgcolor !important;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: $disabled_btn !important;
+  background-color: $disabled_bgcolor !important;
 }
