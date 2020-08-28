@@ -1,4 +1,6 @@
 const en_US = {
+  Security_Audits: 'Security Audits',
+  Security_Audits__content: 'Top-ranked blockchain security companies who help secure our products.',
   dForce_Trade: 'dForce Swap',
   faq: 'FAQ',
   coming_soon: 'Coming soon',

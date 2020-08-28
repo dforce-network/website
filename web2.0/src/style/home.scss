@@ -280,9 +280,15 @@
       .Security {
         display: block;
 
+        .Security-content {
+          padding-top: 30px;
+          font-size: 18px;
+          color: #5C5F6F;
+        }
+
         .Security-wrap {
           display: flex;
-          padding-top: 40px;
+          padding-top: 20px;
 
           .Security-item:hover {
             &::after {
@@ -809,9 +815,15 @@
   .Security {
     display: block;
 
+    .Security-content {
+      padding-top: 15px;
+      font-size: 13px;
+      color: #5C5F6F;
+    }
+
     .Security-wrap {
       display: flex;
-      padding-top: 20px;
+      padding-top: 10px;
       flex-wrap: wrap;
 
       .Security-item {

@@ -179,9 +179,14 @@ export default class Home extends Component {
             </div>
           </div>
 
-          {/* Liquidity Mining */}
+          {/* Security */}
           <div className='liquidity-mining Security'>
-            <div className='web-title'>{/* <FormattedMessage id='Liquidity_Mining' /> */}Security Audits</div>
+            <div className='web-title'>
+              <FormattedMessage id='Security_Audits' />
+            </div>
+            <div className='Security-content'>
+              <FormattedMessage id='Security_Audits__content' />
+            </div>
             <div className='Security-wrap'>
               <div className='Security-item' onClick={() => { this.click__item_open(1) }}>
                 <div className='item-title'>USDx</div>
