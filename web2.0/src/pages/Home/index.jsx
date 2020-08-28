@@ -134,6 +134,49 @@ export default class Home extends Component {
             </div>
           </div>
 
+          {/* Security */}
+          <div className='liquidity-mining Security'>
+            <div className='web-title'>
+              <FormattedMessage id='Security_Audits' />
+            </div>
+            <div className='Security-content'>
+              <FormattedMessage id='Security_Audits__content' />
+            </div>
+            <div className='Security-wrap'>
+              <div className='Security-item' onClick={() => { this.click__item_open(1) }}>
+                <div className='item-title'>USDx</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-2"}></Svg>
+                </div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-3"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(2) }}>
+                <div className='item-title'>GOLDx</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-3"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(3) }}>
+                <div className='item-title'>Yield Markets</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-1"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(4) }}>
+                <div className='item-title'>dForce Swap</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-2"}></Svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           {/* Liquidity Mining */}
           <div className='liquidity-mining'>
             <div className='web-title'>
@@ -176,49 +219,6 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Security */}
-          <div className='liquidity-mining Security'>
-            <div className='web-title'>
-              <FormattedMessage id='Security_Audits' />
-            </div>
-            <div className='Security-content'>
-              <FormattedMessage id='Security_Audits__content' />
-            </div>
-            <div className='Security-wrap'>
-              <div className='Security-item' onClick={() => { this.click__item_open(1) }}>
-                <div className='item-title'>USDx</div>
-                <div className='item-img'>
-                  <Svg iconClass={"security-2"}></Svg>
-                </div>
-                <div className='item-img'>
-                  <Svg iconClass={"security-3"}></Svg>
-                </div>
-              </div>
-
-              <div className='Security-item' onClick={() => { this.click__item_open(2) }}>
-                <div className='item-title'>GOLDx</div>
-                <div className='item-img'>
-                  <Svg iconClass={"security-3"}></Svg>
-                </div>
-              </div>
-
-              <div className='Security-item' onClick={() => { this.click__item_open(3) }}>
-                <div className='item-title'>Yield Markets</div>
-                <div className='item-img'>
-                  <Svg iconClass={"security-1"}></Svg>
-                </div>
-              </div>
-
-              <div className='Security-item' onClick={() => { this.click__item_open(4) }}>
-                <div className='item-title'>dForce Swap</div>
-                <div className='item-img'>
-                  <Svg iconClass={"security-2"}></Svg>
-                </div>
-              </div>
-
             </div>
           </div>
 
