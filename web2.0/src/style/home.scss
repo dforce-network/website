@@ -84,6 +84,8 @@
             width: 780px;
 
             h1 {
+              width: 780px;
+              // background-color: goldenrod;
               font-size: 44px;
               font-weight: normal;
               color: rgba(36, 42, 71, 1);
@@ -160,7 +162,7 @@
               width: 507px;
               height: 466px;
               position: absolute;
-              left: 100px;
+              left: 80px;
             }
           }
         }
@@ -270,6 +272,66 @@
                 // line-height: 19px;
                 margin-top: 30px;
               }
+            }
+          }
+        }
+      }
+
+      .Security {
+        display: block;
+
+        .Security-wrap {
+          display: flex;
+          padding-top: 40px;
+
+          .Security-item:hover {
+            &::after {
+              display: block;
+            }
+          }
+
+          .Security-item {
+            flex: 1;
+            background: #FBFBFB;
+            margin-right: 15px;
+            height: 190px;
+            position: relative;
+            cursor: pointer;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .item-title {
+              padding-top: 30px;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 500;
+              color: #242A47;
+              margin-bottom: 25px;
+            }
+
+            .item-img {
+              // background: red;
+              margin-top: 15px;
+
+              i {
+                // display: block;
+                margin: 0 auto;
+                width: 180px;
+                height: 40px;
+              }
+            }
+
+            &::after {
+              position: absolute;
+              content: '';
+              width: 4px;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background: #FA9B00;
+              display: none;
             }
           }
         }
@@ -744,6 +806,54 @@
     }
   }
 
+  .Security {
+    display: block;
+
+    .Security-wrap {
+      display: flex;
+      padding-top: 20px;
+      flex-wrap: wrap;
+
+      .Security-item {
+        // flex: 0.5;
+        width: 48%;
+        background: #FBFBFB;
+        margin-right: 4%;
+        height: 170px;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .item-title {
+          padding-top: 20px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+          color: #242A47;
+          margin-bottom: 20px;
+        }
+
+        .item-img {
+          // background: red;
+          margin-top: 10px;
+
+          i {
+            // display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 40px;
+          }
+        }
+      }
+
+      .Security-item:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
   .asset-protocols {
     width: 100%;
     padding-left: 15px;
@@ -1075,7 +1185,7 @@
               width: 507px;
               height: 466px;
               position: absolute;
-              left: -40px;
+              left: -100px;
             }
           }
         }

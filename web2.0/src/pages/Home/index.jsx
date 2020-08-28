@@ -7,6 +7,7 @@ import zh_CN from '../../language/zh_CN';
 import banner_lr_bg from '../../logos/svg/banner-lr-bg.png';
 
 
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -24,6 +25,23 @@ export default class Home extends Component {
     window.open('https://github.com/dforce-network/documents/tree/master/audit_report', "_blank");
   }
 
+  click__item_open = (num) => {
+    let t_url;
+    if (num === 1) {
+      t_url = 'https://github.com/dforce-network/documents/tree/master/audit_report/USDx';
+    } else if (num === 2) {
+      t_url = 'https://github.com/dforce-network/documents/tree/master/audit_report/GOLDx';
+    } else if (num === 3) {
+      t_url = 'https://github.com/dforce-network/documents/tree/master/audit_report/dToken';
+    } else if (num === 4) {
+      t_url = 'https://github.com/dforce-network/documents/tree/master/audit_report/xSwap/EN';
+    }
+
+    window.open(t_url, "_blank");
+  }
+
+
+
   render() {
     return (
       <IntlProvider locale={'en'} messages={this.props.cur_language === '中文' ? zh_CN : en_US} >
@@ -40,9 +58,9 @@ export default class Home extends Component {
                   <div className='btn-usdx' onClick={() => { this.open_usdx() }}>
                     <FormattedMessage id='paper' />
                   </div>
-                  <div className='btn-paper' onClick={() => { this.open_paper() }}>
+                  {/* <div className='btn-paper' onClick={() => { this.open_paper() }}>
                     <FormattedMessage id='Audit_Reports' />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className='banner-image'>
@@ -75,9 +93,9 @@ export default class Home extends Component {
                     <div className='btn-usdx' onClick={() => { this.open_usdx() }}>
                       <FormattedMessage id='paper' />
                     </div>
-                    <div className='btn-paper' onClick={() => { this.open_paper() }}>
+                    {/* <div className='btn-paper' onClick={() => { this.open_paper() }}>
                       <FormattedMessage id='Audit_Reports' />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className='banner-image'>
@@ -94,15 +112,7 @@ export default class Home extends Component {
             </div>
             <div className='DeFi-content'>
               <div className='web-title'>
-                {/* <FormattedMessage id='DeFi_Full_Stacks' /> */}
-                {
-                  this.props.cur_language === '中文' ?
-                    <FormattedMessage id='DeFi_Full_Stacks' />
-                    :
-                    <span>
-                      Super Liquidity Galaxy and<br />Protocol Matrix
-                    </span>
-                }
+                <FormattedMessage id='DeFi_Full_Stacks' />
               </div>
               <div className='DeFi-content-con'>
                 <FormattedMessage id='DeFi_Full_Stacks__content' />
@@ -166,6 +176,44 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Liquidity Mining */}
+          <div className='liquidity-mining Security'>
+            <div className='web-title'>{/* <FormattedMessage id='Liquidity_Mining' /> */}Security Audits</div>
+            <div className='Security-wrap'>
+              <div className='Security-item' onClick={() => { this.click__item_open(1) }}>
+                <div className='item-title'>USDx</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-2"}></Svg>
+                </div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-3"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(2) }}>
+                <div className='item-title'>GOLDx</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-3"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(3) }}>
+                <div className='item-title'>Yield Markets</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-1"}></Svg>
+                </div>
+              </div>
+
+              <div className='Security-item' onClick={() => { this.click__item_open(4) }}>
+                <div className='item-title'>dForce Swap</div>
+                <div className='item-img'>
+                  <Svg iconClass={"security-2"}></Svg>
+                </div>
+              </div>
+
             </div>
           </div>
 
