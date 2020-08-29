@@ -1,4 +1,5 @@
 const en_US = {
+  dForce_Swap: 'dForce Swap',
   Security_Audits: 'Security Audits',
   Security_Audits__content: 'Top-ranked blockchain security companies who help secure our products.',
   dForce_Trade: 'dForce Swap',
@@ -20,7 +21,7 @@ const en_US = {
   Ecological: 'Partners',
   Lending_Protocols: 'Lending Protocols',
   Lending_Protocols__part1__title_1: 'Hybrid Lending Facility',
-  Lending_Protocols__part1__title_2: 'Lending Facilities Catering to Specific Users and Assets',
+  Lending_Protocols__part1__title_2: 'Catering to Specific Users and Assets',
   Lending_Protocols__part1__content: 'Create a wide range of separate borrowing pools (which connects to the dToken’s Hybrid Pool) catering to users of different needs and risk tolerance.',
   Lending_Protocols__part2__title_1: 'dForce Lending Protocol',
   Lending_Protocols__part2__title_2: 'Fully Open and Permission-less Lending Protocol',
@@ -50,7 +51,7 @@ const en_US = {
   DeFi_Full_Stacks__btn2: 'Lending  Protocols',
   DeFi_Full_Stacks__btn3: 'Liquidity Protocols',
   slogan: 'Reimagine Money.  Reinvent Finance.',
-  slogan__content: 'dForce advocates for building an integrated and interoperable and scalable open finance protocol network.',
+  slogan__content: 'dForce advocates for building an integrated and interoperable and scalable open finance protocol network, cultivating intra-protocol liquidity and network effects, while remain in full openness to interact and integrated with other protocols.',
   paper: 'White Paper',
   Staking: 'Staking',
   Assets: 'Assets',

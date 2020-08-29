@@ -1,6 +1,7 @@
 const zh_CN = {
+  dForce_Swap: '资产闪兑',
   Security_Audits: '安全审计',
-  Security_Audits__content: '世界顶级区块链安全审计公司为我们的产品保驾护航',
+  Security_Audits__content: '世界顶级区块链安全审计公司为我们的产品保驾护航。',
   dForce_Trade: '资产闪兑',
   faq: '常见问题',
   coming_soon: '敬请期待',
@@ -50,7 +51,7 @@ const zh_CN = {
   DeFi_Full_Stacks__btn2: '借贷类协议',
   DeFi_Full_Stacks__btn3: '流动性协议',
   slogan: '重塑货币·开放金融',
-  slogan__content: 'dForce旨在打造一个统一的、可互操作、可扩展的开放式金融协议网络',
+  slogan__content: 'dForce旨在打造一个统一的、可互操作、可扩展的开放式金融协议网络，在建立矩阵内部的流动性和网络效应的同时，保持完全的开放性，方便与外部协议进行交互和集成。',
   paper: '白皮书',
   Staking: '挖矿',
   Assets: '资产协议',
