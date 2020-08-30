@@ -28,7 +28,7 @@ const en_US = {
   Lending_Protocols__part2__content: 'Permission-less version of lending protocol with more embedded risk control parameters and diversified sources of capital supply (dToken pool and other sources). ',
   Liquidity_Protocols: 'Liquidity Protocols',
   Liquidity_Protocols__part1__title_1: 'dForce Swap',
-  Liquidity_Protocols__part1__title_2: 'Instant Swaps between Stablecoins and/with GOLDx',
+  Liquidity_Protocols__part1__title_2: 'Instant Swaps between Stablecoins and GOLDx',
   Liquidity_Protocols__part1__content: 'All dominating ERC-20 stablecoins supported, including USDx, USDT, USDC, PAX, TUSD, DAI and digital gold token GOLDx with 0% price slippage. ',
   Liquidity_Protocols__part2__title_1: 'dForce Trade',
   Liquidity_Protocols__part2__title_2: 'DEX Aggregator with the Best Market Price',
