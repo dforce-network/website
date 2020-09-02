@@ -144,7 +144,7 @@ export default class Home extends Component {
             </div>
             <div className='Security-wrap'>
               <div className='Security-item'>
-                <div className='item-title'>USDx</div>
+                <div className='item-title'>USDx/USR</div>
 
                 <div className='item-img-wrap' onClick={() => { this.click__item_open(1) }}>
                   <div className='item-img'>

@@ -1,4 +1,6 @@
 const zh_CN = {
+  Assets__usr__content: 'USDx系统利息',
+  Assets__usr: 'USR',
   dForce_Swap: '资产闪兑',
   Security_Audits: '安全审计',
   Security_Audits__content: '世界顶级区块链安全审计公司为我们的产品保驾护航。',

@@ -1,4 +1,6 @@
 const en_US = {
+  Assets__usr__content: 'USDx saving rate',
+  Assets__usr: 'USR',
   dForce_Swap: 'dForce Swap',
   Security_Audits: 'Security Audits',
   Security_Audits__content: 'Top-ranked blockchain security companies who help secure our products.',
@@ -57,7 +59,7 @@ const en_US = {
   Assets: 'Assets',
   Assets__usdx: 'USDx',
   Assets__usdx__content: 'An indexed stablecion',
-  Assets__Yield_Markets: 'Yidld Markets',
+  Assets__Yield_Markets: 'Yield Markets',
   Assets__Yield_Markets__content: 'A yield aggregator',
   Assets__goldx: 'GOLDx',
   Assets__goldx__content: 'Token backed by physical gold',
