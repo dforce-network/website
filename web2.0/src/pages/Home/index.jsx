@@ -466,6 +466,18 @@ export default class Home extends Component {
               </div>
               <div className='logo-item'>
 
+                {/* huobi global */}
+                <div className='logo-wrap'>
+                  <a href="https://www.huobi.com/zh-cn/exchange/df_usdt/" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"huobiglobal"}></Svg>
+                  </a>
+                </div>
+                {/* gate */}
+                <div className='logo-wrap'>
+                  <a href="https://www.gate.io/trade/DF_USDT" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"gate"}></Svg>
+                  </a>
+                </div>
                 {/* mxc */}
                 <div className='logo-wrap'>
                   <a href="https://www.mxc.com" target="_blank" rel="noopener noreferrer">
@@ -485,11 +497,11 @@ export default class Home extends Component {
                   </a>
                 </div>
                 {/* Bitz */}
-                <div className='logo-wrap'>
+                {/* <div className='logo-wrap'>
                   <a href="https://www.bitz.ai/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"exchanges-4"}></Svg>
                   </a>
-                </div>
+                </div> */}
                 {/* TAB葡萄 */}
                 <div className='logo-wrap'>
                   <a href="https://www.tac.top/" target="_blank" rel="noopener noreferrer">
@@ -538,6 +550,19 @@ export default class Home extends Component {
                     <Svg iconClass={"exchanges-12"}></Svg>
                   </a>
                 </div>
+                {/* hoo */}
+                <div className='logo-wrap'>
+                  <a href="https://hoozh.com/spot/df-usdt" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"hoo"}></Svg>
+                  </a>
+                </div>
+                {/* coinbene */}
+                <div className='logo-wrap'>
+                  <a href="https://www.coinbene.plus/spot/exchange/DF_USDT" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"exchanges-15"}></Svg>
+                  </a>
+                </div>
+
               </div>
             </div>
 
@@ -652,6 +677,13 @@ export default class Home extends Component {
                 <div className='logo-wrap'>
                   <a href="https://legendtrading.com/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"ecological-5"}></Svg>
+                  </a>
+                </div>
+
+                {/* band protocol */}
+                <div className='logo-wrap'>
+                  <a href="https://bandprotocol.com/" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"ecological-12"}></Svg>
                   </a>
                 </div>
                 {/* hashkey */}
