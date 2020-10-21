@@ -349,8 +349,8 @@ export default class Home extends Component {
               <div className='web-title protocols center mob-mb15'>
                 <FormattedMessage id='Liquidity_Protocols' />
               </div>
-              <div className='lending-liquidity-items'>
-                <div className='item'>
+              <div className='lending-liquidity-items spe--item'>
+                {/* <div className='item'>
                   <div className='item-top'>
                     <div className='item-top-logo'>
                       <Svg iconClass={"protocols-3"}></Svg>
@@ -372,7 +372,7 @@ export default class Home extends Component {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className='item'>
                   <div className='item-top'>
@@ -390,9 +390,10 @@ export default class Home extends Component {
                   </div>
                   <div className='item-bottom'>
                     <FormattedMessage id='Liquidity_Protocols__part2__content' />
-                    <div className='learn-more-wrap learn-more-wrap--coming'>
-                      <a href="javascript:;">
-                        <FormattedMessage id='coming_soon' />
+                    <div className='learn-more-wrap'>
+                      <a href="https://trade.dforce.network" target="_blank" rel="noopener noreferrer">
+                        {/* <FormattedMessage id='coming_soon' /> */}
+                        <FormattedMessage id='learn_more' />
                       </a>
                     </div>
                   </div>

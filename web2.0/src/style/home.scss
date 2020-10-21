@@ -1518,3 +1518,14 @@
     }
   }
 }
+
+
+
+.spe--item {
+  // background: red;
+  width: 50%;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
