@@ -14,24 +14,6 @@
             font-family: NotoSansHans-Regular;
             src: url('./src/font/NotoSansHans.otf')
         }
-
-        .spe-span {
-            display: block;
-            /* background-color: red; */
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .spe-span::before {
-            content: '-';
-            position: absolute;
-            left: 0;
-            top: -2px;
-        }
-
-        .to_connect {
-            text-align: center;
-        }
     </style>
 
     <title>vote</title>
@@ -48,47 +30,35 @@
             </div>
             <div class="clear"></div>
             <div class="top_title">
-                dForce Governance Poll No. 3 <br />
-                USDx Reserve Adjustment Proposal
+                dForce Improvement Proposal 001 (DIP001)<br />
+                Integration of Yield Enhancing Protocol with USDx
             </div>
             <!-- <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we would like to propose a change to remove DAI
             </div> -->
             <div class="top_details">
-                In an attempt to improve yielding opportunity of USDx' underlying constituent stablecoins, we would like
-                to propose a change to adjust the constituent stablecoins' weighting, taking into account their
-                outstanding market share, number of exchanges supported, DeFi integrations, yield market accessibility.
-                Click <a
-                    href="https://medium.com/dforcenet/dforce-governance-poll-no-3-usdx-reserve-adjustment-proposal-35db404f0c8b"
-                    target="_blank" style="text-decoration: underline;">here</a> to view the proposal in
-                details.
-
-            </div>
-
-            <div class="section">
-                <div class="secL">
-                    <div>Current weighting:</div>
-                    <div>Proposed weighting:</div>
-                </div>
-                <div class="secR">
-                    <div>1 USDx = 35% USDC + 35% PAX + 30% TUSD</div>
-                    <div>1 USDx = 80% USDC + 10% PAX + 10% TUSD</div>
-                </div>
-                <div class="clear"></div>
+                It is proposed to unlock up to 90% of constituent collaterals and re-supply them
+                into the lending protocol of dForce (or similar designated protocols like Compound, dYdX, and etc) to
+                earn yield. By doing so, USDx holders are entitled to a systematic interest by simply depositing
+                USDx into USR (USDx Saving Rate).
+                <a href="https://medium.com/dforcenet/dforce-improvement-proposal-001-dip001-a78dc740841e"
+                    target="_blank">
+                    More...
+                </a>
             </div>
         </div>
     </div>
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="main">
         <div class="main_left">
-            <div class="m_title">Action Required (Please vote here)</div>
-            <!-- <div class="addPlus">(Start from 12:00 UTC+8 26 Feb 2020)</div> -->
+            <div class="m_title">Action Required: Please Vote Here</div>
+            <div class="addPlus">(Start from 12:00 UTC+8 26 Feb 2020)</div>
             <div class="m_choosen">
                 <img src="./src/images/vote_is_choosen.svg" alt="" srcset="" class="ichoiceA">
-                <span>Option A: Yes, please execute the adjustment.</span>
+                <span>Vote A: Yes</span>
             </div>
             <div class="m_choosen">
                 <img src="./src/images/vote_not_choosen.svg" alt="" srcset="" class="ichoiceB">
-                <span>Option B: No, please stick to the old weighting.</span>
+                <span>Vote B: No</span>
             </div>
             <div class="vote_btn">VOTE</div>
         </div>
@@ -133,24 +103,21 @@
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="bottom">
         <div class="b_title">
-            Voting Mechanism
+            Voting mechanism
         </div>
         <ul>
-            <li>The governance poll will last for 3 days from 9:00pm UTC+8, 22 July to 9:00pm UTC+8, 25 July.</li>
-            <li>All DF holders will have the opportunity to signal your support for the reserve adjustments.</li>
+            <li>The governance poll will last for 3 days from 26 to 29 February.</li>
             <li>
                 Proposal will be implemented if the following requirements are satisfied:
                 <br />
-                <span class="spe-span">
-                    Given only 11.8% DF tokens are in circulation, the required quorum is: >2% of total DF tokens at the
-                    end of the voting period need to have participated in the voting.
-                </span>
-                <span class="spe-span">
-                    Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
-                    proposal (If the voting result is tied, the proposal won’t be implemented).
-                </span>
+                -Quorum: >1.5% of total DF tokens at the end of the voting period need to have participated in the
+                voting
+                <br />
+                -Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
+                proposal (If the voting result is tied, the
+                proposal won’t be implemented.)
             </li>
-            <li>Governance decision will be disclosed through Medium and Twitter before 9:00pm UTC+8, 27 July.</li>
+            <li>Governance decision will be disclosed through Medium and Twitter on 1 March.</li>
         </ul>
     </div>
 
@@ -178,7 +145,7 @@
         if (typeof window.web3 === 'undefined') {
             return false;
         }
-        var contractVote = web3.eth.contract(abiVote).at(addressVote);
+        var contractVote = web3.eth.contract(abiVote).at(addressVote_002);
         var contractDF = web3.eth.contract(abiDF).at(addressDF);
 
         var myAccount;
@@ -218,7 +185,6 @@
         })
 
         $(".top_connect_btn").click(function () {
-            // console.log('12345');
             connect_metamask();
         })
         $(".bottom_connect_btn").click(function () {
@@ -239,7 +205,6 @@
             $(".ichoiceA").attr('src', './src/images/vote_not_choosen.svg');
             $(".ichoiceB").attr('src', './src/images/vote_is_choosen.svg');
         })
-
         function vote() {
             var num = 1; // yes
             if (i_choice_AorB === 'B') {
@@ -315,10 +280,8 @@
                         }
 
                         var part_A = ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
-                        // var part_B = (100 - (((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
-                        // console.log('choice_B: ', 10000 - ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) * 100)
-                        var part_B = (10000 - ((((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) * 100) / 100 + '%';
-                        // console.log(part_B)
+                        // var part_B = ((((total_B / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
+                        var part_B = (100 - (((total_A / (total_A + total_B)).toFixed(4)) * 100).toFixed(2)) + '%';
 
                         // console.log('choice_A: ', total_A)
                         // console.log('choice_B: ', total_B)
@@ -351,6 +314,7 @@
 
                         if (part_B.indexOf('.') > 0) {
                             if (part_B.substring(0, 5).indexOf('%') > 0) {
+                                // $(".noPersent").html(part_B.substring(0, 5))
                                 if (part_B.substring(0, 5).split('.')[1].length === 2) {
                                     var newStr = part_B.substring(0, 5).split('.')[1];
                                     console.log(newStr)

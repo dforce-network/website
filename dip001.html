@@ -29,21 +29,27 @@
                 <div class="to_connect top_connect_btn">Connect</div>
             </div>
             <div class="clear"></div>
-            <div class="top_title">
-                dForce Improvement Proposal 001 (DIP001)<br />
-                Integration of Yield Enhancing Protocol with USDx
-            </div>
+            <div class="top_title"> dForce Governance Poll No.1: USDx Reserve Adjustment Proposal </div>
             <!-- <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we would like to propose a change to remove DAI
             </div> -->
-            <div class="top_details">
-                It is proposed to unlock up to 90% of constituent collaterals and re-supply them
-                into the lending protocol of dForce (or similar designated protocols like Compound, dYdX, and etc) to
-                earn yield. By doing so, USDx holders are entitled to a systematic interest by simply depositing
-                USDx into USR (USDx Saving Rate).
-                <a href="https://medium.com/dforcenet/dforce-improvement-proposal-001-dip001-a78dc740841e"
-                    target="_blank">
-                    More...
-                </a>
+            <div class="top_details">In an attempt to improve stability of USDx and ensure dollar redeemability, we
+                would like to propose a change to remove DAI from USDx reserve, due to a few concerns including the lack
+                of dollar redeemability, upcoming launch of Multi-Collateral DAI (MCD) and DAI Saving Rates (DSR), and
+                high friction and transaction costs associated with acquiring DAI.
+                <a href="https://medium.com/@dforcenet/dforce-governance-poll-no-1-usdx-reserve-adjustment-proposal-f15312a18303"
+                    target="_blank">More...</a>
+            </div>
+
+            <div class="section">
+                <div class="secL">
+                    <div>Current weighting:</div>
+                    <div>Proposed weighting:</div>
+                </div>
+                <div class="secR">
+                    <div>1 USDx = 30% USDC + 30% TUSD + 30% PAX + 10% DAI</div>
+                    <div>1 USDx = 35% USDC + 30% TUSD + 35% PAX</div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
@@ -51,14 +57,16 @@
     <div class="main">
         <div class="main_left">
             <div class="m_title">Action Required: Please Vote Here</div>
-            <div class="addPlus">(Start from 12:00 UTC+8 26 Feb 2020)</div>
+            <div class="addPlus">(Start from 4 November 2019)</div>
             <div class="m_choosen">
                 <img src="./src/images/vote_is_choosen.svg" alt="" srcset="" class="ichoiceA">
-                <span>Vote A: Yes</span>
+                <span>Option A: Yes, please remove DAI from the reserve basket.
+                </span>
             </div>
             <div class="m_choosen">
                 <img src="./src/images/vote_not_choosen.svg" alt="" srcset="" class="ichoiceB">
-                <span>Vote B: No</span>
+                <span>Option B: No, keep DAI in the reserve basket.
+                </span>
             </div>
             <div class="vote_btn">VOTE</div>
         </div>
@@ -102,29 +110,7 @@
     </div>
     <!-- ————————————————————————   华丽的分割线   ———————————————————————— -->
     <div class="bottom">
-        <div class="b_title">
-            Voting mechanism
-        </div>
-        <ul>
-            <li>The governance poll will last for 3 days from 26 to 29 February.</li>
-            <li>
-                Proposal will be implemented if the following requirements are satisfied:
-                <br />
-                -Quorum: >1.5% of total DF tokens at the end of the voting period need to have participated in the
-                voting
-                <br />
-                -Threshold: >50% of the DF tokens that participated in the voting need to have voted ‘Yes’ for the
-                proposal (If the voting result is tied, the
-                proposal won’t be implemented.)
-            </li>
-            <li>Governance decision will be disclosed through Medium and Twitter on 1 March.</li>
-        </ul>
-    </div>
-
-
-    <div class="bottom">
-        <div class="b_title">
-            Join us for online discussion! We'd love to hear your voice!
+        <div class="b_title">Join us for online discussion! We'd love to hear your voice!
         </div>
         <ul>
             <li>Telegram: <a href="https://t.me/dforcenet" target="_blank">https://t.me/dforcenet</a> </li>
@@ -145,7 +131,7 @@
         if (typeof window.web3 === 'undefined') {
             return false;
         }
-        var contractVote = web3.eth.contract(abiVote).at(addressVote);
+        var contractVote = web3.eth.contract(abiVote).at(addressVote_001);
         var contractDF = web3.eth.contract(abiDF).at(addressDF);
 
         var myAccount;
@@ -391,7 +377,7 @@
                     $(".my_source").html(myAccount);
                     contractDF.balanceOf.call(myAccount, (err, ret) => {
                         if (ret) {
-                            console.log('amount in DF: ', ret.toString());
+                            console.log(ret);
                             $(".vote_amount").html(formatNumber(ret));
                         }
                     })
