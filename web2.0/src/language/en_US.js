@@ -1,4 +1,5 @@
 const en_US = {
+  Governance__content: 'Propose & vote',
   Assets__usr__content: 'USDx saving rate',
   Assets__usr: 'USR',
   dForce_Swap: 'dForce Swap',
@@ -20,7 +21,7 @@ const en_US = {
   Investor: 'Investors',
   Exchanges: 'Exchanges',
   Wallets: 'Wallets',
-  Ecological: 'Partners',
+  Ecological: 'Others',
   Lending_Protocols: 'Lending Protocols',
   Lending_Protocols__part1__title_1: 'Hybrid Lending Facility',
   Lending_Protocols__part1__title_2: 'Catering to Specific Users and Assets',
@@ -68,6 +69,6 @@ const en_US = {
   Trade__dforce__content: 'DEX aggregator',
   Governance: 'Governance',
   Governance__air: 'Airdrop',
-  Governance__air__content: 'DF token distribution',
+  Governance__air__content: 'Incentivized DF distribution',
 }
 export default en_US;

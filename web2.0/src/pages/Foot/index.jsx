@@ -114,7 +114,7 @@ export default class Foot extends Component {
                 </div>
 
                 <div className="icon">
-                  <a href="https://discord.gg/Gbtd3MR" target="_blank" rel="noopener noreferrer">
+                  <a href="https://discord.gg/c2PC8SM" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"img_footer_5"}></Svg>
                   </a>
                 </div>

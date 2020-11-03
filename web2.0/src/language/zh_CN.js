@@ -1,4 +1,5 @@
 const zh_CN = {
+  Governance__content: '提议和投票',
   Assets__usr__content: 'USDx系统利息',
   Assets__usr: 'USR',
   dForce_Swap: '资产闪兑',
@@ -20,7 +21,7 @@ const zh_CN = {
   Investor: '投资机构',
   Exchanges: '交易所',
   Wallets: '钱包',
-  Ecological: '合作伙伴',
+  Ecological: '其他',
   Lending_Protocols: '借贷协议',
   Lending_Protocols__part1__title_1: '混合型借贷平台',
   Lending_Protocols__part1__title_2: '面向特定用户和特定资产的借贷协议',
@@ -67,7 +68,7 @@ const zh_CN = {
   Trade__dforce: 'dForce Trade',
   Trade__dforce__content: '去中心化交易聚合器',
   Governance: '治理',
-  Governance__air: 'Airdrop',
-  Governance__air__content: 'DF代币分发',
+  Governance__air: '空投',
+  Governance__air__content: 'DF激励分发',
 }
 export default zh_CN;

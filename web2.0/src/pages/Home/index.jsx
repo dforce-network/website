@@ -176,7 +176,7 @@ export default class Home extends Component {
                 </div>
               </div>
 
-              <div className='Security-item'>
+              {/* <div className='Security-item'>
                 <div className='item-title'>
                   <FormattedMessage id='dForce_Swap' />
                 </div>
@@ -185,7 +185,7 @@ export default class Home extends Component {
                     <Svg iconClass={"security-2"}></Svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>

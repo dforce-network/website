@@ -127,6 +127,16 @@ export default class Header extends Component {
                         </div>
                       </a>
                     </div>
+                    <div className="list-ul-item">
+                      <a href="https://snapshot.page/#/dforce/all" target="_blank" rel="noopener noreferrer">
+                        <div className="title">
+                          <FormattedMessage id='Governance' />
+                        </div>
+                        <div className="title-plus">
+                          <FormattedMessage id='Governance__content' />
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -309,6 +319,16 @@ export default class Header extends Component {
                           </span>
                           <span className="title-plus">
                             <FormattedMessage id='Governance__air__content' />
+                          </span>
+                        </a>
+                      </div>
+                      <div className={this.state.to_show_arr[2] ? "items" : "items item-hidden"}>
+                        <a href="https://snapshot.page/#/dforce/all" target="_blank" rel="noopener noreferrer">
+                          <span className="title">
+                            <FormattedMessage id='Governance' />
+                          </span>
+                          <span className="title-plus">
+                            <FormattedMessage id='Governance__content' />
                           </span>
                         </a>
                       </div>
