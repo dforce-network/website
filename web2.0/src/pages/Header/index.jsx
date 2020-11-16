@@ -158,7 +158,7 @@ export default class Header extends Component {
                           </a>
                         </div>
                         <div className="flex-item">
-                          <a href="https://discord.gg/Gbtd3MR" target="_blank" rel="noopener noreferrer">
+                          <a href="https://discord.gg/c2PC8SM" target="_blank" rel="noopener noreferrer">
                             <Svg iconClass={"Discord"}></Svg>
                             <span>Discord</span>
                           </a>
@@ -356,7 +356,7 @@ export default class Header extends Component {
                           <span className="icon"><Svg iconClass={"Reddit"}></Svg></span>
                           <span className="name">Reddit</span>
                         </a>
-                        <a href="https://discord.gg/Gbtd3MR" target="_blank" rel="noopener noreferrer">
+                        <a href="https://discord.gg/c2PC8SM" target="_blank" rel="noopener noreferrer">
                           <span className="icon"><Svg iconClass={"Discord"}></Svg></span>
                           <span className="name">Discord</span>
                         </a>
