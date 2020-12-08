@@ -153,6 +153,9 @@ export default class Home extends Component {
                   <div className='item-img'>
                     <Svg iconClass={"security-3"}></Svg>
                   </div>
+                  <div className='item-img'>
+                    <Svg iconClass={"Security-quantstamp"}></Svg>
+                  </div>
                 </div>
               </div>
 
@@ -455,6 +458,55 @@ export default class Home extends Component {
                 <div className='logo-wrap'>
                   <a href="https://www.huobi.com/en-us/capital/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"investor-3"}></Svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* DeFi */}
+            <div className='type-logo-item'>
+              <div className='type-item'>
+                <FormattedMessage id='DeFi' />
+              </div>
+              <div className='logo-item'>
+                <div className='logo-wrap'>
+                  <a href="https://yearn.finance" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-1"}></Svg>
+                  </a>
+                </div>
+
+                <div className='logo-wrap'>
+                  <a href="https://flamingodao.xyz" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-2"}></Svg>
+                  </a>
+                </div>
+
+                <div className='logo-wrap'>
+                  <a href="https://dfi.money" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-3"}></Svg>
+                  </a>
+                </div>
+                <div className='logo-wrap'>
+                  <a href="https://s.finance" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-4"}></Svg>
+                  </a>
+                </div>
+
+                <div className='logo-wrap'>
+                  <a href="https://app.unisave.exchange" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-5"}></Svg>
+                  </a>
+                </div>
+
+                <div className='logo-wrap'>
+                  <a href="https://sashimi.cool" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-6"}></Svg>
+                  </a>
+                </div>
+
+                <div className='logo-wrap'>
+                  <a href="https://ystarpool.finance" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"DeFi-7"}></Svg>
                   </a>
                 </div>
               </div>
