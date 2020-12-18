@@ -15,9 +15,11 @@ a:hover,
 a:active {
     color: #F07629;
 }
-.no-decoration{
+
+.no-decoration {
     text-decoration: none;
 }
+
 .clear {
     clear: both;
 }
@@ -160,6 +162,11 @@ body {
     margin-right: 24px;
 }
 
+.images-item img {
+    width: 122px;
+    height: 122px;
+}
+
 .images-item span {
     display: block;
     font-size: 16px;
@@ -178,4 +185,55 @@ body {
 
 .banner-en {
     background: url('../images/banner-en.jpg') no-repeat center 0px;
+}
+
+
+.huodong-en {
+    padding-left: 80px;
+}
+
+.huodong-en:nth-child(1):after {
+    content: 'Activity 1:';
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.huodong-en:nth-child(2):after {
+    content: 'Activity 2:';
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.huodong-en:nth-child(3):after {
+    content: 'Activity 3:';
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.huodong-zh {
+    padding-left: 65px;
+}
+
+.huodong-zh:nth-child(1):after {
+    content: '活动一：';
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.huodong-zh:nth-child(2):after {
+    content: '活动二：';
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.huodong-zh:nth-child(3):after {
+    content: '活动三：';
+    position: absolute;
+    left: 0;
+    top: 0px;
 }
