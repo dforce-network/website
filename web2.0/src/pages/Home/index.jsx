@@ -525,6 +525,13 @@ export default class Home extends Component {
                     <Svg iconClass={"huobiglobal"}></Svg>
                   </a>
                 </div>
+
+                {/* BINANCE */}
+                <div className='logo-wrap'>
+                  <a href="https://www.binance.com/en/trade/DF_ETH" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"logo-BINANCE"}></Svg>
+                  </a>
+                </div>
                 {/* gate */}
                 <div className='logo-wrap'>
                   <a href="https://www.gate.io/trade/DF_USDT" target="_blank" rel="noopener noreferrer">
@@ -632,22 +639,10 @@ export default class Home extends Component {
                     <Svg iconClass={"wallets-1"}></Svg>
                   </a>
                 </div>
-                {/* mykey */}
-                <div className='logo-wrap'>
-                  <a href="https://mykey.org/" target="_blank" rel="noopener noreferrer">
-                    <Svg iconClass={"wallets-2"}></Svg>
-                  </a>
-                </div>
                 {/* tokenpocket */}
                 <div className='logo-wrap'>
                   <a href="https://www.tokenpocket.pro/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"wallets-3"}></Svg>
-                  </a>
-                </div>
-                {/* bitpie */}
-                <div className='logo-wrap'>
-                  <a href="https://bitpie.com/" target="_blank" rel="noopener noreferrer">
-                    <Svg iconClass={"wallets-4"}></Svg>
                   </a>
                 </div>
                 {/* math wallet */}
@@ -656,16 +651,16 @@ export default class Home extends Component {
                     <Svg iconClass={"wallets-5"}></Svg>
                   </a>
                 </div>
-
+                {/* bitpie */}
                 <div className='logo-wrap'>
-                  <a href="https://debank.com/" target="_blank" rel="noopener noreferrer">
-                    <Svg iconClass={"wallets-6"}></Svg>
+                  <a href="https://bitpie.com/" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"wallets-4"}></Svg>
                   </a>
                 </div>
-                {/* dapp birds */}
+                {/* mykey */}
                 <div className='logo-wrap'>
-                  <a href="https://dappbirds.com/index" target="_blank" rel="noopener noreferrer">
-                    <Svg iconClass={"wallets-7"}></Svg>
+                  <a href="https://mykey.org/" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"wallets-2"}></Svg>
                   </a>
                 </div>
                 {/* huobi wallet */}
@@ -690,6 +685,18 @@ export default class Home extends Component {
                 <div className='logo-wrap'>
                   <a href="https://alphawallet.com/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"wallets-11"}></Svg>
+                  </a>
+                </div>
+                {/* logo-bitkeep */}
+                <div className='logo-wrap'>
+                  <a href="https://bitkeep.org" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"logo-bitkeep"}></Svg>
+                  </a>
+                </div>
+                {/* logo-onto */}
+                <div className='logo-wrap'>
+                  <a href="https://www.onto.app" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"logo-onto"}></Svg>
                   </a>
                 </div>
               </div>
@@ -737,6 +744,17 @@ export default class Home extends Component {
                 <div className='logo-wrap'>
                   <a href="https://bandprotocol.com/" target="_blank" rel="noopener noreferrer">
                     <Svg iconClass={"ecological-12"}></Svg>
+                  </a>
+                </div>
+                <div className='logo-wrap'>
+                  <a href="https://debank.com/" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"wallets-6"}></Svg>
+                  </a>
+                </div>
+                {/* dapp birds */}
+                <div className='logo-wrap'>
+                  <a href="https://dappbirds.com/index" target="_blank" rel="noopener noreferrer">
+                    <Svg iconClass={"wallets-7"}></Svg>
                   </a>
                 </div>
                 {/* hashkey */}
