@@ -59,7 +59,7 @@ const en_US = {
   Staking: 'Staking',
   Assets: 'Assets',
   Assets__usdx: 'USDx',
-  Assets__usdx__content: 'An indexed stablecion',
+  Assets__usdx__content: 'An indexed stablecoin',
   Assets__Yield_Markets: 'Yield Markets',
   Assets__Yield_Markets__content: 'A yield aggregator',
   Assets__goldx: 'GOLDx',

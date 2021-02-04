@@ -73,13 +73,10 @@ export default class Foot extends Component {
               </div>
               <div className="item-link-special">
                 <div className="item-link">
-                  <a href="javascript:;">support@dforce.network</a>
-                </div>
-                <div className="item-link">
                   <a href="javascript:;">bd@dforce.network</a>
                 </div>
                 <div className="item-link">
-                  <a href="javascript:;">tech@dforce.network</a>
+                  <a href="javascript:;">contact@dforce.network</a>
                 </div>
               </div>
             </div>
