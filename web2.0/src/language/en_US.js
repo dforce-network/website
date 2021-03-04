@@ -1,4 +1,5 @@
 const en_US = {
+  daojishiIntl: 'dForce is launching lending protocol at 12:00 PM UTC on Feb 25, 2021.',
   Governance__content: 'Propose & vote',
   Assets__usr__content: 'USDx saving rate',
   Assets__usr: 'USR',

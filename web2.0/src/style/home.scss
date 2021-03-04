@@ -573,7 +573,7 @@
   }
 
   .banner-wrap-Mobile {
-    padding-top: 30px;
+    // padding-top: 30px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -1527,5 +1527,79 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+  }
+}
+
+
+
+
+// 大屏
+@media screen and (min-width: 768px) {
+
+  .daojishi {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .daojishi-left {
+    width: 128px;
+    height: 128px;
+    margin-right: 36px;
+  }
+
+  .daojishi-top {
+    color: #F79B30;
+    font-size: 56px;
+    font-weight: 500;
+
+    .daojishi-top-sub {
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .daojishi-bottom {
+    margin-top: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #242A47;
+  }
+}
+
+// xiao屏
+@media screen and (max-width: 767px) {
+
+  .daojishi {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+
+  .daojishi-left {
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+  }
+
+  .daojishi-top {
+    color: #F79B30;
+    font-size: 24px;
+    font-weight: 500;
+
+    .daojishi-top-sub {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  .daojishi-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #242A47;
   }
 }

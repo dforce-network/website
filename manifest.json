@@ -1,6 +1,6 @@
 {
-  "short_name": "PPP",
-  "name": "Public-Private-Pool",
+  "short_name": "web",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "pp-0.svg",
-      "type": "image/svg",
+      "src": "logo192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "pp-0.svg",
-      "type": "image/svg",
+      "src": "logo512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#FFBF52",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

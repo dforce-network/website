@@ -5,12 +5,72 @@ import en_US from '../../language/en_US';
 import zh_CN from '../../language/zh_CN';
 
 import banner_lr_bg from '../../logos/svg/banner-lr-bg.png';
+import huojian from '../../logos/huojian.gif';
 
 
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      d: 0,
+      hour: 0,
+      min: 0,
+      sec: 0
+    }
+  }
+
+  componentDidMount = () => {
+
+    setInterval(() => {
+      let e_time = 1614254400; // 北京时间 2021年2月25日 20:00
+      // let e_time = 1614063600; // test
+
+      // 倒计时
+      var nowTime = new Date();
+      var endTime = new Date(e_time * 1000);
+      var t = endTime.getTime() - nowTime.getTime();
+      var hour = Math.floor(t / 1000 / 60 / 60 % 24);
+      // var d = Math.floor(hour / 24);
+      var d = Math.floor(t / 1000 / 60 / 60 / 24);
+      var min = Math.floor(t / 1000 / 60 % 60);
+      var sec = Math.floor(t / 1000 % 60);
+      if (hour < 10) {
+        hour = "0" + hour;
+      }
+      if (hour == 24) {
+        hour = "00";
+      }
+      if (min < 10) {
+        min = "0" + min;
+      }
+      if (sec < 10) {
+        sec = "0" + sec;
+      }
+      var countDownTime = d + ":" + hour + ":" + min + ":" + sec;
+      // console.log('countDownTime: ', countDownTime)
+      // console.log('countDownTime: ', hour)
+
+      if (d.toString().includes('0-')) {
+        d = d.toString().slice(1)
+      }
+      if (hour.toString().includes('0-')) {
+        hour = hour.toString().slice(2)
+      }
+      if (min.toString().includes('0-')) {
+        min = min.toString().slice(2)
+      }
+      if (sec.toString().includes('0-')) {
+        sec = sec.toString().slice(2)
+      }
+
+      this.setState({
+        d: d, hour: hour, min: min, sec: sec
+      })
+
+
+    }, 1000)
   }
 
   open_usdx = () => {
@@ -46,6 +106,33 @@ export default class Home extends Component {
     return (
       <IntlProvider locale={'en'} messages={this.props.cur_language === '中文' ? zh_CN : en_US} >
         <div className={"warp"}>
+
+          <div className={'daojishi'}>
+            <div className={'daojishi-left'}>
+              <img src={huojian} alt="" />
+            </div>
+            <div className={'daojishi-right'}>
+              <div className={'daojishi-top'}>
+                <span>{this.state.d}</span>
+                <span className={'daojishi-top-sub'}>Days</span>
+                <span> : </span>
+
+                <span>{this.state.hour}</span>
+                <span className={'daojishi-top-sub'}>Hours</span>
+                <span> : </span>
+
+                <span>{this.state.min}</span>
+                <span className={'daojishi-top-sub'}>Mins</span>
+                <span> : </span>
+
+                <span>{this.state.sec}</span>
+                <span className={'daojishi-top-sub'}>S</span>
+              </div>
+              <div className={'daojishi-bottom'}>
+                <FormattedMessage id='daojishiIntl' />
+              </div>
+            </div>
+          </div>
 
           <div className='banner-wrap banner-wrap-pc'>
             <div className='banner'>

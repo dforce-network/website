@@ -1,4 +1,5 @@
 const zh_CN = {
+  daojishiIntl: 'dForce借贷协议即将于北京时间2021年2月25日20:00正式发布，敬请期待！',
   Governance__content: '提议和投票',
   Assets__usr__content: 'USDx系统利息',
   Assets__usr: 'USR',
