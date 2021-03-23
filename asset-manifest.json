@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.b6742f7d.chunk.css",
-    "main.js": "/static/js/main.55936b41.chunk.js",
-    "main.js.map": "/static/js/main.55936b41.chunk.js.map",
+    "main.js": "/static/js/main.e07f7431.chunk.js",
+    "main.js.map": "/static/js/main.e07f7431.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c0733aee.js",
     "runtime-main.js.map": "/static/js/runtime-main.c0733aee.js.map",
-    "static/js/2.2a0100a0.chunk.js": "/static/js/2.2a0100a0.chunk.js",
-    "static/js/2.2a0100a0.chunk.js.map": "/static/js/2.2a0100a0.chunk.js.map",
+    "static/js/2.57f98dd8.chunk.js": "/static/js/2.57f98dd8.chunk.js",
+    "static/js/2.57f98dd8.chunk.js.map": "/static/js/2.57f98dd8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e17616da4a6d99a7f5a55bd81319817.js": "/precache-manifest.4e17616da4a6d99a7f5a55bd81319817.js",
+    "precache-manifest.4c505cc943017976fbe7e5952437de16.js": "/precache-manifest.4c505cc943017976fbe7e5952437de16.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.b6742f7d.chunk.css.map": "/static/css/main.b6742f7d.chunk.css.map",
-    "static/js/2.2a0100a0.chunk.js.LICENSE.txt": "/static/js/2.2a0100a0.chunk.js.LICENSE.txt",
+    "static/js/2.57f98dd8.chunk.js.LICENSE.txt": "/static/js/2.57f98dd8.chunk.js.LICENSE.txt",
     "static/media/DeFi__DFI_money(YFII).svg": "/static/media/DeFi__DFI_money(YFII).1149750f.svg",
     "static/media/DeFi__bandprotocal.svg": "/static/media/DeFi__bandprotocal.002192c5.svg",
     "static/media/DeFi__deband.svg": "/static/media/DeFi__deband.a1a012e8.svg",
@@ -19,6 +19,8 @@
     "static/media/DeFi__sfinance.svg": "/static/media/DeFi__sfinance.518c88d5.svg",
     "static/media/DeFi__yearn_finance.svg": "/static/media/DeFi__yearn_finance.971e8be2.svg",
     "static/media/index.css": "/static/media/top-bg.d98fbfbb.png",
+    "static/media/Security_Audits__Diligence.svg": "/static/media/Security_Audits__Diligence.da2ff2d5.svg",
+    "static/media/Security_Audits__Quantstamp.svg": "/static/media/Security_Audits__Quantstamp.4e81de4b.svg",
     "static/media/Security_Audits__certora.svg": "/static/media/Security_Audits__certora.156d1fcc.svg",
     "static/media/Security_Audits__huobi.svg": "/static/media/Security_Audits__huobi.d3f4dcb8.svg",
     "static/media/Security_Audits__peckshield.svg": "/static/media/Security_Audits__peckshield.17a6e4e1.svg",
@@ -44,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c0733aee.js",
-    "static/js/2.2a0100a0.chunk.js",
+    "static/js/2.57f98dd8.chunk.js",
     "static/css/main.b6742f7d.chunk.css",
-    "static/js/main.55936b41.chunk.js"
+    "static/js/main.e07f7431.chunk.js"
   ]
 }
