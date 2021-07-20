@@ -1,51 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22a51946c6857d8430334893d36da987",
+    "revision": "cd9f36b2b01cd353ace70e971c9d2faf",
     "url": "/index.html"
   },
   {
-    "revision": "cf495147ff71181bc5dc",
+    "revision": "2e8cee57f421b4d80b0d",
     "url": "/static/css/main.b6742f7d.chunk.css"
   },
   {
-    "revision": "36481d74456642864e90",
-    "url": "/static/js/2.1be5a2dc.chunk.js"
+    "revision": "4191033e3b4f22e785b4",
+    "url": "/static/js/2.f4b52d3e.chunk.js"
   },
   {
     "revision": "aa4100970f46d7e0ec2af84de3f2740b",
-    "url": "/static/js/2.1be5a2dc.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f4b52d3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf495147ff71181bc5dc",
-    "url": "/static/js/main.2f051727.chunk.js"
+    "revision": "2e8cee57f421b4d80b0d",
+    "url": "/static/js/main.992aec0c.chunk.js"
   },
   {
     "revision": "ca9e26916b67ab80e6bd",
     "url": "/static/js/runtime-main.c0733aee.js"
-  },
-  {
-    "revision": "1149750f8617b32b12df74795eb96e36",
-    "url": "/static/media/DeFi__DFI_money(YFII).1149750f.svg"
-  },
-  {
-    "revision": "002192c58082227e352c44cdedc7fbe2",
-    "url": "/static/media/DeFi__bandprotocal.002192c5.svg"
-  },
-  {
-    "revision": "a1a012e85d4984a9846d19bb58d5f642",
-    "url": "/static/media/DeFi__deband.a1a012e8.svg"
-  },
-  {
-    "revision": "fb8cfcc49bd3ed7cabf77df90610435f",
-    "url": "/static/media/DeFi__defipulsh.fb8cfcc4.svg"
-  },
-  {
-    "revision": "518c88d5d44e01d39cda3c22650c4c4f",
-    "url": "/static/media/DeFi__sfinance.518c88d5.svg"
-  },
-  {
-    "revision": "971e8be2a16e2753f68c1b6e008cdbd4",
-    "url": "/static/media/DeFi__yearn_finance.971e8be2.svg"
   },
   {
     "revision": "501537e6bdec998d611f5c9e12015528",
