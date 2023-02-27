@@ -332,10 +332,8 @@ const abiDF = [{
 }
 ];
 
-// test
+
 var addressDF = "0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0";
-var addressVote = "0xC09D8215Cb467c31452F014B3d9f7694d83065BF";
-
-
-// var addressDF = "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0";
-// var addressVote = "0xD4573F462d4Fc4b0f0932Ab9315d194A58a7427E";
+var addressVote_001 = "0x12B0938E71B15aD42eFF3479Ac2874F6b5Cf40E3";
+var addressVote_002 = "0xD4573F462d4Fc4b0f0932Ab9315d194A58a7427E";
+var addressVote_003 = "0xC09D8215Cb467c31452F014B3d9f7694d83065BF";

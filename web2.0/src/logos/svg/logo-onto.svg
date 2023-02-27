@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="80px" viewBox="0 0 190 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo-onto</title>
+    <g id="主页面-bak" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ONTO" transform="translate(37.000000, 20.000000)">
+            <g id="logo" transform="translate(0.000000, 7.000000)" stroke="#000000" stroke-width="3">
+                <path d="M3.71767681,4.21358245 L3.71767681,4.21358245 L0,0.496668082 L0,13.1856985 C0,16.4337665 1.2392256,19.6810984 3.71767681,22.1585506 C8.67531553,27.1141911 16.7129785,27.1141911 21.6706171,22.1585506 L3.71767681,4.21358245 Z" id="Fill-11备份"></path>
+                <path d="M21.4306474,21.6616985 L21.4306474,21.6616985 L25.1483241,25.3778768 L25.1483241,12.6888464 C25.1483241,9.4415145 23.9090986,6.19418259 21.4306474,3.71673036 C16.4730086,-1.23891012 8.43534573,-1.23891012 3.47770701,3.71673036 L21.4306474,21.6616985 Z" id="Fill-12备份"></path>
+            </g>
+            <text font-family="PingFang-SC-Bold, PingFang SC" font-size="28" font-weight="bold" fill="#000000">
+                <tspan x="36" y="30">ONTO</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
