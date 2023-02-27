@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="33px" viewBox="0 0 42 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu</title>
+    <g id="Mining" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="menu" transform="translate(2.000000, 2.000000)" stroke="#FFFFFF" stroke-width="5">
+            <line x1="0.5" y1="0.5" x2="37" y2="0.5" id="路径"></line>
+            <line x1="0.5" y1="14.5" x2="37" y2="14.5" id="路径"></line>
+            <line x1="0.5" y1="28.5" x2="37" y2="28.5" id="路径"></line>
+        </g>
+    </g>
+</svg>

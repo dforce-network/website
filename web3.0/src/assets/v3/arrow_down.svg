@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="10px" viewBox="0 0 9 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>btn-receive</title>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btn-receive" transform="translate(1.000000, 3.000000)" fill="#848E9C" fill-rule="nonzero">
+            <path d="M6.76517921,0 L0.234967733,0 C0.0386254985,0 -0.0704535206,0.196000996 0.0509876453,0.329889362 L3.31608486,3.92278467 L3.31608487,3.92278468 C3.40850505,4.01921719 3.565797,4.026287 3.66740623,3.93857551 C3.67321184,3.93356401 3.67876422,3.92829447 3.68404475,3.92278468 L6.94914196,0.329889371 C7.07058313,0.19600141 6.96077707,0 6.76516188,0 L6.76517921,0 Z"></path>
+        </g>
+    </g>
+</svg>

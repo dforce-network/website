@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="1715px" viewBox="0 0 750 1715" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>手机端 - Features - 模块大背景</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="49.9998675%" y2="93.8528742%" id="linearGradient-1">
+            <stop stop-color="#111336" offset="0%"></stop>
+            <stop stop-color="#15162A" offset="10.1971115%"></stop>
+            <stop stop-color="#0A0B1F" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-4.0%" y="-1.8%" width="108.0%" height="103.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="2022---新官网" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="H5---Web-3" transform="translate(0.000000, -2918.000000)" fill="url(#linearGradient-1)">
+            <polygon id="手机端---Features---模块大背景" filter="url(#filter-2)" points="0 3130 750 2940 750 4608 0 4608"></polygon>
+        </g>
+    </g>
+</svg>

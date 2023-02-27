@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrive</title>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrive" transform="translate(3.000000, 1.000000)" fill="#202020" fill-rule="nonzero">
+            <path d="M5.42051075,2 L-0.777003268,2 C-0.963342371,2 -1.0668641,2.196001 -0.951610044,2.32988936 L2.14713888,5.92278467 L2.14713889,5.92278468 C2.2348505,6.01921719 2.38412882,6.026287 2.48056133,5.93857551 C2.48607115,5.93356401 2.49134065,5.92829447 2.49635215,5.92278468 L5.59510108,2.32988937 C5.71035513,2.19600141 5.60614341,2 5.4204943,2 L5.42051075,2 Z" transform="translate(2.321684, 4.000000) rotate(-90.000000) translate(-2.321684, -4.000000) "></path>
+        </g>
+    </g>
+</svg>
