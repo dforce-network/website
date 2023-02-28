@@ -2,7 +2,7 @@ import React from 'react'
 import { useIntl } from 'react-intl'
 
 import df_logo from 'assets/v3/df-logo.svg'
-
+import {Identify_domain} from 'utils'
 
 
 const Item: React.FC = () => {
@@ -16,7 +16,7 @@ const Item: React.FC = () => {
                     <div className={'Footer-left'}>
                         {/* {fmt({ id: "Investors" })} */}
                         <div className={'logo-wrap'}>
-                            <a href="https://app.dforce.network" target="_blank" rel="noopener noreferrer">
+                            <a href={Identify_domain()} target="_blank" rel="noopener noreferrer">
                                 <img src={df_logo} alt="" />
                             </a>
                         </div>
@@ -35,7 +35,7 @@ const Item: React.FC = () => {
                             </div>
                             <div className={'Footer-right--itemwrap'}>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://app.dforce.network" target="_blank" rel="noopener noreferrer">
+                                    <a href={Identify_domain()} target="_blank" rel="noopener noreferrer">
                                         Protocols
                                     </a>
                                 </div>
@@ -91,12 +91,12 @@ const Item: React.FC = () => {
                             </div>
                             <div className={'Footer-right--itemwrap'}>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://app.dforce.network/#/StakeDF" target="_blank" rel="noopener noreferrer">
+                                    <a href={`${Identify_domain()}#/StakeDF`} target="_blank" rel="noopener noreferrer">
                                         Staking
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://app.dforce.network/#/Delegate" target="_blank" rel="noopener noreferrer">
+                                    <a href={`${Identify_domain()}#/Delegate`} target="_blank" rel="noopener noreferrer">
                                         Delegation
                                     </a>
                                 </div>

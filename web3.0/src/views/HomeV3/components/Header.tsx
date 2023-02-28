@@ -10,8 +10,7 @@ import logo from 'assets/v3/logo-bai.svg'
 import menu from 'assets/v3/menu.svg'
 import close_black from 'assets/v3/close.svg'
 import btn_up from 'assets/v3/btn-up.svg'
-
-
+import {Identify_domain} from 'utils'
 
 interface HomeProps {
     changeLanguage: (newLocale: string) => void

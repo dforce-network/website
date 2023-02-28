@@ -6,7 +6,7 @@ import icon10 from 'assets/v3/icon-10.svg'
 import gov_1 from 'assets/v3/gov-1.svg'
 import gov_2 from 'assets/v3/gov-2.svg'
 import bg_logo from 'assets/v3/bg-logo.svg'
-
+import {Identify_domain} from 'utils'
 
 
 const Item: React.FC = () => {
@@ -36,7 +36,7 @@ const Item: React.FC = () => {
                                 A hybrid model featuring both Free Staking and Lock-up Staking.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
-                                <a className={'Gov-proiect-link'} href="https://app.dforce.network/#/StakeDF" target="_blank" rel="noopener noreferrer">
+                                <a className={'Gov-proiect-link'} href={`${Identify_domain()}#/StakeDF`} target="_blank" rel="noopener noreferrer">
                                     Staking
                                 </a>
                             </div>
@@ -50,7 +50,7 @@ const Item: React.FC = () => {
                                 veDF holders can delegate your voting rights to governors of your choice.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
-                                <a className={'Gov-proiect-link'} href="https://app.dforce.network/#/Delegate" target="_blank" rel="noopener noreferrer">
+                                <a className={'Gov-proiect-link'} href={`${Identify_domain()}#/Delegate`} target="_blank" rel="noopener noreferrer">
                                     Delegation
                                 </a>
                             </div>

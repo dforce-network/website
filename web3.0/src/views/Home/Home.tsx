@@ -16,7 +16,7 @@ import logo_bai from 'assets/web/logo-bai.svg'
 import menu from 'assets/web/menu.svg'
 import close_black from 'assets/web/close.svg'
 import btn_up from 'assets/web/btn-up.svg'
-
+import {Identify_domain} from 'utils'
 
 interface HomeProps {
   changeLanguage: (newLocale: string) => void
@@ -62,7 +62,7 @@ const Home: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                     <div className="menu-item">
                       <h1>
-                        <a href="https://app.dforce.network/#/lending" target='_blank' onClick={() => { setShowMenu(false) }}>
+                        <a href={`${Identify_domain()}/#/Lending`} target='_blank' onClick={() => { setShowMenu(false) }}>
                           <span>{fmt({ id: "LENDing" })}</span>
                         </a>
                       </h1>
@@ -114,12 +114,12 @@ const Home: React.FC<HomeProps> = ({ changeLanguage }) => {
                         <img className={showFARM ? "rotate180" : ""} src={btn_up} />
                       </h1>
                       <div className={showFARM ? "items items-icons" : "items items-icons item-hidden"}>
-                        <a href="https://app.dforce.network/#/Mining" target='_blank' onClick={() => { setShowMenu(false) }}>
+                        <a href={`${Identify_domain()}/#/Mining`} target='_blank' onClick={() => { setShowMenu(false) }}>
                           <span className="name">
                             {fmt({ id: "FARM__LENDING" })}
                           </span>
                         </a>
-                        <a href="https://app.dforce.network/#/Liquidity" target='_blank' onClick={() => { setShowMenu(false) }}>
+                        <a href={`${Identify_domain()}#/Liquidity`} target='_blank' onClick={() => { setShowMenu(false) }}>
                           <span className="name">
                             {fmt({ id: "FARM__LIQUIDITY" })}
                           </span>

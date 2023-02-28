@@ -12,6 +12,7 @@ import Optimism from 'assets/v3/Optimism.svg'
 import Polygon from 'assets/v3/Polygon.svg'
 import Avalanche from 'assets/v3/Avalanche.svg'
 import kava from 'assets/v3/kava.svg'
+import {Identify_domain} from 'utils'
 
 interface SloganProps {
     changeLanguage: (newLocale: string) => void
@@ -30,7 +31,7 @@ const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
             <SmallTitle>
                 A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
             </SmallTitle>
-            <LaunchApp href='https://app.dforce.network' target="_blank" rel="noopener noreferrer">
+            <LaunchApp href={Identify_domain()} target="_blank" rel="noopener noreferrer">
                 Launch APP
                 <Icon src={Launchapp}></Icon>
             </LaunchApp>

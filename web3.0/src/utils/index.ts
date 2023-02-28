@@ -52,3 +52,13 @@ export const format_bn = (numStr: string, decimals: number, decimalPlace = decim
   return res.slice(0, length >= res.length ? res.length : length);
   // return res.slice(-1) == '.' ? res + '00' : res;
 };
+
+export const Identify_domain = () => {
+  const domain = window.location.host
+  if(domain.includes("dforce.eth.limo")){
+    return `https://app.dforce.eth.limo/`
+  }else{
+    return `https://app.dforce.network/`
+    
+  } 
+}
