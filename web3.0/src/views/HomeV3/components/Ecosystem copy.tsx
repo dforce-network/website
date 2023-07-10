@@ -36,7 +36,7 @@ const Item: React.FC = () => {
                             </a>
                         </div>
 
-                        {/* <div className={'Eco-item'}>
+                        <div className={'Eco-item'}>
                             <div className={'proiect-name'}>
                                 <img src={logo_entrofi} alt="" />
                             </div>
@@ -46,7 +46,7 @@ const Item: React.FC = () => {
                             <a href='https://entrofi.io' className={'proiect-link'} target="_blank" rel="noopener noreferrer">
                                 <img src={eco_link} alt="" />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

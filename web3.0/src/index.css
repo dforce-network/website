@@ -519,7 +519,7 @@ a {
 }
 
 .Eco-item {
-  width: 590px;
+  /* width: 590px; */
   height: 327px;
   background: #17182B;
   border-radius: 18px;

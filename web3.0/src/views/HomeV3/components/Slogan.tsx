@@ -12,6 +12,7 @@ import Optimism from 'assets/v3/Optimism.svg'
 import Polygon from 'assets/v3/Polygon.svg'
 import Avalanche from 'assets/v3/Avalanche.svg'
 import kava from 'assets/v3/kava.svg'
+import conflux from 'assets/v3/conflux.svg'
 
 interface SloganProps {
     changeLanguage: (newLocale: string) => void
@@ -27,8 +28,11 @@ const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
             <Header changeLanguage={changeLanguage} />
             <Title>DeFi Infrastructure in</Title>
             <SubTitle>{fmt({ id: 'Web3' })}</SubTitle>
-            <SmallTitle>
+            {/* <SmallTitle>
                 A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
+            </SmallTitle> */}
+            <SmallTitle>
+                dForce is a decentralized stablecoin protocol powered by an integrated DeFi matrix (assets, lending, trading and bridge).
             </SmallTitle>
             <LaunchApp href='https://app.dforce.network' target="_blank" rel="noopener noreferrer">
                 Launch APP
@@ -42,6 +46,7 @@ const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
                 <Item src={Polygon}></Item>
                 <Item src={Avalanche}></Item>
                 <Item src={kava}></Item>
+                <Item src={conflux}></Item>
             </List>
             {/* <Data/> */}
         </Section>
