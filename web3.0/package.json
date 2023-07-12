@@ -27,6 +27,7 @@
     "start": "react-app-rewired start",
     "start-mac": "react-scripts start",
     "build": "react-app-rewired build",
+    "build-pro": "export GENERATE_SOURCEMAP=false && react-scripts build && open .",
     "build-noSourcemap": "set GENERATE_SOURCEMAP=false&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

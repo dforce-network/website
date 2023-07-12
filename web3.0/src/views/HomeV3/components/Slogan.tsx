@@ -28,12 +28,12 @@ const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
             <Header changeLanguage={changeLanguage} />
             <Title>DeFi Infrastructure in</Title>
             <SubTitle>{fmt({ id: 'Web3' })}</SubTitle>
-            {/* <SmallTitle>
-                A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
-            </SmallTitle> */}
             <SmallTitle>
-                dForce is a decentralized stablecoin protocol powered by an integrated DeFi matrix (assets, lending, trading and bridge).
+                A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
             </SmallTitle>
+            {/* <SmallTitle>
+                dForce is a decentralized stablecoin protocol powered by an integrated DeFi matrix (assets, lending, trading and bridge).
+            </SmallTitle> */}
             <LaunchApp href='https://app.dforce.network' target="_blank" rel="noopener noreferrer">
                 Launch APP
                 <Icon src={Launchapp}></Icon>
